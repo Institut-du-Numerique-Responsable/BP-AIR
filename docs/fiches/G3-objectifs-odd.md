@@ -21,7 +21,7 @@ Traduire des ambitions générales en objectifs SMART, priorisés et alignés su
 
 ## Contexte & enjeu
 
-« Être plus responsable » n'est pas pilotable. Mis en concurrence avec coûts, performance et sécurité sans alignement explicite, les objectifs NR perdent. L'alignement sur les ODD ancre et légitime la démarche. Cf. [guide unifié](../guide-unifie.md#28-le-si-au-service-des-odd).
+« Être plus responsable » n'est pas pilotable. Mis en concurrence avec coûts, performance et sécurité sans alignement explicite, les objectifs NR perdent. L'alignement sur les ODD ancre et légitime la démarche. Cf. [guide](../guide-unifie.md#28-le-si-au-service-des-odd).
 
 ## Étapes de mise en œuvre
 

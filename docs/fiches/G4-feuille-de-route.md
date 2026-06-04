@@ -21,7 +21,7 @@ Transformer diagnostic et objectifs en un plan d'action concret, budgété, plan
 
 ## Contexte & enjeu
 
-Un plan technocratique non relié à la valeur métier est rejeté en CODIR. La feuille de route fait le pont entre le diagnostic ([M1](M1-diagnostic.md)) et la mise en œuvre. Cf. [guide unifié](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches).
+Un plan technocratique non relié à la valeur métier est rejeté en CODIR. La feuille de route fait le pont entre le diagnostic ([M1](M1-diagnostic.md)) et la mise en œuvre. Cf. [guide](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches).
 
 ## Étapes de mise en œuvre
 

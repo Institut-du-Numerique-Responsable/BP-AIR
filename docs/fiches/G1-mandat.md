@@ -21,7 +21,7 @@ Ancrer la démarche au plus haut niveau en obtenant un mandat clair de la Direct
 
 ## Contexte & enjeu
 
-On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (direction) autant qu'une attente « ascendante » (terrain). Sans mandat formel, les exigences non-fonctionnelles sont systématiquement sacrifiées au coût ou aux délais. Cf. [guide unifié](../guide-unifie.md#22-pilier-1-gouvernance-alignement-strategique).
+On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (direction) autant qu'une attente « ascendante » (terrain). Sans mandat formel, les exigences non-fonctionnelles sont systématiquement sacrifiées au coût ou aux délais. Cf. [guide](../guide-unifie.md#22-pilier-1-gouvernance-alignement-strategique).
 
 ## Étapes de mise en œuvre
 

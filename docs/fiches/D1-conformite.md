@@ -21,7 +21,7 @@ Déployer concrètement les chantiers tout en garantissant le respect des standa
 
 ## Contexte & enjeu
 
-La conformité se vérifie, elle ne se décrète pas. Des standards définis sans outillage de contrôle restent lettre morte ; un contrôle vécu comme friction est rejeté. Cf. [guide unifié](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches).
+La conformité se vérifie, elle ne se décrète pas. Des standards définis sans outillage de contrôle restent lettre morte ; un contrôle vécu comme friction est rejeté. Cf. [guide](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches).
 
 ## Étapes de mise en œuvre
 

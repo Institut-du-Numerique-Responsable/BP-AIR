@@ -21,7 +21,7 @@ Mesurer objectivement le point de départ — environnemental, social, maturité
 
 ## Contexte & enjeu
 
-Le diagnostic conditionne toute la suite : sans base de référence, impossible de prioriser ([G4](G4-feuille-de-route.md)) ni de prouver les progrès ([M2](M2-pilotage-kpi.md)). Attention à ne pas se limiter au carbone. Cf. [guide unifié](../guide-unifie.md#27-pilier-6-mesure-pilotage-lequation-de-kaya-appliquee-au-si).
+Le diagnostic conditionne toute la suite : sans base de référence, impossible de prioriser ([G4](G4-feuille-de-route.md)) ni de prouver les progrès ([M2](M2-pilotage-kpi.md)). Attention à ne pas se limiter au carbone. Cf. [guide](../guide-unifie.md#27-pilier-6-mesure-pilotage-lequation-de-kaya-appliquee-au-si).
 
 ## Étapes de mise en œuvre
 

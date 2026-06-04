@@ -21,7 +21,7 @@ Réduire le poids des données — environ **52 % de dark data** et **33 % de RO
 
 ## Contexte & enjeu
 
-La donnée est l'objet même de l'informatique, et le plus négligé. Dark data et ROT coûtent en infrastructure, énergie, ETP, et faussent les décisions. Mais une donnée sans valeur aujourd'hui peut en créer demain : décommissionner avec discernement. Cf. [guide unifié](../guide-unifie.md#24-pilier-3-cycle-de-vie-architecture-services-donnees).
+La donnée est l'objet même de l'informatique, et le plus négligé. Dark data et ROT coûtent en infrastructure, énergie, ETP, et faussent les décisions. Mais une donnée sans valeur aujourd'hui peut en créer demain : décommissionner avec discernement. Cf. [guide](../guide-unifie.md#24-pilier-3-cycle-de-vie-architecture-services-donnees).
 
 ## Étapes de mise en œuvre
 

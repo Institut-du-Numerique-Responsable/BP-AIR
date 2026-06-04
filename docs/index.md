@@ -13,7 +13,7 @@
 
 Ce site rassemble deux niveaux de lecture :
 
-- **[Le guide unifié](guide-unifie.md)** — les fondations théoriques : pourquoi et où agir (6 piliers, matrice architecte, boîte à outils, glossaire).
+- **[Le guide](guide-unifie.md)** — les fondations théoriques : pourquoi et où agir (6 piliers, matrice architecte, boîte à outils, glossaire).
 - **Les fiches de bonnes pratiques** — comment agir, dès demain. Une fiche = un fichier, co-écrit par le GT.
 
 ## Les fiches, par thème

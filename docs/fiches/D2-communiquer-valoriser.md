@@ -21,7 +21,7 @@ Suivre les progrès, maintenir l'engagement, valoriser en interne comme en exter
 
 ## Contexte & enjeu
 
-Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. Le label est une conséquence d'une démarche réelle, pas une fin en soi. Valoriser les équipes techniques est un moteur de motivation et de rétention. Cf. [guide unifié](../guide-unifie.md#27-pilier-6-mesure-pilotage-lequation-de-kaya-appliquee-au-si).
+Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. Le label est une conséquence d'une démarche réelle, pas une fin en soi. Valoriser les équipes techniques est un moteur de motivation et de rétention. Cf. [guide](../guide-unifie.md#27-pilier-6-mesure-pilotage-lequation-de-kaya-appliquee-au-si).
 
 ## Étapes de mise en œuvre
 

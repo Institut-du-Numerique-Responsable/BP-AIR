@@ -21,7 +21,7 @@ Mettre en place un pilotage continu de la démarche NR : indicateurs multidimens
 
 ## Contexte & enjeu
 
-« On ne pilote que ce que l'on mesure. » Le diagnostic ([M1](M1-diagnostic.md)) donne le point de départ ; le pilotage transforme cette photo en film. Un bon KPI NR croise les **5 axes du NR**, le **cycle de vie**, les **couches d'architecture** et le triptyque **People / Planet / Prosperity**. Cf. [guide unifié](../guide-unifie.md#27-pilier-6-mesure-pilotage-lequation-de-kaya-appliquee-au-si).
+« On ne pilote que ce que l'on mesure. » Le diagnostic ([M1](M1-diagnostic.md)) donne le point de départ ; le pilotage transforme cette photo en film. Un bon KPI NR croise les **5 axes du NR**, le **cycle de vie**, les **couches d'architecture** et le triptyque **People / Planet / Prosperity**. Cf. [guide](../guide-unifie.md#27-pilier-6-mesure-pilotage-lequation-de-kaya-appliquee-au-si).
 
 ## Étapes de mise en œuvre
 

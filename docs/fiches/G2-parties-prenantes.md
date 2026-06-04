@@ -21,7 +21,7 @@ Transformer des expertises individuelles en force collective : l'architecte ne p
 
 ## Contexte & enjeu
 
-Le NR est par nature transverse. Une politique matérielle sans les Achats, une éco-conception sans les Métiers, un pilotage sans la RSE : autant d'impasses. L'adhésion se construit, elle ne se décrète pas. Cf. [guide unifié](../guide-unifie.md#22-pilier-1-gouvernance-alignement-strategique).
+Le NR est par nature transverse. Une politique matérielle sans les Achats, une éco-conception sans les Métiers, un pilotage sans la RSE : autant d'impasses. L'adhésion se construit, elle ne se décrète pas. Cf. [guide](../guide-unifie.md#22-pilier-1-gouvernance-alignement-strategique).
 
 ## Étapes de mise en œuvre
 
