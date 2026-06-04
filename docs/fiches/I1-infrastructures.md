@@ -25,12 +25,15 @@ La consolidation peut réduire la consommation de **30 à 60 %**. Le stockage vi
 
 ## Étapes de mise en œuvre
 
-1. **Monitorer l'usage réel** (CPU, RAM, I/O via Prometheus / Grafana) ; revue trimestrielle de consolidation / réaffectation / décommissionnement.
-2. Politique de **TTL** sur les environnements de test ; arrêt systématique des inutilisés ; suppression des projets terminés.
-3. **Virtualisation** : dimensionner au plus juste, bon provisioning disque, supprimer les snapshots obsolètes.
-4. **Conteneurisation** : partager les images de base, nettoyer les images/couches orphelines (`docker image prune`).
-5. **Logs** : rotation et nettoyage automatiques (Logrotate) ; DEBUG ponctuel.
-6. **Archivages** : purger l'historique de versions (SharePoint/OneDrive), nettoyer les fichiers Teams.
+1. **Monitorer l'usage réel** (CPU, RAM, I/O via Prometheus / Grafana, Netdata) ; revue trimestrielle de consolidation / réaffectation / décommissionnement.
+2. **Mesurer la consommation électrique et carbone** de l'infrastructure (sondes type Scaphandre / Kepler ; estimation cloud via Cloud Carbon Footprint, DataVizta) pour prioriser sur des données réelles, pas ressenties.
+3. **Right-sizing** : ajuster les ressources allouées aux besoins observés (recommandeurs Goldilocks, KRR sur Kubernetes ; provisioning disque adapté ; suppression des snapshots obsolètes).
+4. Politique de **TTL** et d'extinction hors heures sur les environnements de test (Cloud Custodian, kube-green) ; arrêt systématique des inutilisés ; suppression des projets terminés.
+5. **Conteneurisation** : partager les images de base, analyser et alléger les couches (`dive`), nettoyer les images/couches orphelines (`docker image prune`).
+6. **Auto-scaling & carbon-aware** : préférer l'élasticité au surdimensionnement (KEDA) ; quand c'est possible, décaler les charges flexibles vers les heures bas-carbone (Carbon Aware SDK).
+7. **Logs** : rotation et nettoyage automatiques (Logrotate, Grafana Loki) ; DEBUG ponctuel.
+8. **Archivages** : purger l'historique de versions (SharePoint/OneDrive), nettoyer les fichiers Teams.
+9. **Piloter les coûts (FinOps)** comme proxy de la sobriété : attribuer et suivre la dépense par service (OpenCost, Infracost en CI/CD).
 
 ## KPIs & OKR
 
@@ -45,10 +48,24 @@ La consolidation peut réduire la consommation de **30 à 60 %**. Le stockage vi
 
 ## Outils & ressources
 
-| Outil / Ressource | Usage | Lien |
-|---|---|---|
-| Prometheus / Grafana | Monitoring usage réel | <https://grafana.com> |
-| DataVizta (Boavizta) | Impact serveurs/cloud | <https://dataviz.boavizta.org/> |
+| Catégorie | Outil / Ressource | Usage | Lien |
+|---|---|---|---|
+| Monitoring | **Prometheus + Grafana** | Métriques d'usage réel (CPU, RAM, I/O), tableaux de bord | <https://grafana.com> |
+| Monitoring | **Netdata** | Supervision temps réel par ressource, faible empreinte | <https://www.netdata.cloud/> |
+| Énergie / carbone | **Scaphandre** | Mesure de la consommation électrique des hôtes et VM | <https://github.com/hubblo-org/scaphandre> |
+| Énergie / carbone | **Kepler** | Estimation de l'énergie des workloads Kubernetes | <https://sustainable-computing.io/> |
+| Énergie / carbone | **Cloud Carbon Footprint** | Empreinte carbone des usages cloud (AWS/GCP/Azure) | <https://www.cloudcarbonfootprint.org/> |
+| Énergie / carbone | **DataVizta** (Boavizta) | Impact fabrication/usage serveurs & cloud | <https://dataviz.boavizta.org/> |
+| Right-sizing | **Goldilocks** (Fairwinds) | Recommandations de dimensionnement (VPA) Kubernetes | <https://github.com/FairwindsOps/goldilocks> |
+| Right-sizing | **KRR** (Robusta) | Recommandations de ressources sans agent | <https://github.com/robusta-dev/krr> |
+| Cycle de vie env. | **Cloud Custodian** | Règles automatiques : TTL, arrêt des ressources inutilisées | <https://cloudcustodian.io/> |
+| Cycle de vie env. | **kube-green** | Extinction des namespaces hors heures ouvrées | <https://kube-green.dev/> |
+| Conteneurs | **dive** | Analyse des couches d'image, repérage du superflu | <https://github.com/wagoodman/dive> |
+| Élasticité | **KEDA** | Auto-scaling événementiel (scale-to-zero) | <https://keda.sh/> |
+| Carbon-aware | **Carbon Aware SDK** (GSF) | Décaler les charges flexibles vers les heures bas-carbone | <https://github.com/Green-Software-Foundation/carbon-aware-sdk> |
+| Logs | **Grafana Loki** | Agrégation/rotation des logs, rétention maîtrisée | <https://grafana.com/oss/loki/> |
+| FinOps | **OpenCost** | Coût par service/namespace (proxy de sobriété) | <https://www.opencost.io/> |
+| FinOps | **Infracost** | Estimation du coût de l'infra (IaC) en CI/CD | <https://www.infracost.io/> |
 
 ## Fiches liées
 
