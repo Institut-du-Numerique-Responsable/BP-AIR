@@ -57,7 +57,7 @@ BP-AIR/
 │   ├── index.md                # page d'accueil
 │   ├── guide-unifie.md         # fondations théoriques (6 piliers, matrice, outils, glossaire)
 │   ├── assets/
-│   │   ├── img/                # illustrations / schémas
+│   │   ├── img/                # illustrations et schémas
 │   │   └── extra.css           # styles (figures, zoom)
 │   └── fiches/                 # une fiche = un fichier .md
 │       ├── G1-mandat.md
