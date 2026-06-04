@@ -23,7 +23,7 @@ fiches_liees: [G2, I2, D2]
 
 ## Contexte & enjeu
 
-Maturité ≠ performance : on cherche l'intention et la méthode, pas un résultat ponctuel. Des questions fermées appellent des réponses cosmétiques. Cf. [guide unifié](../guide-unifie.md#22-pilier-1-gouvernance-alignement-strategique).
+Maturité ≠ performance : on cherche l'intention et la méthode, pas un résultat ponctuel. Des questions fermées appellent des réponses cosmétiques. Cf. [guide](../guide-unifie.md#22-pilier-1-gouvernance-alignement-strategique).
 
 ## Étapes de mise en œuvre
 

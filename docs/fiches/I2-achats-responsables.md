@@ -21,7 +21,7 @@ Encadrer l'acquisition de produits et services numériques pour réduire l'empre
 
 ## Contexte & enjeu
 
-**80 % de l'empreinte d'un équipement est figée à la fabrication** : acheter du neuf « performant » sans avoir évalué le réemploi est un contresens. Sans les Achats, aucune politique matérielle ne tient. Cf. [guide unifié](../guide-unifie.md#25-pilier-4-cycle-de-vie-du-materiel-economie-circulaire).
+**80 % de l'empreinte d'un équipement est figée à la fabrication** : acheter du neuf « performant » sans avoir évalué le réemploi est un contresens. Sans les Achats, aucune politique matérielle ne tient. Cf. [guide](../guide-unifie.md#25-pilier-4-cycle-de-vie-du-materiel-economie-circulaire).
 
 ## Étapes de mise en œuvre
 

@@ -1,4 +1,4 @@
-# Guide unifié — les fondations
+# Guide — les fondations
 
 *Partie théorique du document de synthèse du GT AIR. La partie pratique est éclatée en [fiches](index.md#les-fiches-par-theme).*
 
@@ -64,8 +64,8 @@ L'urbanisation organise et **rationalise** le SI. Si deux outils font la même c
 > **Rendre explicite ce que le modèle oublie.** Chaque couche génère des impacts sur deux dimensions invisibles : les **ressources environnementales** (énergie, eau, matières) et les **impacts sociaux/sociétaux**. Le GT AIR recommande d'ajouter une « couche ressources » au modèle.
 
 <figure markdown>
-  ![Cartographie d'urbanisation du SI (plan d'occupation des sols)](assets/img/cartographie-urbanisation.png)
-  <figcaption>Exemple de cartographie d'urbanisation (Plan d'Occupation des Sols) — cliquer pour explorer en plein écran.</figcaption>
+  ![Triptyque des ressources à disposition de l'organisation](assets/img/ressourcesi.svg)
+  <figcaption>Triptyque des ressources à disposition de l'organisation : financières, humaines et matérielles.</figcaption>
 </figure>
 
 ### 2.4 Pilier 3 — Cycle de vie (architecture, services, données)
@@ -75,8 +75,8 @@ Comprendre les cycles de vie, c'est savoir **où se cachent les impacts** et don
 **Cycle de vie d'un service numérique.** Tout service naît d'une **demande**, qui doit répondre à un **besoin** (pas une envie), créer de la **valeur mesurable**, servir la stratégie, et **ne pas déjà exister**. À l'usage : appliquer la **règle des 3U** — un service est-il **U**tile ? **U**tilisé ? **U**tilisable ?
 
 <figure markdown>
-  ![Le cycle de vie de l'architecture, de la vision au change management](assets/img/cycle-vie-architecte.png)
-  <figcaption>Le cycle de vie piloté par l'architecte : de la vision et l'urbanisation au déploiement et au change management.</figcaption>
+  ![Le cycle de vie du SI piloté par la gouvernance](assets/img/cycle-de-vie.jpg)
+  <figcaption>Le cycle de vie du SI piloté par la gouvernance : Design (vision, processus, architecture), Build (achats, construction), Run (usage), jusqu'à la fin de vie.</figcaption>
 </figure>
 
 **Cycle de vie des données — le grand oublié.**
@@ -117,15 +117,15 @@ L'éco-conception est la plus efficace quand **intégrée dès la conception**. 
 L'**équation de Kaya** (1993) transposée au SI relie population des utilisateurs, volume de services, valeur produite, consommation d'énergie, intensité carbone. Axes de pilotage : **intensité carbone, efficience énergétique, efficacité du SI, sobriété**.
 
 <figure markdown>
-  ![Relier l'empreinte GES (scopes) à la stratégie et à l'urbanisation du SI](assets/img/kaya-ges.png)
-  <figcaption>Remonter la chaîne des impacts : l'empreinte GES (Scopes 1, 2, 3) se rattache à la stratégie et à l'urbanisation du SI.</figcaption>
+  ![L'équation de Kaya appliquée au SI](assets/img/kaya.jpg)
+  <figcaption>L'équation de Kaya appliquée au SI : quatre leviers d'action — intensité carbone, efficience énergétique, efficacité et sobriété du SI.</figcaption>
 </figure>
 
 Un bon **KPI NR** croise quatre dimensions : les **5 axes du NR**, le **cycle de vie**, le **découpage en couches**, le triptyque **People / Planet / Profit**.
 
 <figure markdown>
-  ![Cascade de construction des indicateurs, des ODD à la consolidation](assets/img/cascade-kpi.png)
-  <figcaption>La cascade de construction des indicateurs : des ODD aux objectifs NR, puis aux indicateurs par couche et par cycle de vie, jusqu'à la consolidation.</figcaption>
+  ![Les axes du NR](assets/img/nr.svg)
+  <figcaption>Les axes du NR.</figcaption>
 </figure>
 
 | Couche | Optimiser les impacts | Inclusion & durabilité | Éthique & responsabilité | Résilience |

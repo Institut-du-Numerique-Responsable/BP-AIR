@@ -21,7 +21,7 @@ Réduire le gaspillage matériel : **25-30 % des serveurs** tournent sans usage 
 
 ## Contexte & enjeu
 
-La consolidation peut réduire la consommation de **30 à 60 %**. Le stockage virtuel « indolore » ne l'est pas : multiplier les environnements a un coût réel. Cf. [guide unifié](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-conception).
+La consolidation peut réduire la consommation de **30 à 60 %**. Le stockage virtuel « indolore » ne l'est pas : multiplier les environnements a un coût réel. Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-conception).
 
 ## Étapes de mise en œuvre
 

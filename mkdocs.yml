@@ -1,5 +1,5 @@
 site_name: Architecture Informatique Responsable
-site_description: Guide unifié & fiches de bonnes pratiques — GT AIR (INR / ISIT)
+site_description: Guide & fiches de bonnes pratiques — GT AIR (INR / ISIT)
 copyright: "© INR / ISIT — Groupe de Travail AIR. Contenu sous licence CC BY-SA 4.0."
 docs_dir: docs
 
@@ -33,7 +33,7 @@ theme:
 
 nav:
   - Accueil: index.md
-  - Guide unifié (fondations): guide-unifie.md
+  - Guide (fondations): guide-unifie.md
   - "Thème — Gouvernance & Stratégie":
       - fiches/G1-mandat.md
       - fiches/G2-parties-prenantes.md
