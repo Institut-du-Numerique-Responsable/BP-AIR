@@ -1,0 +1,74 @@
+site_name: Architecture Informatique Responsable
+site_description: Guide unifié & fiches de bonnes pratiques — GT AIR (INR / ISIT)
+docs_dir: docs
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Mode clair
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Accueil: index.md
+  - Guide unifié (fondations): guide-unifie.md
+  - "Thème — Gouvernance & Stratégie":
+      - fiches/G1-mandat.md
+      - fiches/G2-parties-prenantes.md
+      - fiches/G3-objectifs-odd.md
+      - fiches/G4-feuille-de-route.md
+  - "Thème — Mesure & Diagnostic":
+      - fiches/M1-diagnostic.md
+      - fiches/M2-pilotage-kpi.md
+  - "Thème — Conception sobre":
+      - fiches/C1-eco-conception-services.md
+      - fiches/C2-cycle-vie-donnees.md
+  - "Thème — Infrastructure & Matériel":
+      - fiches/I1-infrastructures.md
+      - fiches/I2-achats-responsables.md
+  - "Thème — Chaîne de valeur":
+      - fiches/V1-maturite-parties-prenantes.md
+  - "Thème — Déploiement & Valorisation":
+      - fiches/D1-conformite.md
+      - fiches/D2-communiquer-valoriser.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.emoji
+
+plugins:
+  - search:
+      lang: fr
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://institutnr.org
