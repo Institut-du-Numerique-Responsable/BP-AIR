@@ -112,7 +112,7 @@ Pas besoin de Git en ligne de commande.
 ### Créer une nouvelle fiche
 
 1. Copiez `TEMPLATE-fiche.md` dans `docs/fiches/` en la nommant `CODE-titre-court.md` (ex. `G5-formation.md`).
-2. Remplissez l'entête `---` (frontmatter) : `id`, `titre`, `theme`, `owner`…
+2. Remplissez l'entête `---` (frontmatter) : `id`, `titre`, `theme`, `proprietaire`, `contributeurs`…
 3. Ajoutez-la dans `mkdocs.yml` (sous le bon thème) **et** dans le tableau de `docs/index.md`.
 4. Ouvrez une Pull Request.
 
@@ -157,7 +157,63 @@ maj: 2026-06-04
 
 ---
 
-## 6. Prévisualiser en local (optionnel, pour les plus à l'aise)
+## 6. Travailler à plusieurs (branche protégée + Pull Requests)
+
+La branche `main` est **protégée** : personne ne pousse directement dessus. Toute évolution passe par une **Pull Request (PR) relue**. C'est ce qui rend la coédition sûre — rien n'arrive en ligne sans relecture, et l'historique reste propre.
+
+### Règles en vigueur sur `main`
+- ❌ Pas de push direct sur `main`.
+- ✅ Toute modification via une **branche** + une **Pull Request**.
+- 👁️ **1 approbation** d'un autre membre minimum avant de pouvoir fusionner.
+- 🤖 La **construction du site doit réussir** (vérification automatique `build`, qui lance `mkdocs build --strict` : liens cassés, navigation invalide = PR bloquée).
+- 🔄 La PR doit être **à jour** avec `main` avant fusion.
+
+### Le parcours d'une évolution ou d'une correction
+
+```
+1. Créer une branche       (depuis main)
+        │
+2. Modifier la / les fiche(s) en Markdown
+        │
+3. Ouvrir une Pull Request  → décrire le changement
+        │
+4. Vérification auto "build" (mkdocs --strict)   ──┐
+        │                                          │ doivent être OK
+5. Relecture + approbation d'un membre  ───────────┘
+        │
+6. Fusion (Merge) dans main
+        │
+7. Déploiement automatique → site à jour (~30 s)
+```
+
+### A. Tout dans le navigateur (recommandé pour la plupart)
+1. Ouvrez la fiche dans `docs/fiches/`, cliquez **✏️ Edit**.
+2. Faites vos modifications.
+3. **Commit changes** → cochez **« Create a new branch and start a pull request »** → nommez la branche (ex. `correction-C1-typo`) → **Propose changes**.
+4. Renseignez le titre/description, **Create pull request**.
+5. Attendez le ✅ de la vérification `build`, demandez la relecture (`Reviewers`).
+6. Après approbation, cliquez **Merge pull request**. Le site se met à jour seul.
+
+### B. En local avec Git (pour les contributions plus larges)
+```bash
+git clone https://github.com/Institut-du-Numerique-Responsable/BP-AIR.git
+cd BP-AIR
+git switch -c ma-contribution          # nouvelle branche
+# … éditer les fichiers, prévisualiser avec « mkdocs serve » (voir §7) …
+git add -A && git commit -m "Décrit le changement"
+git push -u origin ma-contribution
+gh pr create --fill                    # ou ouvrir la PR depuis l'interface GitHub
+```
+
+### Bonnes pratiques
+- **Une PR = un sujet** (une fiche ou une correction ciblée) → relecture plus simple, fusion plus rapide.
+- Ajoutez-vous dans `contributeurs` (frontmatter) de la fiche travaillée.
+- Nom de branche parlant : `ajout-G5-formation`, `maj-outils-I1`, `correction-liens-C2`.
+- Répondez aux commentaires de relecture en poussant de nouveaux commits sur la **même branche** (la PR se met à jour automatiquement).
+
+---
+
+## 7. Prévisualiser en local (optionnel, pour les plus à l'aise)
 
 Pour voir le rendu avant de pousser :
 
@@ -171,13 +227,13 @@ mkdocs serve            # ouvre http://127.0.0.1:8000 (recharge auto)
 
 ---
 
-## 7. Contribuer sans Git (alternative)
+## 8. Contribuer sans Git (alternative)
 
 Pour les membres bloqués par Git ou par les règles de sécurité de leur entreprise : rédigez le brouillon dans **HackMD** (<https://hackmd.io>, Markdown en temps réel, commentaires), puis un membre à l'aise avec Git reporte le contenu validé dans le dépôt via une Pull Request.
 
 ---
 
-## 8. Publication — résumé
+## 9. Publication — résumé
 
 | Question | Réponse |
 |---|---|
