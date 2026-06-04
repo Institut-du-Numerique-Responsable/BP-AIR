@@ -3,8 +3,8 @@ id: C1
 titre: Éco-concevoir les services numériques
 theme: Conception sobre
 statut: brouillon
-owner: ""
-contributeurs: []
+proprietaire: INR/ISIT
+contributeurs: [Guillaume Gallon]
 reviewers: []
 version: 0.1
 maj: 2026-06-04

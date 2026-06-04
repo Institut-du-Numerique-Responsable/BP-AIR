@@ -3,8 +3,8 @@ id: D2
 titre: Communiquer, valoriser & labelliser
 theme: Déploiement & Valorisation
 statut: brouillon
-owner: ""
-contributeurs: []
+proprietaire: INR/ISIT
+contributeurs: [Guillaume Gallon]
 reviewers: []
 version: 0.1
 maj: 2026-06-04

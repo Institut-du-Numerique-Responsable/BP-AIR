@@ -3,8 +3,8 @@ id: X0
 titre: Titre de la fiche
 theme: Gouvernance & Stratégie   # | Mesure & Diagnostic | Conception sobre | Infrastructure & Matériel | Chaîne de valeur | Déploiement & Valorisation
 statut: brouillon                # brouillon | en-revue | validé
-owner: prenom.nom                # responsable de la fiche
-contributeurs: []
+proprietaire: INR/ISIT           # entité détentrice de la fiche
+contributeurs: []                # rédacteurs (ex. [Prénom Nom])
 reviewers: []
 version: 0.1
 maj: 2026-06-04

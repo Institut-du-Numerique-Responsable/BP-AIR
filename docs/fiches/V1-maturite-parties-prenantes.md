@@ -3,8 +3,8 @@ id: V1
 titre: Évaluer & influencer la maturité des parties prenantes
 theme: Chaîne de valeur
 statut: brouillon
-owner: ""
-contributeurs: []
+proprietaire: INR/ISIT
+contributeurs: [Guillaume Gallon]
 reviewers: []
 version: 0.1
 maj: 2026-06-04

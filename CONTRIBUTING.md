@@ -13,21 +13,22 @@ Pas besoin d'être développeur. Tout se fait dans le navigateur. Le Markdown qu
 ## 2. Créer une nouvelle fiche
 
 1. Copiez `TEMPLATE-fiche.md` dans `docs/fiches/` sous le nom `CODE-titre-court.md` (ex. `G5-formation.md`).
-2. Remplissez le **frontmatter** (entête entre `---`) : `id`, `titre`, `theme`, `owner`, etc.
+2. Remplissez le **frontmatter** (entête entre `---`) : `id`, `titre`, `theme`, `proprietaire`, `contributeurs`, etc.
 3. Ajoutez la fiche à la navigation dans `mkdocs.yml` (sous le bon thème) et au tableau de `docs/index.md`.
 4. Ouvrez une Pull Request.
 
 ## 3. Le frontmatter (pilotage de la coédition)
 
 ```yaml
-statut: brouillon   # brouillon → en-revue → validé
-owner: prenom.nom   # qui porte la fiche
-reviewers: []       # qui doit relire
+statut: brouillon         # brouillon → en-revue → validé
+proprietaire: INR/ISIT    # entité détentrice de la fiche
+contributeurs: [Prénom Nom]   # rédacteurs
+reviewers: []             # qui doit relire
 version: 0.1
 maj: 2026-06-04
 ```
 
-- **Un seul `owner` par fiche** : évite les éditions concurrentes.
+- Le **propriétaire** est l'entité détentrice (INR/ISIT) ; ajoutez votre nom dans **`contributeurs`** quand vous travaillez sur une fiche (permet de voir qui est déjà dessus et d'éviter les éditions concurrentes).
 - Passez `statut` à `en-revue` quand la fiche est prête à relecture, `validé` une fois actée par le GT.
 - Avant `validé`, **purgez la section « Notes de coédition »** (en bas de fiche).
 

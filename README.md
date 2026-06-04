@@ -124,13 +124,15 @@ id: C1
 titre: Éco-concevoir les services numériques
 theme: Conception sobre
 statut: brouillon        # brouillon → en-revue → validé
-owner: prenom.nom        # UNE seule personne porte la fiche (évite les conflits)
+proprietaire: INR/ISIT   # entité détentrice de la fiche
+contributeurs: [Prénom Nom]   # rédacteurs ; ajoutez-vous quand vous contribuez
 reviewers: []
 version: 0.1
 maj: 2026-06-04
 ---
 ```
 
+- Ajoutez votre nom dans `contributeurs` quand vous travaillez sur une fiche (évite les éditions concurrentes : voyez qui est déjà dessus).
 - Passez `statut` à `en-revue` quand la fiche est prête, `validé` quand le GT l'a actée.
 - Avant `validé`, **supprimez la section « Notes de coédition »** en bas de fiche.
 

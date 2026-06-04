@@ -3,8 +3,8 @@ id: M2
 titre: Pilotage & tableau de bord KPI
 theme: Mesure & Diagnostic
 statut: brouillon
-owner: ""
-contributeurs: []
+proprietaire: INR/ISIT
+contributeurs: [Guillaume Gallon]
 reviewers: []
 version: 0.1
 maj: 2026-06-04

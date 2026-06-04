@@ -3,8 +3,8 @@ id: I1
 titre: Optimiser infrastructures & environnements
 theme: Infrastructure & Matériel
 statut: brouillon
-owner: ""
-contributeurs: []
+proprietaire: INR/ISIT
+contributeurs: [Guillaume Gallon]
 reviewers: []
 version: 0.1
 maj: 2026-06-04

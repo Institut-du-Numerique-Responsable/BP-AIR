@@ -3,8 +3,8 @@ id: I2
 titre: Politique d'achats numériques responsables
 theme: Infrastructure & Matériel
 statut: brouillon
-owner: ""
-contributeurs: []
+proprietaire: INR/ISIT
+contributeurs: [Guillaume Gallon]
 reviewers: []
 version: 0.1
 maj: 2026-06-04
