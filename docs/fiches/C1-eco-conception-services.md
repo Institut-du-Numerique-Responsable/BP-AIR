@@ -19,7 +19,7 @@ fiches_liees: [C2, M1, D1]
 
 Intégrer la sobriété **dès la conception** des services, et la maintenir dans le temps.
 
-## Contexte & enjeu
+## Contexte & enjeux
 
 Près de **45 % des fonctionnalités développées ne sont jamais utilisées**. L'éco-conception ajoutée en fin de projet est coûteuse et superficielle ; intégrée en amont, elle réduit poids, requêtes et dette. Cf. [guide unifié](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-conception).
 
