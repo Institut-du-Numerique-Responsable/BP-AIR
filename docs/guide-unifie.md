@@ -26,6 +26,11 @@ Les organisations évoluent dans un monde dit **VUCA** — *Volatile, Uncertain,
 
 Le temps où la DSI dépensait sans compter est révolu. **Chaque investissement, chaque ressource numérique consommée doit désormais être justifié et organisé.** On parle de sobriété, non par dogme, mais par nécessité. L'**urbanisation du SI** devient indispensable : faire mieux avec moins, en rationalisant l'existant.
 
+<figure markdown>
+  ![VUCA : un monde volatile, incertain, complexe et ambigu](assets/img/vuca.svg)
+  <figcaption>VUCA : un monde devenu volatile, incertain, complexe et ambigu.</figcaption>
+</figure>
+
 ### 2.2 Pilier 1 — Gouvernance & alignement stratégique
 
 Toutes les organisations partagent un besoin structurel : **bien gérer des ressources finies (financières, matérielles, humaines) au service de leurs objectifs.** C'est l'**alignement stratégique**. La stratégie de l'entreprise se retrouve dans chacune des briques numériques :
