@@ -192,7 +192,8 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 ### Mesure & maturité
 | Outil | Usage | Lien |
 |---|---|---|
-| **WeNR** | Empreinte GES + maturité NR (ACV simplifiée + questionnaire DINUM) | INR |
+| **WeNR** | Empreinte GES + maturité NR du SI (ACV simplifiée + questionnaire DINUM) | <https://wenr.isit-europe.org/> |
+| **MyImpact** (INR/ISIT) | Calculateur de l'empreinte numérique individuelle (sensibilisation) | <https://myimpact.isit-europe.org/fr/> |
 | **NumEcoEval** | Évaluation environnementale des SI | — |
 | **DataVizta** (Boavizta) | Impact fabrication/usage des équipements | <https://dataviz.boavizta.org/> |
 | **Guide Maturité PP (INR/ISIT)** | 47 questions, 10 familles | <https://institutnr.org/guide-maturite-parties-prenantes> |
@@ -216,6 +217,13 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 | **Guide bonnes pratiques NR (INR)** | Référentiel | <https://institutnr.org/guide-bonnes-pratiques-nr> |
 | **Guide achats responsables (DINUM)** | Achats | <https://ecoresponsable.numerique.gouv.fr/publications/guide-pratique-achats-numeriques-responsables/> |
 | **Label NR** (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
+
+### Formation & sensibilisation
+| Ressource | Usage | Lien |
+|---|---|---|
+| **MOOC Numérique Responsable** (Académie NR) | Montée en compétences NR (cf. fiche [G2](fiches/G2-parties-prenantes.md)) | <https://www.academie-nr.org/mooc-nr/fr/index.html> |
+| **MOOC IA Responsable** (Académie NR) | Comprendre et encadrer l'IA responsable | <https://www.academie-nr.org/mooc-ia/fr/index.html> |
+| **MyImpact** (INR/ISIT) | Calculateur d'empreinte individuelle, support d'ateliers | <https://myimpact.isit-europe.org/fr/> |
 
 ### Communication responsable (ADEME)
 - ImpactCO₂ : <https://impactco2.fr/outils/numerique>
