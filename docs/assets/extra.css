@@ -20,6 +20,25 @@
   font-style: italic;
 }
 
+/* Logos partenaires dans le pied de page : bande blanche, hauteur homogène */
+.air-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  background: #fff;
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin: 0 auto 0.6rem;
+  max-width: 100%;
+}
+.air-logos .air-logo {
+  height: 42px;          /* même taille pour les 3 logos */
+  width: auto;
+  display: block;
+}
+
 /* Bandeau d'accueil */
 .air-hero {
   text-align: center;

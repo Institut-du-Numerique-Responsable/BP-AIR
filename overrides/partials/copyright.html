@@ -1,0 +1,25 @@
+<div class="air-logos">
+  <a href="https://institutnr.org" target="_blank" rel="noopener" title="INR France">
+    <img class="air-logo" src="{{ base_url }}/assets/img/logo-inr-fr.svg" alt="INR — Institut du Numérique Responsable (France)">
+  </a>
+  <a href="https://institutnr.org" target="_blank" rel="noopener" title="INR Suisse">
+    <img class="air-logo" src="{{ base_url }}/assets/img/logo-inr-ch.svg" alt="INR — Institut du Numérique Responsable (Suisse)">
+  </a>
+  <a href="https://isit-europe.org" target="_blank" rel="noopener" title="ISIT">
+    <img class="air-logo" src="{{ base_url }}/assets/img/logo-isit-be.svg" alt="ISIT — Institut du Numérique Responsable (Belgique)">
+  </a>
+</div>
+
+<div class="md-copyright">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight">
+      {{ config.copyright }}
+    </div>
+  {% endif %}
+  {% if not config.extra.generator == false %}
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  {% endif %}
+</div>

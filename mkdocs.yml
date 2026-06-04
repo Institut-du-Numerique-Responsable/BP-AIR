@@ -1,10 +1,12 @@
 site_name: Architecture Informatique Responsable
 site_description: Guide unifié & fiches de bonnes pratiques — GT AIR (INR / ISIT)
+copyright: "© INR / ISIT — Groupe de Travail AIR. Contenu sous licence CC BY-SA 4.0."
 docs_dir: docs
 
 theme:
   name: material
   language: fr
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
