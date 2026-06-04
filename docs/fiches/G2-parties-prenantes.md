@@ -43,14 +43,14 @@ Le NR est par nature transverse. Une politique matérielle sans les Achats, une 
 
 ## Outils & ressources
 
-*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+*🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| 🆓 Guide bonnes pratiques NR (INR) | Sensibilisation | <https://institutnr.org/guide-bonnes-pratiques-nr> |
-| 🆓 MOOC Numérique Responsable (Académie NR) | Formation des collaborateurs et ambassadeurs | <https://www.academie-nr.org/mooc-nr/fr/index.html> |
-| 🆓 MOOC IA Responsable (Académie NR) | Acculturation à l'IA responsable | <https://www.academie-nr.org/mooc-ia/fr/index.html> |
-| 🆓 MyImpact (INR/ISIT) | Calculateur d'empreinte individuelle (support d'atelier) | <https://myimpact.isit-europe.org/fr/> |
+| 🟢 Guide bonnes pratiques NR (INR) | Sensibilisation | <https://institutnr.org/guide-bonnes-pratiques-nr> |
+| 🟢 MOOC Numérique Responsable (Académie NR) | Formation des collaborateurs et ambassadeurs | <https://www.academie-nr.org/mooc-nr/fr/index.html> |
+| 🟢 MOOC IA Responsable (Académie NR) | Acculturation à l'IA responsable | <https://www.academie-nr.org/mooc-ia/fr/index.html> |
+| 🟢 MyImpact (INR/ISIT) | Calculateur d'empreinte individuelle (support d'atelier) | <https://myimpact.isit-europe.org/fr/> |
 
 ## Fiches liées
 

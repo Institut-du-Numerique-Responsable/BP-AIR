@@ -43,13 +43,13 @@ Encadrer l'acquisition de produits et services numériques pour réduire l'empre
 
 ## Outils & ressources
 
-*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+*🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| 🆓 Clausier NR (INR) | Clauses CCTP/CCAP | <https://institutnr.org/clausier-numerique-ecoresponsable> |
-| 🆓 Dispositif RFAR | Charte + Label d'État (ISO 20400) | <https://www.economie.gouv.fr/mediateur-des-entreprises> |
-| 🆓 Guide achats responsables (DINUM) | Achats | <https://ecoresponsable.numerique.gouv.fr/publications/guide-pratique-achats-numeriques-responsables/> |
+| 🟢 Clausier NR (INR) | Clauses CCTP/CCAP | <https://institutnr.org/clausier-numerique-ecoresponsable> |
+| Dispositif RFAR | Charte + Label d'État (ISO 20400) | <https://www.economie.gouv.fr/mediateur-des-entreprises> |
+| Guide achats responsables (DINUM) | Achats | <https://ecoresponsable.numerique.gouv.fr/publications/guide-pratique-achats-numeriques-responsables/> |
 
 ## Fiches liées
 

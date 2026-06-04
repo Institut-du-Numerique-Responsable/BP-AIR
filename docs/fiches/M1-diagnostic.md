@@ -44,12 +44,12 @@ Le diagnostic conditionne toute la suite : sans base de référence, impossible 
 
 ## Outils & ressources
 
-*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+*🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| 🆓 WeNR | Empreinte GES + maturité NR du SI | <https://wenr.isit-europe.org/> |
-| 🆓 MyImpact (INR/ISIT) | Calculateur d'empreinte individuelle (enquête/sensibilisation) | <https://myimpact.isit-europe.org/fr/> |
+| 🟢 WeNR | Empreinte GES + maturité NR du SI | <https://wenr.isit-europe.org/> |
+| 🟢 MyImpact (INR/ISIT) | Calculateur d'empreinte individuelle (enquête/sensibilisation) | <https://myimpact.isit-europe.org/fr/> |
 | 🟢 NumEcoEval | Évaluation environnementale des SI | — |
 | 🟢 DataVizta (Boavizta) | Impact fabrication/usage | <https://dataviz.boavizta.org/> |
 | 🟢 EcoIndex CLI | Audit éco-conception | <https://github.com/cnumr/EcoIndex_python> |

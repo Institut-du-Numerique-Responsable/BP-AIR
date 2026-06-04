@@ -48,11 +48,11 @@ Maturité ≠ performance : on cherche l'intention et la méthode, pas un résul
 
 ## Outils & ressources
 
-*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+*🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| 🆓 Guide Maturité PP (INR/ISIT) | 47 questions, 10 familles | <https://institutnr.org/guide-maturite-parties-prenantes> |
+| 🟢 Guide Maturité PP (INR/ISIT) | 47 questions, 10 familles | <https://institutnr.org/guide-maturite-parties-prenantes> |
 
 ## Fiches liées
 

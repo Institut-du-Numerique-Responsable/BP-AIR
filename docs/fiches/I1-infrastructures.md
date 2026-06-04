@@ -48,17 +48,17 @@ La consolidation peut réduire la consommation de **30 à 60 %**. Le stockage vi
 
 ## Outils & ressources
 
-*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant (freemium = version gratuite + offre payante).*
+*🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 | Catégorie | Outil / Ressource | Usage | Lien |
 |---|---|---|---|
-| Monitoring | 🟢 **Prometheus + Grafana** *(freemium)* | Métriques d'usage réel (CPU, RAM, I/O), tableaux de bord | <https://grafana.com> |
-| Monitoring | 🟢 **Netdata** *(freemium)* | Supervision temps réel par ressource, faible empreinte | <https://www.netdata.cloud/> |
+| Monitoring | 🟢 **Prometheus + Grafana** | Métriques d'usage réel (CPU, RAM, I/O), tableaux de bord | <https://grafana.com> |
+| Monitoring | 🟢 **Netdata** | Supervision temps réel par ressource, faible empreinte | <https://www.netdata.cloud/> |
 | Énergie / carbone | 🟢 **Scaphandre** | Mesure de la consommation électrique des hôtes et VM | <https://github.com/hubblo-org/scaphandre> |
 | Énergie / carbone | 🟢 **Kepler** | Estimation de l'énergie des workloads Kubernetes | <https://sustainable-computing.io/> |
 | Énergie / carbone | 🟢 **Cloud Carbon Footprint** | Empreinte carbone des usages cloud (AWS/GCP/Azure) | <https://www.cloudcarbonfootprint.org/> |
 | Énergie / carbone | 🟢 **DataVizta** (Boavizta) | Impact fabrication/usage serveurs & cloud | <https://dataviz.boavizta.org/> |
-| Virtualisation (VMware) | 💶 **EasyVirt** (DC Scope / CO2 Scope) | Optimisation, capacité et empreinte carbone d'environnements VMware/VDI | <https://www.easyvirt.com/> |
+| Virtualisation (VMware) | **EasyVirt** (DC Scope / CO2 Scope) | Optimisation, capacité et empreinte carbone d'environnements VMware/VDI | <https://www.easyvirt.com/> |
 | Right-sizing | 🟢 **Goldilocks** (Fairwinds) | Recommandations de dimensionnement (VPA) Kubernetes | <https://github.com/FairwindsOps/goldilocks> |
 | Right-sizing | 🟢 **KRR** (Robusta) | Recommandations de ressources sans agent | <https://github.com/robusta-dev/krr> |
 | Cycle de vie env. | 🟢 **Cloud Custodian** | Règles automatiques : TTL, arrêt des ressources inutilisées | <https://cloudcustodian.io/> |
@@ -68,7 +68,7 @@ La consolidation peut réduire la consommation de **30 à 60 %**. Le stockage vi
 | Carbon-aware | 🟢 **Carbon Aware SDK** (GSF) | Décaler les charges flexibles vers les heures bas-carbone | <https://github.com/Green-Software-Foundation/carbon-aware-sdk> |
 | Logs | 🟢 **Grafana Loki** | Agrégation/rotation des logs, rétention maîtrisée | <https://grafana.com/oss/loki/> |
 | FinOps | 🟢 **OpenCost** | Coût par service/namespace (proxy de sobriété) | <https://www.opencost.io/> |
-| FinOps | 🟢 **Infracost** *(freemium)* | Estimation du coût de l'infra (IaC) en CI/CD | <https://www.infracost.io/> |
+| FinOps | 🟢 **Infracost** | Estimation du coût de l'infra (IaC) en CI/CD | <https://www.infracost.io/> |
 
 ## Fiches liées
 

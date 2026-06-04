@@ -37,7 +37,7 @@ maj: 2026-06-04
 - Public visé : **architectes SI** et **experts numérique responsable**. Ton concret, actionnable.
 - Une affirmation chiffrée = une source (ex. *Forrester 2021*, *ADEME*).
 - Liens entre fiches : liens Markdown relatifs (`[C2](C2-cycle-vie-donnees.md)`).
-- Pour chaque outil, indiquez la **licence / coût** par un préfixe : **🟢 open source · 🆓 gratuit · 💶 payant** (ajoutez *(freemium)* si offre mixte).
+- Marquez d'une pastille **🟢** les outils **open source** ; laissez les autres sans pastille.
 - Pas de secret, token, ni donnée interne d'entreprise dans le dépôt (public).
 
 ## 5. Rédiger sans Git (alternative)

@@ -44,11 +44,11 @@ Un plan technocratique non relié à la valeur métier est rejeté en CODIR. La 
 
 ## Outils & ressources
 
-*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+*🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| 🆓 Clausier NR (INR) | Clauses CCTP/CCAP | <https://institutnr.org/clausier-numerique-ecoresponsable> |
+| 🟢 Clausier NR (INR) | Clauses CCTP/CCAP | <https://institutnr.org/clausier-numerique-ecoresponsable> |
 
 ## Fiches liées
 

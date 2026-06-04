@@ -44,13 +44,13 @@ Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. 
 
 ## Outils & ressources
 
-*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+*🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| 💶 Label NR (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
-| 🆓 Guide anti-greenwashing (ADEME) | Communication externe | <https://librairie.ademe.fr/> |
-| 🆓 Communication responsable (ADEME) | Bonnes pratiques | <https://communication-responsable.ademe.fr/> |
+| Label NR (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
+| Guide anti-greenwashing (ADEME) | Communication externe | <https://librairie.ademe.fr/> |
+| Communication responsable (ADEME) | Bonnes pratiques | <https://communication-responsable.ademe.fr/> |
 
 ## Fiches liées
 

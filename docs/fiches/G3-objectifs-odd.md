@@ -44,11 +44,11 @@ Traduire des ambitions générales en objectifs SMART, priorisés et alignés su
 
 ## Outils & ressources
 
-*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+*🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| 🆓 Liste des 17 ODD (ONU) | Alignement | <https://www.un.org/sustainabledevelopment/fr/objectifs-de-developpement-durable/> |
+| Liste des 17 ODD (ONU) | Alignement | <https://www.un.org/sustainabledevelopment/fr/objectifs-de-developpement-durable/> |
 
 ## Fiches liées
 

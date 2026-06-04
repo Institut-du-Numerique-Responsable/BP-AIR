@@ -189,16 +189,16 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 
 ## 5. Boîte à outils & ressources
 
-*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant (freemium = version gratuite + offre payante).*
+*🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 ### Mesure & maturité
 | Outil | Usage | Lien |
 |---|---|---|
-| 🆓 **WeNR** | Empreinte GES + maturité NR du SI (ACV simplifiée + questionnaire DINUM) | <https://wenr.isit-europe.org/> |
-| 🆓 **MyImpact** (INR/ISIT) | Calculateur de l'empreinte numérique individuelle (sensibilisation) | <https://myimpact.isit-europe.org/fr/> |
+| 🟢 **WeNR** | Empreinte GES + maturité NR du SI (ACV simplifiée + questionnaire DINUM) | <https://wenr.isit-europe.org/> |
+| 🟢 **MyImpact** (INR/ISIT) | Calculateur de l'empreinte numérique individuelle (sensibilisation) | <https://myimpact.isit-europe.org/fr/> |
 | 🟢 **NumEcoEval** | Évaluation environnementale des SI | — |
 | 🟢 **DataVizta** (Boavizta) | Impact fabrication/usage des équipements | <https://dataviz.boavizta.org/> |
-| 🆓 **Guide Maturité PP (INR/ISIT)** | 47 questions, 10 familles | <https://institutnr.org/guide-maturite-parties-prenantes> |
+| 🟢 **Guide Maturité PP (INR/ISIT)** | 47 questions, 10 familles | <https://institutnr.org/guide-maturite-parties-prenantes> |
 
 ### Éco-conception & accessibilité
 | Outil | Usage | Lien |
@@ -206,31 +206,31 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 | 🟢 **EcoIndex CLI** | Poids des pages, intégrable CI/CD | <https://github.com/cnumr/EcoIndex_python> |
 | 🟢 **Lighthouse plugin EcoIndex** | Audit éco-conception | <https://github.com/cnumr/lighthouse-plugin-ecoindex> |
 | 🟢 **YellowLab Tools** | Requêtes, poids, perfs front | <https://yellowlab.tools/> |
-| 🆓 **RequestMap** | Cartographie des requêtes | <https://requestmap.webperf.tools/> |
+| **RequestMap** | Cartographie des requêtes | <https://requestmap.webperf.tools/> |
 | 🟢 **Tanaguru** | Accessibilité (RGAA / WCAG) | — |
-| 🆓 **GR491 (INR)** | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
-| 🆓 **RGESN (ARCEP/ARCOM)** | Référentiel général d'éco-conception | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
+| 🟢 **GR491 (INR)** | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
+| **RGESN (ARCEP/ARCOM)** | Référentiel général d'éco-conception | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
 
 ### Achats & gouvernance
 | Ressource | Usage | Lien |
 |---|---|---|
-| 🆓 **Clausier NR (INR)** | Clauses types CCTP/CCAP | <https://institutnr.org/clausier-numerique-ecoresponsable> |
-| 🆓 **Dispositif RFAR** | Charte + Label d'État (ISO 20400) | <https://www.economie.gouv.fr/mediateur-des-entreprises> |
-| 🆓 **Guide bonnes pratiques NR (INR)** | Référentiel | <https://institutnr.org/guide-bonnes-pratiques-nr> |
-| 🆓 **Guide achats responsables (DINUM)** | Achats | <https://ecoresponsable.numerique.gouv.fr/publications/guide-pratique-achats-numeriques-responsables/> |
-| 💶 **Label NR** (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
+| 🟢 **Clausier NR (INR)** | Clauses types CCTP/CCAP | <https://institutnr.org/clausier-numerique-ecoresponsable> |
+| **Dispositif RFAR** | Charte + Label d'État (ISO 20400) | <https://www.economie.gouv.fr/mediateur-des-entreprises> |
+| 🟢 **Guide bonnes pratiques NR (INR)** | Référentiel | <https://institutnr.org/guide-bonnes-pratiques-nr> |
+| **Guide achats responsables (DINUM)** | Achats | <https://ecoresponsable.numerique.gouv.fr/publications/guide-pratique-achats-numeriques-responsables/> |
+| **Label NR** (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
 
 ### Formation & sensibilisation
 | Ressource | Usage | Lien |
 |---|---|---|
-| 🆓 **MOOC Numérique Responsable** (Académie NR) | Montée en compétences NR (cf. fiche [G2](fiches/G2-parties-prenantes.md)) | <https://www.academie-nr.org/mooc-nr/fr/index.html> |
-| 🆓 **MOOC IA Responsable** (Académie NR) | Comprendre et encadrer l'IA responsable | <https://www.academie-nr.org/mooc-ia/fr/index.html> |
-| 🆓 **MyImpact** (INR/ISIT) | Calculateur d'empreinte individuelle, support d'ateliers | <https://myimpact.isit-europe.org/fr/> |
+| 🟢 **MOOC Numérique Responsable** (Académie NR) | Montée en compétences NR (cf. fiche [G2](fiches/G2-parties-prenantes.md)) | <https://www.academie-nr.org/mooc-nr/fr/index.html> |
+| 🟢 **MOOC IA Responsable** (Académie NR) | Comprendre et encadrer l'IA responsable | <https://www.academie-nr.org/mooc-ia/fr/index.html> |
+| 🟢 **MyImpact** (INR/ISIT) | Calculateur d'empreinte individuelle, support d'ateliers | <https://myimpact.isit-europe.org/fr/> |
 
 ### Communication responsable (ADEME)
-- 🆓 ImpactCO₂ : <https://impactco2.fr/outils/numerique>
-- 🆓 Communication responsable : <https://communication-responsable.ademe.fr/>
-- 🆓 Guide anti-greenwashing (2025) : <https://librairie.ademe.fr/>
+- ImpactCO₂ : <https://impactco2.fr/outils/numerique>
+- Communication responsable : <https://communication-responsable.ademe.fr/>
+- Guide anti-greenwashing (2025) : <https://librairie.ademe.fr/>
 
 ---
 
