@@ -36,6 +36,11 @@ Toutes les organisations partagent un besoin structurel : **bien gérer des ress
 
 **Un principe fondateur : on ne gouverne bien qu'à plusieurs.** Le NR exige une attente « ascendante » (terrain) et un soutien « descendant » (direction). Sans mandat clair, les exigences non-fonctionnelles (performance énergétique, accessibilité, durabilité) sont perçues comme des *nice-to-have* et sacrifiées.
 
+<figure markdown>
+  ![L'alignement stratégique : de la stratégie métier aux ressources logiques et physiques](assets/img/alignement-strategique.png)
+  <figcaption>L'alignement stratégique : la stratégie métier irrigue les ressources logiques puis physiques du SI.</figcaption>
+</figure>
+
 > **Maturité ≠ performance.** Une organisation est *performante* si ses équipements portent un écolabel (ex. TCO). Elle est *mature* si elle a **explicitement exigé** cet écolabel à l'appel d'offres. On peut être performant par chance ; on n'est mature que par intention et par méthode.
 
 ### 2.3 Pilier 2 — Urbanisation & architecture en couches
@@ -53,11 +58,21 @@ L'urbanisation organise et **rationalise** le SI. Si deux outils font la même c
 
 > **Rendre explicite ce que le modèle oublie.** Chaque couche génère des impacts sur deux dimensions invisibles : les **ressources environnementales** (énergie, eau, matières) et les **impacts sociaux/sociétaux**. Le GT AIR recommande d'ajouter une « couche ressources » au modèle.
 
+<figure markdown>
+  ![Cartographie d'urbanisation du SI (plan d'occupation des sols)](assets/img/cartographie-urbanisation.png)
+  <figcaption>Exemple de cartographie d'urbanisation (Plan d'Occupation des Sols) — cliquer pour explorer en plein écran.</figcaption>
+</figure>
+
 ### 2.4 Pilier 3 — Cycle de vie (architecture, services, données)
 
 Comprendre les cycles de vie, c'est savoir **où se cachent les impacts** et donc **quoi mesurer**.
 
 **Cycle de vie d'un service numérique.** Tout service naît d'une **demande**, qui doit répondre à un **besoin** (pas une envie), créer de la **valeur mesurable**, servir la stratégie, et **ne pas déjà exister**. À l'usage : appliquer la **règle des 3U** — un service est-il **U**tile ? **U**tilisé ? **U**tilisable ?
+
+<figure markdown>
+  ![Le cycle de vie de l'architecture, de la vision au change management](assets/img/cycle-vie-architecte.png)
+  <figcaption>Le cycle de vie piloté par l'architecte : de la vision et l'urbanisation au déploiement et au change management.</figcaption>
+</figure>
 
 **Cycle de vie des données — le grand oublié.**
 
@@ -76,6 +91,11 @@ La parade : une **gouvernance de la donnée** (catalogue, registre, qualificatio
 
 En aval, gestion des **DEEE** et **économie circulaire locale** au-delà de la simple conformité.
 
+<figure markdown>
+  ![Les couches du SI croisées avec le cycle de vie et la couche ressources](assets/img/couches-cycle-vie-ressources.png)
+  <figcaption>Les couches (Entreprise → Hardware) croisées avec le cycle de vie (fabrication, utilisation, fin de vie) et la « couche ressources » (eau, énergie, matériaux, CO₂).</figcaption>
+</figure>
+
 ### 2.6 Pilier 5 — Architecture logicielle sobre (éco-conception)
 
 L'éco-conception est la plus efficace quand **intégrée dès la conception**. Quatre familles de leviers :
@@ -91,7 +111,17 @@ L'éco-conception est la plus efficace quand **intégrée dès la conception**. 
 
 L'**équation de Kaya** (1993) transposée au SI relie population des utilisateurs, volume de services, valeur produite, consommation d'énergie, intensité carbone. Axes de pilotage : **intensité carbone, efficience énergétique, efficacité du SI, sobriété**.
 
+<figure markdown>
+  ![Relier l'empreinte GES (scopes) à la stratégie et à l'urbanisation du SI](assets/img/kaya-ges.png)
+  <figcaption>Remonter la chaîne des impacts : l'empreinte GES (Scopes 1, 2, 3) se rattache à la stratégie et à l'urbanisation du SI.</figcaption>
+</figure>
+
 Un bon **KPI NR** croise quatre dimensions : les **5 axes du NR**, le **cycle de vie**, le **découpage en couches**, le triptyque **People / Planet / Profit**.
+
+<figure markdown>
+  ![Cascade de construction des indicateurs, des ODD à la consolidation](assets/img/cascade-kpi.png)
+  <figcaption>La cascade de construction des indicateurs : des ODD aux objectifs NR, puis aux indicateurs par couche et par cycle de vie, jusqu'à la consolidation.</figcaption>
+</figure>
 
 | Couche | Optimiser les impacts | Inclusion & durabilité | Éthique & responsabilité | Résilience |
 |---|---|---|---|---|
@@ -108,7 +138,17 @@ Un bon **KPI NR** croise quatre dimensions : les **5 axes du NR**, le **cycle de
 > 4. Un numérique mesurable, transparent, lisible.
 > 5. L'émergence de nouveaux comportements et valeurs.
 
+<figure markdown>
+  ![Les 5 axes du NR croisés avec les couches d'architecture et les dimensions spatiale et temporelle](assets/img/sphere-5-axes.png)
+  <figcaption>Vue d'ensemble : les 5 axes du NR enveloppent les couches d'architecture (Business → Infrastructure), selon les dimensions spatiale et temporelle.</figcaption>
+</figure>
+
 ### 2.8 Le SI au service des ODD
+
+<figure markdown>
+  ![Les 17 Objectifs de Développement Durable de l'ONU](assets/img/odd-17.png)
+  <figcaption>Les 17 Objectifs de Développement Durable de l'ONU. Le SI peut en adresser directement une partie (voir tableau).</figcaption>
+</figure>
 
 | ODD | Contribution du SI |
 |---|---|
@@ -186,6 +226,11 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 
 ## 6. Glossaire
 
+<figure markdown>
+  ![Les trois scopes d'émissions de GES (GHG Protocol / ISO 14064)](assets/img/arbre-ges-scopes.png)
+  <figcaption>Les trois scopes du Bilan GES (GHG Protocol / ISO 14064) : émissions directes (Scope 1), indirectes liées à l'énergie (Scope 2), et indirectes de la chaîne de valeur (Scope 3, jusqu'à 80 %).</figcaption>
+</figure>
+
 | Terme | Définition |
 |---|---|
 | **ACV** | Analyse du Cycle de Vie — impacts sur toutes les phases (fabrication, distribution, usage, fin de vie). |
@@ -211,3 +256,6 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 ---
 
 *Document fusionnant le Livre Blanc AIR (INR, 2024), le Guide des Bonnes Pratiques AIR (2026) et le Guide d'évaluation de la maturité NR des parties prenantes (INR/ISIT, 2024).*
+
+!!! quote "Crédits & licence des illustrations"
+    Schémas et illustrations issus des publications du GT AIR de l'**Institut du Numérique Responsable (INR / ISIT)**, diffusés sous licence **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)**. Toute réutilisation doit créditer l'INR/ISIT et conserver la même licence.

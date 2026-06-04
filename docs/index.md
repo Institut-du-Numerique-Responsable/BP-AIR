@@ -4,6 +4,11 @@
 
 *Espace de travail collaboratif du Groupe de Travail AIR — Institut du Numérique Responsable (INR / ISIT).*
 
+<figure markdown>
+  ![Le parcours de la démarche AIR, du lancement à la valorisation](assets/img/parcours-demarche.png)
+  <figcaption>Le parcours de la démarche, du lancement à la valorisation (cliquer pour agrandir).</figcaption>
+</figure>
+
 ---
 
 Ce site rassemble deux niveaux de lecture :

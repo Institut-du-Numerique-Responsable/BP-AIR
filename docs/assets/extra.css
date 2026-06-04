@@ -1,0 +1,31 @@
+/* Figures : centrage, cadre léger, légende discrète */
+.md-typeset figure {
+  margin: 1.6em auto;
+  text-align: center;
+}
+
+.md-typeset figure img {
+  max-width: 100%;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  padding: 8px;
+  background: #fff;
+  cursor: zoom-in;
+}
+
+.md-typeset figcaption {
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* Bandeau d'accueil */
+.air-hero {
+  text-align: center;
+  margin: 0 0 1.5em;
+}
+.air-hero img {
+  border: none !important;
+  padding: 0 !important;
+}

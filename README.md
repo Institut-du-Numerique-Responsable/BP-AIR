@@ -56,6 +56,9 @@ BP-AIR/
 ├── docs/                       # tout le contenu du site
 │   ├── index.md                # page d'accueil
 │   ├── guide-unifie.md         # fondations théoriques (6 piliers, matrice, outils, glossaire)
+│   ├── assets/
+│   │   ├── img/                # illustrations / schémas
+│   │   └── extra.css           # styles (figures, zoom)
 │   └── fiches/                 # une fiche = un fichier .md
 │       ├── G1-mandat.md
 │       ├── ...
@@ -130,6 +133,23 @@ maj: 2026-06-04
 
 - Passez `statut` à `en-revue` quand la fiche est prête, `validé` quand le GT l'a actée.
 - Avant `validé`, **supprimez la section « Notes de coédition »** en bas de fiche.
+
+### Ajouter une image / un schéma
+
+1. Déposez le fichier dans `docs/assets/img/` (nom explicite, ex. `cartographie-urbanisation.png`).
+2. Insérez-le dans une fiche/section avec une légende — le **zoom plein écran** au clic est automatique :
+
+   ```markdown
+   <figure markdown>
+     ![Texte alternatif décrivant l'image](../assets/img/mon-schema.png)
+     <figcaption>Légende affichée sous l'image.</figcaption>
+   </figure>
+   ```
+
+   Chemin : `assets/img/...` depuis `index.md` / `guide-unifie.md`, **`../assets/img/...`** depuis une fiche dans `docs/fiches/`.
+3. Renseignez toujours le **texte alternatif** (accessibilité) et **créditez la source** si l'image n'est pas la vôtre.
+
+> ⚖️ Les schémas issus des publications INR/ISIT sont sous licence **CC BY-SA 4.0** : attribution + même licence obligatoires.
 
 > Détail complet du workflow et des règles d'écriture : **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
