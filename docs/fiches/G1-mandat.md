@@ -44,9 +44,11 @@ On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (d
 
 ## Outils & ressources
 
+*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| Guide bonnes pratiques NR (INR) | Référentiel | <https://institutnr.org/guide-bonnes-pratiques-nr> |
+| 🆓 Guide bonnes pratiques NR (INR) | Référentiel | <https://institutnr.org/guide-bonnes-pratiques-nr> |
 
 ## Fiches liées
 

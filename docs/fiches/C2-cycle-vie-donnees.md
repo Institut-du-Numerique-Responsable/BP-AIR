@@ -44,9 +44,11 @@ La donnée est l'objet même de l'informatique, et le plus négligé. Dark data 
 
 ## Outils & ressources
 
+*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| RGPD / CNIL | Conservation, effacement | <https://www.cnil.fr> |
+| 🆓 RGPD / CNIL | Conservation, effacement | <https://www.cnil.fr> |
 
 ## Fiches liées
 

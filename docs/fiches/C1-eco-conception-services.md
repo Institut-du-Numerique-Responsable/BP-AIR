@@ -45,13 +45,15 @@ Près de **45 % des fonctionnalités développées ne sont jamais utilisées**. 
 
 ## Outils & ressources
 
+*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| EcoIndex CLI | Poids des pages, CI/CD | <https://github.com/cnumr/EcoIndex_python> |
-| YellowLab Tools | Requêtes, perfs front | <https://yellowlab.tools/> |
-| RequestMap | Cartographie des requêtes | <https://requestmap.webperf.tools/> |
-| GR491 (INR) | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
-| RGESN | Référentiel général d'éco-conception | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
+| 🟢 EcoIndex CLI | Poids des pages, CI/CD | <https://github.com/cnumr/EcoIndex_python> |
+| 🟢 YellowLab Tools | Requêtes, perfs front | <https://yellowlab.tools/> |
+| 🆓 RequestMap | Cartographie des requêtes | <https://requestmap.webperf.tools/> |
+| 🆓 GR491 (INR) | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
+| 🆓 RGESN | Référentiel général d'éco-conception | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
 
 ## Fiches liées
 

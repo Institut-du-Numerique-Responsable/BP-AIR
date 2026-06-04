@@ -44,11 +44,13 @@ Mettre en place un pilotage continu de la démarche NR : indicateurs multidimens
 
 ## Outils & ressources
 
+*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| WeNR | Empreinte GES + maturité du SI | <https://wenr.isit-europe.org/> |
-| MyImpact (INR/ISIT) | Calculateur d'empreinte individuelle | <https://myimpact.isit-europe.org/fr/> |
-| ImpactCO₂ (ADEME) | Conversion / vulgarisation | <https://impactco2.fr/outils/numerique> |
+| 🆓 WeNR | Empreinte GES + maturité du SI | <https://wenr.isit-europe.org/> |
+| 🆓 MyImpact (INR/ISIT) | Calculateur d'empreinte individuelle | <https://myimpact.isit-europe.org/fr/> |
+| 🆓 ImpactCO₂ (ADEME) | Conversion / vulgarisation | <https://impactco2.fr/outils/numerique> |
 
 ## Fiches liées
 

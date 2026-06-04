@@ -42,10 +42,12 @@ La conformité se vérifie, elle ne se décrète pas. Des standards définis san
 
 ## Outils & ressources
 
+*Licence / coût : 🟢 open source · 🆓 gratuit · 💶 payant.*
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| GR491 (INR) | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
-| RGESN | Contrôle de conformité | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
+| 🆓 GR491 (INR) | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
+| 🆓 RGESN | Contrôle de conformité | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
 
 ## Fiches liées
 
