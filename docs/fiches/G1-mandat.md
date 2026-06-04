@@ -29,7 +29,7 @@ On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (d
 2. Identifier des **sponsors** au sein de la Direction (DSI, Directeur RSE, DAF).
 3. Préparer et présenter un **dossier de cadrage** au CODIR.
 4. Nommer officiellement un **Référent NR** et planifier les instances de gouvernance.
-5. *(Recommandé)* Adhérer à l'**INR** pour bénéficier de l'écosystème.
+5. *(Recommandé)* Adhérer à l'**INR** (en France), l'**ISIT-BE** (en Belgique) ou l'**ISIT-CH** (en Suisse) pour bénéficier de l'écosystème.
 
 ## KPIs & OKR
 
