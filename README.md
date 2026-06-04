@@ -15,24 +15,24 @@ Vous écrivez du **Markdown** (texte simple) dans ce dépôt → un robot le tra
 ## 2. Comment ça marche (architecture)
 
 ```
-                 ┌──────────────────────────────────────────┐
-   Vous éditez   │  Dépôt GitHub (les fichiers .md)          │
+                 ┌─────────────────────────────────────────--─┐
+   Vous éditez   │  Dépôt GitHub (les fichiers .md)           │
    une fiche  ──►│  docs/fiches/*.md  +  docs/guide-unifie.md │
-                 └───────────────────┬──────────────────────┘
+                 └───────────────────┬─────────────────────--─┘
                                      │  push / merge sur "main"
                                      ▼
-                 ┌──────────────────────────────────────────┐
+                 ┌──────────────────────────────--────────────┐
    Automatique   │  GitHub Actions (.github/workflows)        │
-   (~30 s)       │  1. installe MkDocs Material              │
-                 │  2. construit le site (HTML)             │
-                 │  3. le déploie sur GitHub Pages          │
-                 └───────────────────┬──────────────────────┘
+   (~30 s)       │  1. installe MkDocs Material               │
+                 │  2. construit le site (HTML)               │
+                 │  3. le déploie sur GitHub Pages            │
+                 └───────────────────┬─────────────────--─────┘
                                      ▼
-                 ┌──────────────────────────────────────────┐
+                 ┌───────────────────────────────────────-───┐
    Résultat      │  Site public, à jour                      │
                  │  institut-du-numerique-responsable        │
                  │       .github.io/BP-AIR/                  │
-                 └──────────────────────────────────────────┘
+                 └────────────────────────────────────────-──┘
 ```
 
 **Briques techniques :**
