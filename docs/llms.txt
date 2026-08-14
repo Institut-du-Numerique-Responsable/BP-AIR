@@ -1,0 +1,18 @@
+# BP-AIR — Bonnes pratiques d'architecture informatique responsable
+
+> Guide et fiches de bonnes pratiques pour concevoir des architectures informatiques responsables, produits par le groupe de travail AIR de l'INR et d'ISIT. Chaque fiche traite un choix d'architecture sous l'angle de la sobriete, de la durabilite et du cout environnemental.
+
+## Docs
+
+- [Site du guide](https://institut-du-numerique-responsable.github.io/BP-AIR/)
+- [Guide unifie](https://institut-du-numerique-responsable.github.io/BP-AIR/guide-unifie/)
+- [Code source](https://github.com/Institut-du-Numerique-Responsable/BP-AIR)
+
+## Qui publie
+
+Publie par l'**Institut du Numerique Responsable** (INR), association loi 1901
+creee en 2018 : https://institutnr.org — voir aussi ISIT Belgique
+(https://isit-be.org) et ISIT Suisse (https://isit-ch.org).
+
+Citation : voir CITATION.cff a la racine du depot.
+Contributeurs : voir la page "Contributors" du depot GitHub.
