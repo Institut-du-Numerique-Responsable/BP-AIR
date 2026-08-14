@@ -1,5 +1,7 @@
 site_name: Architecture Informatique Responsable
 site_description: Guide & fiches de bonnes pratiques — GT AIR (INR / ISIT)
+site_url: https://institut-du-numerique-responsable.github.io/BP-AIR/
+repo_url: https://github.com/Institut-du-Numerique-Responsable/BP-AIR
 copyright: "© INR / ISIT — Groupe de Travail AIR. Contenu sous licence CC BY-SA 4.0."
 docs_dir: docs
 
