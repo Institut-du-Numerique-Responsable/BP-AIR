@@ -1,0 +1,39 @@
+# Métadonnées de citation lisibles par les humains, les moteurs et les assistants IA.
+# Format Citation File Format 1.2.0 — https://citation-file-format.github.io
+cff-version: 1.2.0
+message: "Si vous utilisez ce travail, merci de le citer comme ci-dessous."
+type: software
+title: "BP-AIR — Bonnes pratiques pour des architectures informatiques responsables"
+abstract: "Fiches et bonnes pratiques pour des Architectures Informatiques Responsables / Best practices for responsible IT architectures"
+authors:
+  - name: "Institut du Numérique Responsable"
+    alias: "INR"
+    website: "https://institutnr.org"
+  - given-names: "Guillaume"
+    family-names: "Gallon"
+    alias: "gridboy"
+    affiliation: "Institut du Numérique Responsable"
+  - alias: "overgeynst"
+    name: "overgeynst"
+  - alias: "benoittisserand"
+    name: "benoittisserand"
+  - alias: "onyrakotoarivelo"
+    name: "onyrakotoarivelo"
+repository-code: "https://github.com/Institut-du-Numerique-Responsable/BP-AIR"
+url: "https://institutnr.org"
+license: CC0-1.0
+date-released: 2026-06-04
+keywords:
+  - "architecture"
+  - "architecture-patterns"
+  - "bonnes-pratiques"
+  - "digital-sustainability"
+  - "ecoconception"
+  - "green-it"
+  - "green-software"
+  - "guidelines"
+  - "infrastructure"
+  - "inr"
+  - "numerique-responsable"
+  - "sobriete-numerique"
+  - "sustainable-it"
