@@ -1,6 +1,8 @@
 ---
 id: D2
 titre: Communiquer, valoriser & labelliser
+description: >-
+  Communiquer et valoriser une démarche numérique responsable en interne comme en externe, labellisation comprise, sans tomber dans le greenwashing.
 theme: Déploiement & Valorisation
 statut: brouillon
 proprietaire: INR/ISIT
@@ -46,6 +48,8 @@ Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. 
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
+> Cette sélection ne retient que les outils mobilisables sur ce chantier. Le catalogue complet de l'INR (355 ressources classées en 15 thèmes, liens vérifiés) tient la référence à jour : [**Boîte à outils du Numérique Responsable**](https://sustainableit-tools.isit-europe.org/).
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
 | Label NR (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
@@ -57,8 +61,3 @@ Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. 
 - [M2 — Pilotage & tableau de bord KPI](M2-pilotage-kpi.md)
 - [D1 — Mettre en œuvre & contrôler la conformité](D1-conformite.md)
 - [V1 — Évaluer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

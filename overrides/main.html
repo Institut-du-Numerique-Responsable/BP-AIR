@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{#
+  Bandeau de statut : piloté par le frontmatter `statut` de chaque fiche.
+  brouillon → avertissement ; en-revue → note ; validé → rien.
+  Aucune édition page par page : le bandeau disparaît de lui-même quand le GT
+  passe la fiche en `statut: validé`.
+#}
+{#
+  Référencement : Open Graph, Twitter Card et JSON-LD schema.org.
+  Objectif double : moteurs classiques (Google, Bing) et assistants IA, qui
+  s'appuient fortement sur les données structurées et l'attribution d'auteur.
+#}
+{% block extrahead %}
+  {% set page_title = page.meta.titre if page and page.meta and page.meta.titre else (page.title if page and page.title else config.site_name) %}
+  {% set page_desc = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
+  {% set page_url = page.canonical_url if page and page.canonical_url else config.site_url %}
+  {% set og_image = config.site_url ~ 'assets/img/og-bp-air.png' %}
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_desc }}">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BP-AIR, Architecture Informatique Responsable, Institut du Numérique Responsable">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_desc }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+
+  {# `author` est déjà émis par le thème depuis site_author, ne pas dupliquer. #}
+  <meta name="publisher" content="Institut du Numérique Responsable">
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+  <meta name="dcterms.license" content="CC BY-SA 4.0">
+  {% if page and page.meta and page.meta.maj %}
+    <meta property="article:modified_time" content="{{ page.meta.maj }}">
+  {% endif %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://institutnr.org/#organization",
+        "name": "Institut du Numérique Responsable",
+        "alternateName": ["INR", "ISIT"],
+        "url": "https://institutnr.org",
+        "description": "Association loi 1901 créée en 2018, dédiée au numérique responsable.",
+        "sameAs": [
+          "https://isit-be.org",
+          "https://isit-ch.org",
+          "https://github.com/Institut-du-Numerique-Responsable"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ config.site_url }}#website",
+        "url": "{{ config.site_url }}",
+        "name": {{ config.site_name | tojson }},
+        "description": {{ config.site_description | tojson }},
+        "inLanguage": "fr-FR",
+        "publisher": { "@id": "https://institutnr.org/#organization" },
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      {
+        "@type": {% if page and page.meta and page.meta.id %}"TechArticle"{% else %}"WebPage"{% endif %},
+        "@id": "{{ page_url }}#page",
+        "url": "{{ page_url }}",
+        "name": {{ page_title | tojson }},
+        "headline": {{ page_title | tojson }},
+        "description": {{ page_desc | tojson }},
+        "inLanguage": "fr-FR",
+        "isPartOf": { "@id": "{{ config.site_url }}#website" },
+        "publisher": { "@id": "https://institutnr.org/#organization" },
+        "author": { "@id": "https://institutnr.org/#organization" },
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creativeWorkStatus": {{ (page.meta.statut if page and page.meta and page.meta.statut else "published") | tojson }}{% if page and page.meta and page.meta.maj %},
+        "dateModified": {{ page.meta.maj | string | tojson }}{% endif %}{% if page and page.meta and page.meta.theme %},
+        "articleSection": {{ page.meta.theme | tojson }}{% endif %}
+      }
+    ]
+  }
+  </script>
+{% endblock %}
+
+{% block content %}
+  {% if page.meta and page.meta.statut == "brouillon" %}
+    <div class="air-statut air-statut--brouillon" role="note">
+      <strong>Brouillon</strong> : cette fiche est un document de travail du GT AIR,
+      publié en transparence avant validation. Son contenu peut évoluer.
+      {% if page.meta.maj %}Dernière mise à jour : {{ page.meta.maj }}.{% endif %}
+    </div>
+  {% elif page.meta and page.meta.statut == "en-revue" %}
+    <div class="air-statut air-statut--revue" role="note">
+      <strong>En relecture</strong> : cette fiche est stabilisée et en cours de
+      validation par le GT AIR.
+      {% if page.meta.maj %}Dernière mise à jour : {{ page.meta.maj }}.{% endif %}
+    </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}

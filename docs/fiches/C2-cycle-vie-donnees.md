@@ -1,6 +1,8 @@
 ---
 id: C2
 titre: Maîtriser le cycle de vie des données
+description: >-
+  Maîtriser le cycle de vie des données pour réduire leur poids dans le SI : dark data (≈52 %), données ROT (≈33 %), archivage et purge.
 theme: Conception sobre
 statut: brouillon
 proprietaire: INR/ISIT
@@ -46,6 +48,8 @@ La donnée est l'objet même de l'informatique, et le plus négligé. Dark data 
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
+> Cette sélection ne retient que les outils mobilisables sur ce chantier. Le catalogue complet de l'INR (355 ressources classées en 15 thèmes, liens vérifiés) tient la référence à jour : [**Boîte à outils du Numérique Responsable**](https://sustainableit-tools.isit-europe.org/).
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
 | RGPD / CNIL | Conservation, effacement | <https://www.cnil.fr> |
@@ -55,8 +59,3 @@ La donnée est l'objet même de l'informatique, et le plus négligé. Dark data 
 - [C1 — Éco-concevoir les services numériques](C1-eco-conception-services.md)
 - [I1 — Optimiser infrastructures & environnements](I1-infrastructures.md)
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

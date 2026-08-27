@@ -9,6 +9,12 @@ authors:
   - name: "Institut du Numérique Responsable"
     alias: "INR"
     website: "https://institutnr.org"
+  - given-names: "Vincent"
+    family-names: "Courboulay"
+    affiliation: "Institut du Numérique Responsable"
+  - given-names: "Benjamin"
+    family-names: "Duthil"
+    affiliation: "EIGSI — École d'ingénieurs généralistes, La Rochelle"
   - given-names: "Guillaume"
     family-names: "Gallon"
     alias: "gridboy"
@@ -21,7 +27,7 @@ authors:
     name: "onyrakotoarivelo"
 repository-code: "https://github.com/Institut-du-Numerique-Responsable/BP-AIR"
 url: "https://institutnr.org"
-license: CC0-1.0
+license: CC-BY-SA-4.0
 date-released: 2026-06-04
 keywords:
   - "architecture"

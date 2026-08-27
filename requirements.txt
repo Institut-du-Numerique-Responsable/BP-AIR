@@ -1,2 +1,7 @@
-mkdocs-material
-mkdocs-glightbox
+# Versions épinglées : MkDocs 2.0 supprimera le système de plugins et les theme
+# overrides, sans chemin de migration. Ce dépôt utilise les deux (glightbox +
+# overrides/partials/). L'épinglage évite qu'un déploiement casse sans qu'aucun
+# commit n'ait bougé. Relever les bornes de façon délibérée, en vérifiant le build.
+mkdocs>=1.6,<2.0
+mkdocs-material>=9.7,<10.0
+mkdocs-glightbox>=0.5,<1.0

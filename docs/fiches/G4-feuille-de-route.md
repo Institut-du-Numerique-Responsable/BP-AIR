@@ -1,6 +1,8 @@
 ---
 id: G4
 titre: Construire & faire valider la feuille de route
+description: >-
+  Construire une feuille de route numérique responsable budgétée et planifiée, puis obtenir l'engagement formel qui en fait un projet d'entreprise.
 theme: Gouvernance & Stratégie
 statut: brouillon
 proprietaire: INR/ISIT
@@ -46,6 +48,8 @@ Un plan technocratique non relié à la valeur métier est rejeté en CODIR. La 
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
+> Cette sélection ne retient que les outils mobilisables sur ce chantier. Le catalogue complet de l'INR (355 ressources classées en 15 thèmes, liens vérifiés) tient la référence à jour : [**Boîte à outils du Numérique Responsable**](https://sustainableit-tools.isit-europe.org/).
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
 | 🟢 Clausier NR (INR) | Clauses CCTP/CCAP | <https://institutnr.org/clausier-numerique-ecoresponsable> |
@@ -56,8 +60,3 @@ Un plan technocratique non relié à la valeur métier est rejeté en CODIR. La 
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)
 - [I2 — Achats numériques responsables](I2-achats-responsables.md)
 - [D1 — Mettre en œuvre & contrôler la conformité](D1-conformite.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

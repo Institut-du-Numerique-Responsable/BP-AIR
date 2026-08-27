@@ -1,3 +1,8 @@
+---
+description: >-
+  Les fondations de l'architecture informatique responsable : 6 piliers, matrice architecte, équation de Kaya appliquée au SI, alignement ODD, boîte à outils et glossaire.
+---
+
 # Guide — les fondations
 
 *Partie théorique du document de synthèse du GT AIR. La partie pratique est éclatée en [fiches](index.md#les-fiches-par-theme).*
@@ -42,7 +47,7 @@ Toutes les organisations partagent un besoin structurel : **bien gérer des ress
 **Un principe fondateur : on ne gouverne bien qu'à plusieurs.** Le NR exige une attente « ascendante » (terrain) et un soutien « descendant » (direction). Sans mandat clair, les exigences non-fonctionnelles (performance énergétique, accessibilité, durabilité) sont perçues comme des *nice-to-have* et sacrifiées.
 
 <figure markdown>
-  ![L'alignement stratégique : de la stratégie métier aux ressources logiques et physiques](assets/img/alignement-strategique.png)
+  ![L'alignement stratégique : de la stratégie métier aux ressources logiques et physiques](assets/img/alignement-strategique.webp)
   <figcaption>L'alignement stratégique : la stratégie métier irrigue les ressources logiques puis physiques du SI.</figcaption>
 </figure>
 
@@ -75,7 +80,7 @@ Comprendre les cycles de vie, c'est savoir **où se cachent les impacts** et don
 **Cycle de vie d'un service numérique.** Tout service naît d'une **demande**, qui doit répondre à un **besoin** (pas une envie), créer de la **valeur mesurable**, servir la stratégie, et **ne pas déjà exister**. À l'usage : appliquer la **règle des 3U** — un service est-il **U**tile ? **U**tilisé ? **U**tilisable ?
 
 <figure markdown>
-  ![Le cycle de vie du SI piloté par la gouvernance](assets/img/cycle-de-vie.jpg)
+  ![Le cycle de vie du SI piloté par la gouvernance](assets/img/cycle-de-vie.webp)
   <figcaption>Le cycle de vie du SI piloté par la gouvernance : Design (vision, processus, architecture), Build (achats, construction), Run (usage), jusqu'à la fin de vie.</figcaption>
 </figure>
 
@@ -97,7 +102,7 @@ La parade : une **gouvernance de la donnée** (catalogue, registre, qualificatio
 En aval, gestion des **DEEE** et **économie circulaire locale** au-delà de la simple conformité.
 
 <figure markdown>
-  ![Les couches du SI croisées avec le cycle de vie et la couche ressources](assets/img/couches-cycle-vie-ressources.png)
+  ![Les couches du SI croisées avec le cycle de vie et la couche ressources](assets/img/couches-cycle-vie-ressources.webp)
   <figcaption>Les couches (Entreprise → Hardware) croisées avec le cycle de vie (fabrication, utilisation, fin de vie) et la « couche ressources » (eau, énergie, matériaux, CO₂).</figcaption>
 </figure>
 
@@ -117,7 +122,7 @@ L'éco-conception est la plus efficace quand **intégrée dès la conception**. 
 L'**équation de Kaya** (1993) transposée au SI relie population des utilisateurs, volume de services, valeur produite, consommation d'énergie, intensité carbone. Axes de pilotage : **intensité carbone, efficience énergétique, efficacité du SI, sobriété**.
 
 <figure markdown>
-  ![L'équation de Kaya appliquée au SI](assets/img/kaya.jpg)
+  ![L'équation de Kaya appliquée au SI](assets/img/kaya.webp)
   <figcaption>L'équation de Kaya appliquée au SI : quatre leviers d'action — intensité carbone, efficience énergétique, efficacité et sobriété du SI.</figcaption>
 </figure>
 
@@ -144,14 +149,14 @@ Un bon **KPI NR** croise quatre dimensions : les **5 axes du NR**, le **cycle de
 > 5. L'émergence de nouveaux comportements et valeurs.
 
 <figure markdown>
-  ![Les 5 axes du NR croisés avec les couches d'architecture et les dimensions spatiale et temporelle](assets/img/sphere-5-axes.png)
+  ![Les 5 axes du NR croisés avec les couches d'architecture et les dimensions spatiale et temporelle](assets/img/sphere-5-axes.webp)
   <figcaption>Vue d'ensemble : les 5 axes du NR enveloppent les couches d'architecture (Business → Infrastructure), selon les dimensions spatiale et temporelle.</figcaption>
 </figure>
 
 ### 2.8 Le SI au service des ODD
 
 <figure markdown>
-  ![Les 17 Objectifs de Développement Durable de l'ONU](assets/img/odd-17.png)
+  ![Les 17 Objectifs de Développement Durable de l'ONU](assets/img/odd-17.webp)
   <figcaption>Les 17 Objectifs de Développement Durable de l'ONU. Le SI peut en adresser directement une partie (voir tableau).</figcaption>
 </figure>
 
@@ -194,6 +199,16 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 
 ## 5. Boîte à outils & ressources
 
+!!! tip "Le catalogue de référence"
+    L'INR maintient une **[Boîte à outils du Numérique Responsable](https://sustainableit-tools.isit-europe.org/)**
+    : 355 ressources (outils de mesure, référentiels, guides, MOOC et textes de loi)
+    classées en 15 thèmes, avec recherche, filtres et vérification active des liens.
+
+    La sélection ci-dessous en est un extrait commenté : les outils que le GT AIR
+    tient pour structurants dans une démarche d'architecture. Pour un besoin pointu
+    ou une veille, allez au catalogue. L'INR le met à jour en continu, quand cette
+    page suit le rythme des relectures du GT.
+
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 ### Mesure & maturité
@@ -215,6 +230,8 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 | 🟢 **Tanaguru** | Accessibilité (RGAA / WCAG) | — |
 | 🟢 **GR491 (INR)** | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
 | **RGESN (ARCEP/ARCOM)** | Référentiel général d'éco-conception | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
+| 🟢 **Green Claude** (INR) | Skill d'éco-conception pour Claude Code : audit RGESN/GR491/GSF et sobriété IA dans l'IDE | [Présentation](https://institut-du-numerique-responsable.github.io/green-claude/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/green-claude) |
+| 🟢 **Skill NR** (INR) | Règles d'éco-conception (RGESN, GR491, Opquast, RGAA) pour 11 assistants IA de code, en 13 langues | [Présentation](https://institut-du-numerique-responsable.github.io/skill-nr/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/skill-nr) |
 
 ### Achats & gouvernance
 | Ressource | Usage | Lien |
@@ -224,6 +241,7 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 | 🟢 **Guide bonnes pratiques NR (INR)** | Référentiel | <https://institutnr.org/guide-bonnes-pratiques-nr> |
 | **Guide achats responsables (DINUM)** | Achats | <https://ecoresponsable.numerique.gouv.fr/publications/guide-pratique-achats-numeriques-responsables/> |
 | **Label NR** (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
+| **Charte IA Responsable** (INR) | Cadre d'engagement pour une IA éthique, inclusive, éco-responsable et de confiance ; complète l'AI Act, qui impose des obligations sans dire comment faire | <https://charter.isit-europe.org/charte-ia/?lang=fr_FR> |
 
 ### Formation & sensibilisation
 | Ressource | Usage | Lien |
@@ -242,7 +260,7 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 ## 6. Glossaire
 
 <figure markdown>
-  ![Les trois scopes d'émissions de GES (GHG Protocol / ISO 14064)](assets/img/arbre-ges-scopes.png)
+  ![Les trois scopes d'émissions de GES (GHG Protocol / ISO 14064)](assets/img/arbre-ges-scopes.webp)
   <figcaption>Les trois scopes du Bilan GES (GHG Protocol / ISO 14064) : émissions directes (Scope 1), indirectes liées à l'énergie (Scope 2), et indirectes de la chaîne de valeur (Scope 3, jusqu'à 80 %).</figcaption>
 </figure>
 

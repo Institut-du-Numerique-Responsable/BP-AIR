@@ -1,6 +1,8 @@
 ---
 id: V1
 titre: Évaluer & influencer la maturité des parties prenantes
+description: >-
+  Évaluer la maturité numérique responsable de ses fournisseurs et partenaires pour agir sur le Scope 3, qui peut représenter 80 % de l'empreinte.
 theme: Chaîne de valeur
 statut: brouillon
 proprietaire: INR/ISIT
@@ -50,6 +52,8 @@ Maturité ≠ performance : on cherche l'intention et la méthode, pas un résul
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
+> Cette sélection ne retient que les outils mobilisables sur ce chantier. Le catalogue complet de l'INR (355 ressources classées en 15 thèmes, liens vérifiés) tient la référence à jour : [**Boîte à outils du Numérique Responsable**](https://sustainableit-tools.isit-europe.org/).
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
 | 🟢 Guide Maturité PP (INR/ISIT) | 47 questions, 10 familles | <https://institutnr.org/guide-maturite-parties-prenantes> |
@@ -59,8 +63,3 @@ Maturité ≠ performance : on cherche l'intention et la méthode, pas un résul
 - [G2 — Embarquer les parties prenantes](G2-parties-prenantes.md)
 - [I2 — Achats numériques responsables](I2-achats-responsables.md)
 - [D2 — Communiquer, valoriser & labelliser](D2-communiquer-valoriser.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

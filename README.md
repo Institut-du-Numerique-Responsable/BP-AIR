@@ -56,31 +56,42 @@ BP-AIR/
 ├── docs/                       # tout le contenu du site
 │   ├── index.md                # page d'accueil
 │   ├── guide-unifie.md         # fondations théoriques (6 piliers, matrice, outils, glossaire)
+│   ├── contributeurs.md        # autrices, auteurs et intervenants du GT
+│   ├── robots.txt              # indexation, moteurs et robots IA
 │   ├── assets/
-│   │   ├── img/                # illustrations et schémas
-│   │   └── extra.css           # styles (figures, zoom)
+│   │   ├── img/                # illustrations et schémas (WebP + SVG)
+│   │   └── extra.css           # styles (figures, zoom, bandeaux de statut)
 │   └── fiches/                 # une fiche = un fichier .md
 │       ├── G1-mandat.md
 │       ├── ...
 │       └── D2-communiquer-valoriser.md
+├── overrides/                  # surcharges du thème
+│   ├── main.html               # bandeau de statut + balises SEO / JSON-LD
+│   └── partials/copyright.html # pied de page et logos
+├── hooks/llms.py               # génère llms.txt et llms-full.txt au build
 ├── TEMPLATE-fiche.md           # modèle à copier pour créer une fiche
 ├── mkdocs.yml                  # configuration + navigation
-├── requirements.txt            # dépendance (mkdocs-material)
+├── requirements.txt            # dépendances épinglées
 ├── CONTRIBUTING.md             # guide détaillé de contribution
+├── SECURITY.md                 # signalement de vulnérabilité
+├── CITATION.cff                # métadonnées de citation
+├── LICENSE                     # CC BY-SA 4.0
 ├── README.md                   # ce fichier
 └── .github/
     ├── workflows/deploy.yml    # build + déploiement automatiques
+    ├── workflows/liens.yml     # vérification mensuelle des liens externes
+    ├── CODEOWNERS              # relecteurs par défaut
     ├── PULL_REQUEST_TEMPLATE.md
     └── ISSUE_TEMPLATE/fiche.md
 ```
 
-### Les 13 fiches, par thème
+### Les 14 fiches, par thème
 
 | Code | Thème | Fiches |
 |---|---|---|
 | G1–G4 | **Gouvernance & Stratégie** | Mandat · Parties prenantes · Objectifs & ODD · Feuille de route |
 | M1–M2 | **Mesure & Diagnostic** | Diagnostic · Pilotage & KPI |
-| C1–C2 | **Conception sobre** | Éco-conception des services · Cycle de vie des données |
+| C1–C3 | **Conception sobre** | Éco-conception des services · Cycle de vie des données · IA sobre |
 | I1–I2 | **Infrastructure & Matériel** | Infrastructures & environnements · Achats responsables |
 | V1 | **Chaîne de valeur** | Maturité des parties prenantes |
 | D1–D2 | **Déploiement & Valorisation** | Conformité · Communiquer & valoriser |
@@ -138,12 +149,12 @@ maj: 2026-06-04
 
 ### Ajouter une image / un schéma
 
-1. Déposez le fichier dans `docs/assets/img/` (nom explicite, ex. `cartographie-urbanisation.png`).
+1. Déposez le fichier dans `docs/assets/img/` (nom explicite, ex. `cartographie-urbanisation.webp`). **Format WebP** pour les images matricielles, SVG pour les schémas vectoriels : `cwebp -q 82 schema.png -o schema.webp`.
 2. Insérez-le dans une fiche/section avec une légende — le **zoom plein écran** au clic est automatique :
 
    ```markdown
    <figure markdown>
-     ![Texte alternatif décrivant l'image](../assets/img/mon-schema.png)
+     ![Texte alternatif décrivant l'image](../assets/img/mon-schema.webp)
      <figcaption>Légende affichée sous l'image.</figcaption>
    </figure>
    ```
@@ -151,7 +162,7 @@ maj: 2026-06-04
    Chemin : `assets/img/...` depuis `index.md` / `guide-unifie.md`, **`../assets/img/...`** depuis une fiche dans `docs/fiches/`.
 3. Renseignez toujours le **texte alternatif** (accessibilité) et **créditez la source** si l'image n'est pas la vôtre.
 
-> ⚖️ Les schémas issus des publications INR/ISIT sont sous licence **CC BY-SA 4.0** : attribution + même licence obligatoires.
+> ⚖️ Les schémas issus des publications INR/ISIT sont sous licence **CC BY-SA 4.0**, comme l'ensemble de ce dépôt (voir §10) : attribution + même licence obligatoires.
 
 > Détail complet du workflow et des règles d'écriture : **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
@@ -241,6 +252,46 @@ Pour les membres bloqués par Git ou par les règles de sécurité de leur entre
 | Combien de temps ? | ~30 secondes après le merge. |
 | Où voir l'état ? | Onglet **Actions** du dépôt. |
 | Coût ? | Gratuit (dépôt public + GitHub Pages). |
+
+---
+
+## 10. Référencement (moteurs & assistants IA)
+
+Le site est outillé pour être trouvé *et* correctement cité, y compris par les
+assistants IA, un enjeu direct pour un travail sous CC BY-SA, dont l'attribution
+est une obligation de licence.
+
+| Dispositif | Où | Rôle |
+|---|---|---|
+| Description propre à chaque page | `description:` dans le frontmatter | Évite la description générique dupliquée sur les 16 pages, principal frein au classement. |
+| Open Graph + Twitter Card | `overrides/main.html` | Aperçu correct au partage (LinkedIn, Slack, X). Visuel : `docs/assets/img/og-bp-air.png`. |
+| JSON-LD schema.org | `overrides/main.html` | Déclare l'Organisation éditrice, le site et chaque fiche en `TechArticle`, avec licence, auteur et date. C'est ce que lisent Google et les assistants pour attribuer. |
+| `llms.txt` + `llms-full.txt` | générés par `hooks/llms.py` | Index et corpus complet au format [llmstxt.org](https://llmstxt.org), pour que les assistants citent le guide sans parcourir le site. |
+| `robots.txt` | `docs/robots.txt` | Autorise explicitement les robots IA nommés (GPTBot, ClaudeBot, PerplexityBot…). |
+| `sitemap.xml` | généré par MkDocs | Découverte des 16 pages. |
+| `CITATION.cff` | racine | Citation académique, lue par GitHub et Zenodo. |
+
+Rien de tout cela n'est à maintenir à la main : `llms.txt` et `llms-full.txt` sont
+dérivés du contenu réel à chaque build, les balises du frontmatter. **La seule
+chose à renseigner en créant une fiche, c'est `description:`** : une phrase, dans
+l'entête.
+
+---
+
+## 11. Licence
+
+L'ensemble du contenu de ce dépôt (fiches, guide, schémas) est publié sous licence
+**[Creative Commons Attribution / Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)**.
+
+Vous êtes libre de le partager et de l'adapter, y compris commercialement, à deux conditions :
+
+- **Attribution** : créditer « Institut du Numérique Responsable / ISIT, Groupe de Travail AIR » et indiquer les modifications apportées.
+- **Partage dans les Mêmes Conditions** : toute œuvre dérivée doit être diffusée sous la même licence.
+
+Ce choix n'est pas arbitraire : le contenu dérive de publications INR/ISIT déjà sous
+CC BY-SA 4.0, dont la clause de partage à l'identique se propage aux travaux dérivés.
+
+En contribuant à ce dépôt, vous acceptez que votre contribution soit diffusée sous cette licence.
 
 ---
 

@@ -1,6 +1,8 @@
 ---
 id: I2
 titre: Politique d'achats numériques responsables
+description: >-
+  Bâtir une politique d'achats numériques responsables : clausier NR, critères environnementaux et arbitrage entre empreinte, performance et coût.
 theme: Infrastructure & Matériel
 statut: brouillon
 proprietaire: INR/ISIT
@@ -45,6 +47,8 @@ Encadrer l'acquisition de produits et services numériques pour réduire l'empre
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
+> Cette sélection ne retient que les outils mobilisables sur ce chantier. Le catalogue complet de l'INR (355 ressources classées en 15 thèmes, liens vérifiés) tient la référence à jour : [**Boîte à outils du Numérique Responsable**](https://sustainableit-tools.isit-europe.org/).
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
 | 🟢 Clausier NR (INR) | Clauses CCTP/CCAP | <https://institutnr.org/clausier-numerique-ecoresponsable> |
@@ -56,8 +60,3 @@ Encadrer l'acquisition de produits et services numériques pour réduire l'empre
 - [G4 — Construire la feuille de route](G4-feuille-de-route.md)
 - [I1 — Optimiser infrastructures & environnements](I1-infrastructures.md)
 - [V1 — Évaluer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

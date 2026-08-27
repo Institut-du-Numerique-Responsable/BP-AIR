@@ -1,6 +1,8 @@
 ---
 id: G1
 titre: Initialiser la démarche (obtenir le mandat)
+description: >-
+  Obtenir un mandat clair de la Direction pour ancrer la démarche numérique responsable au plus haut niveau et éviter qu'elle soit sacrifiée au premier arbitrage.
 theme: Gouvernance & Stratégie
 statut: brouillon
 proprietaire: INR/ISIT
@@ -46,17 +48,15 @@ On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (d
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
+> Cette sélection ne retient que les outils mobilisables sur ce chantier. Le catalogue complet de l'INR (355 ressources classées en 15 thèmes, liens vérifiés) tient la référence à jour : [**Boîte à outils du Numérique Responsable**](https://sustainableit-tools.isit-europe.org/).
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
 | 🟢 Guide bonnes pratiques NR (INR) | Référentiel | <https://institutnr.org/guide-bonnes-pratiques-nr> |
+| Charte IA Responsable (INR) | Support d'engagement de la direction sur l'IA ; la signature matérialise le mandat | <https://charter.isit-europe.org/charte-ia/?lang=fr_FR> |
 
 ## Fiches liées
 
 - [G2 — Embarquer les parties prenantes](G2-parties-prenantes.md)
 - [G3 — Identifier & prioriser les objectifs](G3-objectifs-odd.md)
 - [G4 — Construire la feuille de route](G4-feuille-de-route.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

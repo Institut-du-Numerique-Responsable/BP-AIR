@@ -1,6 +1,8 @@
 ---
 id: G2
 titre: Embarquer les parties prenantes
+description: >-
+  Embarquer et structurer les parties prenantes d'une démarche numérique responsable : rôles, acculturation, gouvernance collective autour de l'architecte.
 theme: Gouvernance & Stratégie
 statut: brouillon
 proprietaire: INR/ISIT
@@ -45,6 +47,8 @@ Le NR est par nature transverse. Une politique matérielle sans les Achats, une 
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
+> Cette sélection ne retient que les outils mobilisables sur ce chantier. Le catalogue complet de l'INR (355 ressources classées en 15 thèmes, liens vérifiés) tient la référence à jour : [**Boîte à outils du Numérique Responsable**](https://sustainableit-tools.isit-europe.org/).
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
 | 🟢 Guide bonnes pratiques NR (INR) | Sensibilisation | <https://institutnr.org/guide-bonnes-pratiques-nr> |
@@ -57,8 +61,3 @@ Le NR est par nature transverse. Une politique matérielle sans les Achats, une 
 - [G1 — Initialiser la démarche](G1-mandat.md)
 - [G3 — Identifier & prioriser les objectifs](G3-objectifs-odd.md)
 - [V1 — Évaluer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —
