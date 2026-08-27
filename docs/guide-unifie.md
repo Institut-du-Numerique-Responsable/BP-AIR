@@ -101,6 +101,14 @@ moment où l'organisation peut encore décider autrement.
 
 ## 2. Partie théorique : les fondations
 
+!!! note "Sur les chiffres cités"
+    Chaque ordre de grandeur porte sa source et son année. Certains proviennent
+    d'études d'éditeurs ou de travaux anciens, signalés comme tels : reprenez-les
+    comme repères de discussion, pas comme mesures de votre système. Les chiffres qui
+    engagent une décision doivent venir de votre propre diagnostic
+    ([M1](fiches/M1-diagnostic.md)).
+
+
 ### 2.1 Le cadre : un monde VUCA et une DSI sous tension
 
 Les organisations évoluent dans un monde dit **VUCA** — *Volatile, Uncertain, Complex, Ambiguous* (Bennis et Nanus, 1987). Crises économiques, sanitaires, énergétiques, raréfaction des matières premières : les règles du jeu ont changé.
@@ -131,7 +139,8 @@ Toutes les organisations partagent un besoin structurel : **bien gérer des ress
 
 ### 2.3 Pilier 2 — Urbanisation & architecture en couches
 
-L'urbanisation organise et **rationalise** le SI. Si deux outils font la même chose, n'en garder qu'un : simplification, économies de licences, de maintenance, de machines, d'énergie. Une cartographie à jour permet de **réduire de 20 à 30 % les coûts d'exploitation** (Forrester, 2021).
+L'urbanisation organise et **rationalise** le SI. Si deux outils font la même chose, n'en garder qu'un : simplification, économies de licences, de maintenance, de machines, d'énergie. Une cartographie à jour permet de **réduire de 20 à 30 % les coûts d'exploitation**
+(Forrester, 2021).
 
 | Couche | Question | Ce qu'on y trouve |
 |---|---|---|
@@ -162,14 +171,18 @@ Comprendre les cycles de vie, c'est savoir **où se cachent les impacts** et don
 
 **Cycle de vie des données — le grand oublié.**
 
-- **52 % des données** d'un SI sont des **dark data** — stockées sans création de valeur (Veritas).
-- **33 %** sont des données **ROT** — **R**edondantes, **O**bsolètes ou **T**riviales.
+- **52 % des données** d'un SI sont des **dark data**, stockées sans création de
+  valeur, et **33 %** sont des données **ROT**, pour **R**edondantes, **O**bsolètes
+  ou **T**riviales (Veritas, *Databerg Report*, 2015 ; étude d'éditeur, à considérer
+  comme un ordre de grandeur et non comme une mesure de votre SI).
 
 La parade : une **gouvernance de la donnée** (catalogue, registre, qualification chaud/froid). Attention : une donnée sans valeur *aujourd'hui* peut en créer demain — décommissionner avec discernement.
 
 ### 2.5 Pilier 4 — Cycle de vie du matériel & économie circulaire
 
-**80 % de l'empreinte carbone d'un équipement provient de sa fabrication.** Le seul levier vraiment puissant : **l'allongement de la durée de vie** et la **circularité**. Trois axes :
+**80 % de l'empreinte carbone d'un équipement provient de sa fabrication**
+(ordre de grandeur retenu par l'ADEME pour les terminaux utilisateurs ; la part varie
+selon le type d'équipement et l'intensité carbone du réseau électrique d'usage). Le seul levier vraiment puissant : **l'allongement de la durée de vie** et la **circularité**. Trois axes :
 
 1. **Réduction à la source** — réutiliser, réparer, reconditionner, prolonger *avant* d'acheter.
 2. **Critères environnementaux (Green IT)** — durables, réparables (Indice de Réparabilité, TCO / EPEAT).
@@ -186,10 +199,18 @@ En aval, gestion des **DEEE** et **économie circulaire locale** au-delà de la 
 
 L'éco-conception est la plus efficace quand **intégrée dès la conception**. Quatre familles de leviers :
 
-- **Sobriété fonctionnelle** — règle des 3U (45 % des fonctionnalités ne servent jamais), standards ouverts (REST, JSON, ODF, CSV).
+- **Sobriété fonctionnelle** : règle des 3U et standards ouverts (REST, JSON, ODF,
+  CSV). Le chiffre souvent cité de 45 % de fonctionnalités jamais utilisées vient du
+  Standish Group (*CHAOS Report*, 2002), dont la méthode est discutée et l'âge
+  considérable. Mesurez l'usage réel de vos propres fonctionnalités plutôt que de
+  reprendre ce pourcentage.
 - **Sobriété technique** — poids des pages (EcoIndex), nombre de requêtes (YellowLab), poids des médias, audits statiques (EcoCode).
 - **Durabilité** — rétrocompatibilité, auto-scaling, hébergeurs engagés.
-- **Hygiène des environnements** — 25-30 % des serveurs tournent sans usage ; un serveur à <15 % de charge consomme jusqu'à 60 % de son énergie nominale. Consolidation : −30 à −60 %.
+- **Hygiène des environnements** : 25 à 30 % des serveurs tournent sans usage, un
+  ordre de grandeur stable depuis les travaux de l'Uptime Institute et d'Anthesis sur
+  les serveurs comateux. Un serveur sous 15 % de charge consomme jusqu'à 60 % de son
+  énergie nominale, la consommation d'un processeur au repos restant élevée.
+  Consolidation : de 30 à 60 % de gain.
 
 ### 2.7 Pilier 6 — Mesure & pilotage (l'équation de Kaya appliquée au SI)
 
@@ -285,22 +306,51 @@ d'hier ([C3](fiches/C3-ia-sobre.md)).
 
 ## 4. Synthèse : la matrice architecte
 
-Croise les grandes étapes de la démarche avec les couches d'architecture.
+Croise chaque fiche avec les couches d'architecture qu'elle mobilise. Une fiche qui
+n'active qu'une colonne se traite dans une équipe ; une fiche qui en active cinq
+demande un arbitrage transverse.
 
-| Étape | Stratégie & Gouvernance | Métier | Application | Données | Techno / Infra |
+| Fiche | Stratégie & Gouvernance | Métier | Application | Données | Techno / Infra |
 |---|:---:|:---:|:---:|:---:|:---:|
-| **G1. Initialiser** | ● | ○ | | | |
-| **G2. Embarquer les PP** | ○ | ● | | | |
-| **G3. Identifier les objectifs** | ● | ○ | | | |
-| **M1. État des lieux** | | ○ | ● | ● | ● |
-| **G4. Feuille de route** | ● | ● | | | |
-| **C1→I1. Mettre en œuvre** | | ○ | ● | ● | ● |
-| **V1. Maturité des PP** | ● | ● | ○ | ○ | ○ |
-| **D2. Communiquer & valoriser** | ○ | ● | | | |
+| **G1** Initialiser la démarche | ● | ○ | | | |
+| **G2** Embarquer les parties prenantes | ○ | ● | | | |
+| **G3** Identifier & prioriser les objectifs | ● | ● | | | |
+| **G4** Feuille de route | ● | ● | ○ | ○ | ○ |
+| **M1** État des lieux | ○ | ○ | ● | ● | ● |
+| **M2** Pilotage & KPI | ● | ○ | ○ | ● | ● |
+| **C1** Éco-concevoir les services | | ○ | ● | ○ | ○ |
+| **C2** Cycle de vie des données | ○ | ○ | ○ | ● | ○ |
+| **C3** Services d'IA sobres | ○ | ○ | ● | ● | ● |
+| **C4** Dette d'intégration | ○ | ○ | ● | ● | ● |
+| **C5** Accessibilité | ○ | ● | ● | | |
+| **I1** Infrastructures & environnements | | | ○ | ○ | ● |
+| **I2** Achats responsables | ● | ○ | | | ● |
+| **I3** Résilience & sobriété | ● | ○ | ○ | ○ | ● |
+| **V1** Maturité des parties prenantes | ● | ● | ○ | ○ | ○ |
+| **V2** Souveraineté & réversibilité | ● | ○ | ● | ● | ● |
+| **D1** Conformité | ● | ○ | ● | ● | ○ |
+| **D2** Communiquer & valoriser | ○ | ● | | | |
 
 **Légende.** **●** Impact primaire · **○** Impact secondaire.
 
-> **L'architecte, ambassadeur du Numérique Responsable.** Au terme du parcours, il devient le **promoteur actif** d'un numérique sobre, inclusif et résilient.
+### Par où commencer
+
+Les dix-sept fiches ne se traitent pas de front. Trois séquences possibles selon
+votre point de départ.
+
+**Sans mandat.** G1, puis G3 et G2. Obtenir l'arbitrage avant d'engager la mesure,
+faute de quoi le diagnostic produit des chiffres que personne ne reprend.
+
+**Avec un mandat, sans chiffres.** M1, puis G4 et M2. Le diagnostic donne la base de
+référence, la feuille de route en découle, le pilotage la tient dans le temps.
+
+**Avec un mandat et des chiffres.** Attaquer par la couche où votre diagnostic
+signale le plus d'écart : I1 et I3 pour l'infrastructure, C1 et C5 pour les services,
+C2 et C4 pour les données et les flux, C3 si l'IA monte en charge, I2 et V1 pour la
+chaîne de valeur. D1 et V2 encadrent l'ensemble, D2 le valorise.
+
+> **L'architecte, ambassadeur du Numérique Responsable.** Au terme du parcours, il
+> devient le promoteur actif d'un numérique sobre, inclusif et résilient.
 
 ---
 
@@ -336,6 +386,7 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 | 🟢 **YellowLab Tools** | Requêtes, poids, perfs front | <https://yellowlab.tools/> |
 | **RequestMap** | Cartographie des requêtes | <https://requestmap.webperf.tools/> |
 | 🟢 **Tanaguru** | Accessibilité (RGAA / WCAG) | — |
+| 🟢 **Skill Accessibilité** (INR) | Génère une déclaration d'accessibilité RGAA conforme au modèle officiel | [Présentation](https://institut-du-numerique-responsable.github.io/claude_skill_accessibilite/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/claude_skill_accessibilite) |
 | 🟢 **GR491 (INR)** | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
 | **RGESN (ARCEP/ARCOM)** | Référentiel général d'éco-conception | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
 | 🟢 **Green Claude** (INR) | Skill d'éco-conception pour Claude Code : audit RGESN/GR491/GSF et sobriété IA dans l'IDE | [Présentation](https://institut-du-numerique-responsable.github.io/green-claude/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/green-claude) |
