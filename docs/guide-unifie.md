@@ -205,9 +205,9 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
     classées en 15 thèmes, avec recherche, filtres et vérification active des liens.
 
     La sélection ci-dessous en est un extrait commenté : les outils que le GT AIR
-    considère comme structurants pour une démarche d'architecture. Pour un besoin
-    précis ou une veille, aller au catalogue : il est tenu à jour, cette page ne
-    l'est qu'au rythme des relectures du GT.
+    tient pour structurants dans une démarche d'architecture. Pour un besoin pointu
+    ou une veille, allez au catalogue. L'INR le met à jour en continu, quand cette
+    page suit le rythme des relectures du GT.
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 

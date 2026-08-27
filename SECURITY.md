@@ -9,7 +9,7 @@ publication (GitHub Actions, GitHub Pages) et aux dépendances de build.
 N'ouvrez pas d'issue publique pour une vulnérabilité.
 
 Écrivez à **contact@institutnr.org** en décrivant le problème, les étapes de
-reproduction et l'impact estimé. Nous accusons réception sous 5 jours ouvrés.
+reproduction et l'impact estimé. Vous recevez un accusé de réception sous 5 jours ouvrés.
 
 ## Périmètre
 
