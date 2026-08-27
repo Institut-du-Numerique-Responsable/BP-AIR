@@ -174,6 +174,37 @@ Un bon **KPI NR** croise quatre dimensions : les **5 axes du NR**, le **cycle de
 | **13** Climat | Empreinte carbone par service |
 | **17** Partenariats | Coopération public / privé / société civile |
 
+### 2.9 Le retour de la contrainte physique
+
+Pendant vingt ans, l'architecte a pu raisonner en abstractions. La capacité suivait,
+l'énergie n'apparaissait pas sur sa facture, le matériel arrivait en quelques
+semaines. Trois évolutions ont refermé cette parenthèse : la tension sur les
+composants, le prix de l'électricité, et les limites d'alimentation des datacenters,
+qui refusent aujourd'hui des raccordements dans plusieurs régions européennes.
+
+La sobriété change alors de statut. Elle cesse d'être une exigence morale qu'on
+arbitre en dernier, pour devenir une contrainte d'ingénierie du même ordre que la
+latence, la disponibilité ou la sécurité. Un architecte ne discute pas l'existence
+d'une contrainte de latence : il conçoit avec.
+
+Trois conséquences pratiques.
+
+**Le logiciel se paie en matériel.** Une réplication nocturne maintient allumés un
+serveur, une baie de stockage et un lien réseau. Un cluster de haute disponibilité,
+ce sont trois machines pour un service. Un découpage en microservices multiplie les
+planchers de ressources réservées. Ces choix se prennent sur un tableau blanc et se
+règlent en équipements ([C4](fiches/C4-dette-integration.md)).
+
+**L'empreinte est engagée avant la mise en service.** 80 % de l'empreinte d'un
+équipement est figée dès sa fabrication. Un serveur ajouté arrive avec sa dette
+environnementale constituée, avant d'avoir traité la première requête. Reporter un
+achat vaut mieux qu'optimiser la consommation de la machine achetée.
+
+**La ressource rare se déplace.** Le calcul accéléré concentre désormais la tension,
+sur l'approvisionnement comme sur l'alimentation électrique. Un GPU réservé et
+inoccupé coûte davantage, en euros comme en carbone, que le serveur comateux
+d'hier ([C3](fiches/C3-ia-sobre.md)).
+
 ---
 
 ## 4. Synthèse : la matrice architecte
