@@ -37,28 +37,27 @@ dessiner en entier. Le guide rappelle qu'une cartographie tenue à jour fait bai
 les coûts d'exploitation de 20 à 30 %
 ([Forrester, 2021](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches)).
 
-**Elle se paie en matériel, pas en licences.** C'est le point que les revues
-d'architecture manquent. Un flux de réplication nocturne maintient allumés un
-serveur d'intégration, une baie de stockage et un lien réseau, pour recopier une
-donnée que vous détenez déjà. Une donnée de référence dupliquée cinq fois occupe
+**Elle se paie en serveurs.** Les revues d'architecture comptent les licences et
+s'arrêtent là. Un flux de réplication nocturne maintient allumés un serveur
+d'intégration, une baie de stockage et un lien réseau, pour recopier une donnée que
+vous détenez déjà. Une donnée de référence dupliquée cinq fois occupe
 cinq fois le stockage, et le stockage porte son empreinte de fabrication avant
 même d'être branché. Un broker déployé en cluster pour la haute disponibilité,
 c'est trois serveurs de plus, allumés en permanence, pour transporter des messages
 dont une partie n'a plus de destinataire.
 
-**La contrainte matérielle est redevenue réelle.** Pendant vingt ans, l'architecte
-pouvait raisonner en abstractions : la capacité suivait, l'énergie ne se voyait pas
-sur sa facture, le matériel arrivait en quelques semaines. La tension sur les
-composants, le prix de l'électricité et les limites d'alimentation des datacenters
-ont remis le physique dans l'équation. Le guide le formule en une règle : **80 % de
-l'empreinte d'un équipement est figée dès sa fabrication**. Chaque serveur ajouté
-pour porter de l'intégration arrive donc avec sa dette environnementale déjà
-constituée, avant d'avoir traité le premier message.
+**Le matériel vous rattrape.** Pendant vingt ans, vous avez pu raisonner en
+abstractions : la capacité suivait, l'énergie n'apparaissait pas sur votre facture,
+le matériel arrivait en quelques semaines. Depuis, la tension sur les composants, le
+prix de l'électricité et les datacenters qui refusent des raccordements ont changé
+l'équation. Le guide pose la règle : **80 % de l'empreinte d'un équipement est figée
+dès sa fabrication**. Le serveur que vous ajoutez pour porter un flux arrive avec sa
+dette environnementale constituée, avant son premier message traité.
 
-**Le découpage en microservices fabrique de la dette d'intégration.** Le débat
-« microservices ou monolithe » occupe les conférences, la question utile porte
-ailleurs : à partir de quelle granularité le coût de coordination dépasse-t-il le
-bénéfice d'autonomie ? Sa version matérielle se mesure. Chaque service porte son
+**Le découpage en microservices fabrique de la dette d'intégration.** Laissez le
+débat « microservices ou monolithe » aux conférences et posez la question du seuil :
+à partir de quelle granularité le coût de coordination dépasse-t-il le bénéfice
+d'autonomie ? Sa version matérielle se compte. Chaque service porte son
 runtime, son *sidecar* de service mesh, ses répliques minimales pour la haute
 disponibilité et sa collecte d'observabilité. Quarante services en trois répliques,
 ce sont cent vingt instances, chacune avec un plancher de RAM et de CPU que personne
@@ -66,7 +65,8 @@ ne consomme. Un appel qui coûtait un saut en mémoire devient une sérialisatio
 chiffrement TLS et un aller-retour réseau. Le tracing distribué génère ensuite un
 volume de données proportionnel au nombre de sauts que vous avez créés.
 
-Un flux redondant n'est pas une élégance perdue. C'est du matériel immobilisé.
+Chaque flux redondant immobilise du matériel qui aurait servi ailleurs, ou qui
+n'aurait pas eu besoin d'être acheté.
 
 Cf. [guide](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches).
 
