@@ -28,7 +28,7 @@ en énergie.
 Vous outillez la dette de code depuis quinze ans : linters, analyse statique, seuils
 de couverture, tout cela bloque une *pull request*. La dette d'intégration n'a rien
 de comparable. Aucun outil ne la mesure par défaut, aucune équipe ne la porte, et
-elle grossit à chaque projet livré dans les temps.
+elle grossit à chaque projet qu'on livre.
 
 **Elle croît plus vite que le SI.** Vingt applications reliées deux à deux
 autorisent jusqu'à 190 liaisons. Chaque application ajoutée sans urbanisation
