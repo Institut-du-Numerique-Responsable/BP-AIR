@@ -1,6 +1,8 @@
 ---
 id: D1
 titre: Mettre en œuvre & contrôler la conformité
+description: >-
+  Mettre en œuvre et contrôler la conformité numérique responsable : l'architecte passe de concepteur à coach et contrôleur des standards NR.
 theme: Déploiement & Valorisation
 statut: brouillon
 proprietaire: INR/ISIT
@@ -48,14 +50,11 @@ La conformité se vérifie, elle ne se décrète pas. Des standards définis san
 |---|---|---|
 | 🟢 GR491 (INR) | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
 | RGESN | Contrôle de conformité | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
+| Charte IA Responsable (INR) | Cadre d'engagement IA éthique et éco-responsable, en appui de l'AI Act | <https://charter.isit-europe.org/charte-ia/?lang=fr_FR> |
+| 🟢 Skill NR (INR) | Contrôle d'éco-conception outillé côté assistants IA de code | <https://institut-du-numerique-responsable.github.io/skill-nr/> |
 
 ## Fiches liées
 
 - [G4 — Construire la feuille de route](G4-feuille-de-route.md)
 - [C1 — Éco-concevoir les services numériques](C1-eco-conception-services.md)
 - [D2 — Communiquer, valoriser & labelliser](D2-communiquer-valoriser.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

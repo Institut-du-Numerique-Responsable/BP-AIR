@@ -1,6 +1,8 @@
 ---
 id: G4
 titre: Construire & faire valider la feuille de route
+description: >-
+  Construire une feuille de route numérique responsable budgétée et planifiée, puis obtenir l'engagement formel qui en fait un projet d'entreprise.
 theme: Gouvernance & Stratégie
 statut: brouillon
 proprietaire: INR/ISIT
@@ -56,8 +58,3 @@ Un plan technocratique non relié à la valeur métier est rejeté en CODIR. La 
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)
 - [I2 — Achats numériques responsables](I2-achats-responsables.md)
 - [D1 — Mettre en œuvre & contrôler la conformité](D1-conformite.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

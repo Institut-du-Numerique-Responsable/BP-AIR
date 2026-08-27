@@ -1,7 +1,14 @@
 site_name: Architecture Informatique Responsable
-site_description: Guide & fiches de bonnes pratiques — GT AIR (INR / ISIT)
+site_description: >-
+  Guide et 13 fiches de bonnes pratiques pour concevoir, piloter et valoriser une
+  architecture informatique responsable — gouvernance, mesure, éco-conception,
+  infrastructure, conformité. Groupe de Travail AIR de l'Institut du Numérique
+  Responsable (INR / ISIT).
 site_url: https://institut-du-numerique-responsable.github.io/BP-AIR/
 repo_url: https://github.com/Institut-du-Numerique-Responsable/BP-AIR
+repo_name: INR/BP-AIR
+edit_uri: edit/main/docs/
+site_author: Institut du Numérique Responsable (INR / ISIT) — Groupe de Travail AIR
 copyright: "© INR / ISIT — Groupe de Travail AIR. Contenu sous licence CC BY-SA 4.0."
 docs_dir: docs
 
@@ -29,6 +36,8 @@ theme:
     - navigation.top
     - navigation.indexes
     - toc.follow
+    - content.action.edit
+    - content.action.view
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -55,6 +64,7 @@ nav:
   - "Thème — Déploiement & Valorisation":
       - fiches/D1-conformite.md
       - fiches/D2-communiquer-valoriser.md
+  - Contributeurs: contributeurs.md
 
 markdown_extensions:
   - admonition
@@ -67,6 +77,9 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight
   - pymdownx.emoji
+
+hooks:
+  - hooks/llms.py
 
 plugins:
   - search:
@@ -82,6 +95,7 @@ extra_css:
   - assets/extra.css
 
 extra:
+  generator: true
   social:
     - icon: fontawesome/solid/globe
       link: https://institutnr.org

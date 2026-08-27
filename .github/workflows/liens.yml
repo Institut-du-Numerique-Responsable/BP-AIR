@@ -1,0 +1,30 @@
+name: Vérifier les liens
+
+# Les fiches citent une quarantaine de ressources externes (référentiels, outils,
+# publications). Elles bougent. Une vérification mensuelle évite que le guide
+# renvoie silencieusement vers des pages mortes.
+on:
+  schedule:
+    - cron: '0 6 1 * *'   # le 1er de chaque mois
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-retries 2 --accept 200,206,403,429 'docs/**/*.md' 'README.md'
+          fail: false
+      - if: env.lychee_exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Liens cassés détectés dans les fiches"
+          content-filepath: ./lychee/out.md
+          labels: documentation

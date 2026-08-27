@@ -1,6 +1,8 @@
 ---
 id: G2
 titre: Embarquer les parties prenantes
+description: >-
+  Embarquer et structurer les parties prenantes d'une démarche numérique responsable : rôles, acculturation, gouvernance collective autour de l'architecte.
 theme: Gouvernance & Stratégie
 statut: brouillon
 proprietaire: INR/ISIT
@@ -57,8 +59,3 @@ Le NR est par nature transverse. Une politique matérielle sans les Achats, une 
 - [G1 — Initialiser la démarche](G1-mandat.md)
 - [G3 — Identifier & prioriser les objectifs](G3-objectifs-odd.md)
 - [V1 — Évaluer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

@@ -48,3 +48,21 @@
   border: none !important;
   padding: 0 !important;
 }
+
+/* Bandeau de statut des fiches (voir overrides/main.html) */
+.air-statut {
+  border-left: 4px solid;
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  margin: 0 0 1.4rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.air-statut--brouillon {
+  border-color: var(--md-accent-fg-color);
+  background: var(--md-code-bg-color);
+}
+.air-statut--revue {
+  border-color: var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+}

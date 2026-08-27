@@ -1,6 +1,8 @@
 ---
 id: I1
 titre: Optimiser infrastructures & environnements
+description: >-
+  Optimiser infrastructures et environnements : 25 à 30 % des serveurs tournent sans usage et un serveur sous-utilisé consomme jusqu'à 60 % de son énergie nominale.
 theme: Infrastructure & Matériel
 statut: brouillon
 proprietaire: INR/ISIT
@@ -75,8 +77,3 @@ La consolidation peut réduire la consommation de **30 à 60 %**. Le stockage vi
 - [I2 — Achats numériques responsables](I2-achats-responsables.md)
 - [C2 — Maîtriser le cycle de vie des données](C2-cycle-vie-donnees.md)
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

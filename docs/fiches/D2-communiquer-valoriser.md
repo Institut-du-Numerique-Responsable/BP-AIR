@@ -1,6 +1,8 @@
 ---
 id: D2
 titre: Communiquer, valoriser & labelliser
+description: >-
+  Communiquer et valoriser une démarche numérique responsable en interne comme en externe, labellisation comprise, sans tomber dans le greenwashing.
 theme: Déploiement & Valorisation
 statut: brouillon
 proprietaire: INR/ISIT
@@ -57,8 +59,3 @@ Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. 
 - [M2 — Pilotage & tableau de bord KPI](M2-pilotage-kpi.md)
 - [D1 — Mettre en œuvre & contrôler la conformité](D1-conformite.md)
 - [V1 — Évaluer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

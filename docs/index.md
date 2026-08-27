@@ -1,3 +1,8 @@
+---
+description: >-
+  Guide et 13 fiches de bonnes pratiques pour concevoir, piloter et valoriser une architecture informatique responsable. Produit par le GT AIR de l'Institut du Numérique Responsable (INR / ISIT).
+---
+
 # Architecture Informatique Responsable
 
 ### De la théorie à l'action : concevoir, piloter et faire rayonner un Système d'Information responsable
@@ -5,7 +10,7 @@
 *Espace de travail collaboratif du Groupe de Travail AIR — Institut du Numérique Responsable (INR / ISIT).*
 
 <figure markdown>
-  ![Le parcours de la démarche AIR, du lancement à la valorisation](assets/img/parcours-demarche.png)
+  ![Le parcours de la démarche AIR, du lancement à la valorisation](assets/img/parcours-demarche.webp)
   <figcaption>Le parcours de la démarche, du lancement à la valorisation (cliquer pour agrandir).</figcaption>
 </figure>
 
@@ -29,6 +34,6 @@ Ce site rassemble deux niveaux de lecture :
 
 ## Contribuer
 
-Chaque fiche s'édite en Markdown, directement sur GitHub (bouton crayon ou touche `.` pour l'éditeur web). Voir le [guide de contribution](https://github.com/) et le modèle de fiche dans le dépôt. Le site se reconstruit automatiquement à chaque modification validée.
+Chaque fiche s'édite en Markdown, directement sur GitHub (bouton crayon ou touche `.` pour l'éditeur web). Voir le [guide de contribution](https://github.com/Institut-du-Numerique-Responsable/BP-AIR/blob/main/CONTRIBUTING.md) et le modèle de fiche dans le dépôt. Le site se reconstruit automatiquement à chaque modification validée.
 
 > **Principes directeurs transversaux** — Approche holistique · Démarche itérative (*Mesurer → Agir → Apprendre → Ajuster*) · Pilotage par la valeur · Gouvernance collaborative.

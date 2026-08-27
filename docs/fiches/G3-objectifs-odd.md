@@ -1,6 +1,8 @@
 ---
 id: G3
 titre: Identifier & prioriser les objectifs
+description: >-
+  Traduire les ambitions numérique responsable en objectifs SMART priorisés et alignés sur la stratégie RSE et les Objectifs de Développement Durable.
 theme: Gouvernance & Stratégie
 statut: brouillon
 proprietaire: INR/ISIT
@@ -55,8 +57,3 @@ Traduire des ambitions générales en objectifs SMART, priorisés et alignés su
 - [G1 — Initialiser la démarche](G1-mandat.md)
 - [G4 — Construire la feuille de route](G4-feuille-de-route.md)
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

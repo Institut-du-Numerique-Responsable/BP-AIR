@@ -1,6 +1,8 @@
 ---
 id: I2
 titre: Politique d'achats numériques responsables
+description: >-
+  Bâtir une politique d'achats numériques responsables : clausier NR, critères environnementaux et arbitrage entre empreinte, performance et coût.
 theme: Infrastructure & Matériel
 statut: brouillon
 proprietaire: INR/ISIT
@@ -56,8 +58,3 @@ Encadrer l'acquisition de produits et services numériques pour réduire l'empre
 - [G4 — Construire la feuille de route](G4-feuille-de-route.md)
 - [I1 — Optimiser infrastructures & environnements](I1-infrastructures.md)
 - [V1 — Évaluer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —

@@ -1,6 +1,8 @@
 ---
 id: M2
 titre: Pilotage & tableau de bord KPI
+description: >-
+  Piloter une démarche numérique responsable par les KPI : indicateurs multidimensionnels, tableau de bord et boucle Mesurer → Agir → Apprendre → Ajuster.
 theme: Mesure & Diagnostic
 statut: brouillon
 proprietaire: INR/ISIT
@@ -57,7 +59,7 @@ Mettre en place un pilotage continu de la démarche NR : indicateurs multidimens
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)
 - [D2 — Communiquer, valoriser & labelliser](D2-communiquer-valoriser.md)
 
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    Fiche **nouvelle** : extraite et développée à partir du pilotage évoqué dans l'ancienne fiche C2. À enrichir par le GT (choix du référentiel KPI, exemples concrets par couche).
+<!-- Notes de coédition (interne au GT, non publiées sur le site) :
+     Fiche nouvelle : extraite et développée à partir du pilotage évoqué dans
+     l'ancienne fiche C2. À enrichir par le GT (choix du référentiel KPI,
+     exemples concrets par couche). -->

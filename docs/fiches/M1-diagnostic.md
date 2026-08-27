@@ -1,6 +1,8 @@
 ---
 id: M1
 titre: Faire l'état des lieux (diagnostic)
+description: >-
+  Réaliser le diagnostic initial d'un système d'information : empreinte environnementale, volet social et maturité numérique responsable.
 theme: Mesure & Diagnostic
 statut: brouillon
 proprietaire: INR/ISIT
@@ -60,8 +62,3 @@ Le diagnostic conditionne toute la suite : sans base de référence, impossible 
 - [G3 — Identifier & prioriser les objectifs](G3-objectifs-odd.md)
 - [G4 — Construire la feuille de route](G4-feuille-de-route.md)
 - [M2 — Pilotage & tableau de bord KPI](M2-pilotage-kpi.md)
-
----
-
-!!! note "🗨️ Notes de coédition (à purger avant validation)"
-    —
