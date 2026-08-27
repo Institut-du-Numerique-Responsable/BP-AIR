@@ -220,8 +220,8 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 | 🟢 **Tanaguru** | Accessibilité (RGAA / WCAG) | — |
 | 🟢 **GR491 (INR)** | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
 | **RGESN (ARCEP/ARCOM)** | Référentiel général d'éco-conception | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
-| 🟢 **Green Claude** (INR) | Skill d'éco-conception pour Claude Code : audit RGESN/GR491/GSF et sobriété IA à même l'IDE | <https://institut-du-numerique-responsable.github.io/green-claude/> |
-| 🟢 **Skill NR** (INR) | Règles d'éco-conception (RGESN, GR491, Opquast, RGAA) pour 11 assistants IA de code | <https://institut-du-numerique-responsable.github.io/skill-nr/> |
+| 🟢 **Green Claude** (INR) | Skill d'éco-conception pour Claude Code : audit RGESN/GR491/GSF et sobriété IA à même l'IDE | [Présentation](https://institut-du-numerique-responsable.github.io/green-claude/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/green-claude) |
+| 🟢 **Skill NR** (INR) | Règles d'éco-conception (RGESN, GR491, Opquast, RGAA) pour 11 assistants IA de code, en 13 langues | [Présentation](https://institut-du-numerique-responsable.github.io/skill-nr/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/skill-nr) |
 
 ### Achats & gouvernance
 | Ressource | Usage | Lien |

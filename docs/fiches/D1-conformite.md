@@ -51,7 +51,8 @@ La conformité se vérifie, elle ne se décrète pas. Des standards définis san
 | 🟢 GR491 (INR) | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
 | RGESN | Contrôle de conformité | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
 | Charte IA Responsable (INR) | Cadre d'engagement IA éthique et éco-responsable, en appui de l'AI Act | <https://charter.isit-europe.org/charte-ia/?lang=fr_FR> |
-| 🟢 Skill NR (INR) | Contrôle d'éco-conception outillé côté assistants IA de code | <https://institut-du-numerique-responsable.github.io/skill-nr/> |
+| 🟢 Skill NR (INR) | Contrôle d'éco-conception outillé côté assistants IA de code | [Présentation](https://institut-du-numerique-responsable.github.io/skill-nr/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/skill-nr) |
+| 🟢 Green Claude (INR) | Audit RGESN/GR491 automatisé dans l'IDE : le contrôle de conformité au plus près du code | [Présentation](https://institut-du-numerique-responsable.github.io/green-claude/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/green-claude) |
 
 ## Fiches liées
 
