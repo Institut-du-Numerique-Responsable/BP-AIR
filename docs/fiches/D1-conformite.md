@@ -90,6 +90,7 @@ réglementations, plutôt que d'ouvrir un chantier par texte.
 | RGESN | Contrôle de conformité | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
 | Charte IA Responsable (INR) | Cadre d'engagement IA éthique et éco-responsable, en appui de l'AI Act | <https://charter.isit-europe.org/charte-ia/?lang=fr_FR> |
 | 🟢 Skill NR (INR) | Contrôle d'éco-conception outillé côté assistants IA de code | [Présentation](https://institut-du-numerique-responsable.github.io/skill-nr/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/skill-nr) |
+| 🟢 Skill Accessibilité (INR) | Génération de la déclaration d'accessibilité RGAA au modèle officiel, preuve exigible | [Présentation](https://institut-du-numerique-responsable.github.io/claude_skill_accessibilite/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/claude_skill_accessibilite) |
 | 🟢 Green Claude (INR) | Audit RGESN/GR491 automatisé dans l'IDE : le contrôle de conformité au plus près du code | [Présentation](https://institut-du-numerique-responsable.github.io/green-claude/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/green-claude) |
 
 ## Fiches liées
