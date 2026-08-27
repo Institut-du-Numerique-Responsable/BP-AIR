@@ -85,15 +85,15 @@ BP-AIR/
     └── ISSUE_TEMPLATE/fiche.md
 ```
 
-### Les 15 fiches, par thème
+### Les 17 fiches, par thème
 
 | Code | Thème | Fiches |
 |---|---|---|
 | G1–G4 | **Gouvernance & Stratégie** | Mandat · Parties prenantes · Objectifs & ODD · Feuille de route |
 | M1–M2 | **Mesure & Diagnostic** | Diagnostic · Pilotage & KPI |
 | C1–C4 | **Conception sobre** | Éco-conception des services · Cycle de vie des données · IA sobre · Dette d'intégration |
-| I1–I2 | **Infrastructure & Matériel** | Infrastructures & environnements · Achats responsables |
-| V1 | **Chaîne de valeur** | Maturité des parties prenantes |
+| I1–I3 | **Infrastructure & Matériel** | Infrastructures & environnements · Achats responsables · Résilience & sobriété |
+| V1–V2 | **Chaîne de valeur** | Maturité des parties prenantes · Souveraineté & réversibilité |
 | D1–D2 | **Déploiement & Valorisation** | Conformité · Communiquer & valoriser |
 
 ---
