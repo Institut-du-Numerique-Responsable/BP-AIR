@@ -16,7 +16,7 @@ Responsable (INR / ISIT).
 | Auteur / encadrant | Organisation | Rôle dans les travaux |
 |---|---|---|
 | Vincent COURBOULAY | Institut du Numérique Responsable (INR) | Encadrant scientifique — auteur & contributeur |
-| Benjamin DUTHIL | EGSI | Encadrant du GT AIR — auteur & contributeur |
+| Benjamin DUTHIL | EIGSI (École d'ingénieurs, La Rochelle) | Encadrant du GT AIR — auteur & contributeur |
 | Guillaume GALLON | MADE-UP | Encadrant du GT AIR — auteur & contributeur |
 
 ## Intervenants du groupe de travail
@@ -27,7 +27,7 @@ n'engagent pas leur employeur.
 
 | Intervenant | Organisation | Rôle |
 |---|---|---|
-| Benjamin DUTHIL | EGSI | Enseignant / Chercheur / Architecte |
+| Benjamin DUTHIL | EIGSI (École d'ingénieurs, La Rochelle) | Enseignant / Chercheur / Architecte |
 | Xavier PRINCE | MADE-UP | Architecte SI / Tech Lead |
 | Thierry-Gauthier DE LANGHE | VECTEUR E | Consultant en numérique durable |
 | Cyrille CHOPELET | CGI | Architecte Technique |
