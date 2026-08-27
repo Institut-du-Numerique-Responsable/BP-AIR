@@ -57,6 +57,7 @@ Le diagnostic conditionne toute la suite : sans base de référence, impossible 
 | 🟢 NumEcoEval | Évaluation environnementale des SI | — |
 | 🟢 DataVizta (Boavizta) | Impact fabrication/usage | <https://dataviz.boavizta.org/> |
 | 🟢 EcoIndex CLI | Audit éco-conception | <https://github.com/cnumr/EcoIndex_python> |
+| 🟢 GPC-ONR (INR) | Auto-évaluation participative de la démarche NR, en complément des mesures techniques | <https://github.com/Institut-du-Numerique-Responsable/GPC-ONR> |
 | 🟢 Tanaguru | Accessibilité (RGAA/WCAG) | — |
 
 ## Fiches liées

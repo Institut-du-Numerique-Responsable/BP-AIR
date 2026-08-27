@@ -219,6 +219,7 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 | 🟢 **NumEcoEval** | Évaluation environnementale des SI | — |
 | 🟢 **DataVizta** (Boavizta) | Impact fabrication/usage des équipements | <https://dataviz.boavizta.org/> |
 | 🟢 **Guide Maturité PP (INR/ISIT)** | 47 questions, 10 familles | <https://institutnr.org/guide-maturite-parties-prenantes> |
+| 🟢 **GPC-ONR** (INR) | Évaluation participative, priorisation et consolidation des Objectifs Numérique Responsable (ONR) | <https://github.com/Institut-du-Numerique-Responsable/GPC-ONR> |
 
 ### Éco-conception & accessibilité
 | Outil | Usage | Lien |
@@ -275,6 +276,7 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 | **Maturité (vs performance)** | Capacité à connaître et faire respecter les meilleures pratiques. |
 | **NR** | Numérique Responsable. |
 | **ODD** | Objectifs de Développement Durable (ONU, 17). |
+| **ONR** | Objectifs Numérique Responsable, déclinaison des ambitions NR en objectifs pilotables. |
 | **OKR** | Objectives & Key Results. |
 | **PUE** | Power Usage Effectiveness — efficacité énergétique d'un datacenter. |
 | **RFI / RFP** | Request For Information (maturité) / Request For Proposal (performance, contractuel). |
