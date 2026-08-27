@@ -85,13 +85,13 @@ BP-AIR/
     └── ISSUE_TEMPLATE/fiche.md
 ```
 
-### Les 13 fiches, par thème
+### Les 14 fiches, par thème
 
 | Code | Thème | Fiches |
 |---|---|---|
 | G1–G4 | **Gouvernance & Stratégie** | Mandat · Parties prenantes · Objectifs & ODD · Feuille de route |
 | M1–M2 | **Mesure & Diagnostic** | Diagnostic · Pilotage & KPI |
-| C1–C2 | **Conception sobre** | Éco-conception des services · Cycle de vie des données |
+| C1–C3 | **Conception sobre** | Éco-conception des services · Cycle de vie des données · IA sobre |
 | I1–I2 | **Infrastructure & Matériel** | Infrastructures & environnements · Achats responsables |
 | V1 | **Chaîne de valeur** | Maturité des parties prenantes |
 | D1–D2 | **Déploiement & Valorisation** | Conformité · Communiquer & valoriser |
@@ -258,7 +258,7 @@ Pour les membres bloqués par Git ou par les règles de sécurité de leur entre
 ## 10. Référencement (moteurs & assistants IA)
 
 Le site est outillé pour être trouvé *et* correctement cité, y compris par les
-assistants IA — un enjeu direct pour un travail sous CC BY-SA, dont l'attribution
+assistants IA, un enjeu direct pour un travail sous CC BY-SA, dont l'attribution
 est une obligation de licence.
 
 | Dispositif | Où | Rôle |
@@ -273,7 +273,7 @@ est une obligation de licence.
 
 Rien de tout cela n'est à maintenir à la main : `llms.txt` et `llms-full.txt` sont
 dérivés du contenu réel à chaque build, les balises du frontmatter. **La seule
-chose à renseigner en créant une fiche, c'est `description:`** — une phrase, dans
+chose à renseigner en créant une fiche, c'est `description:`** : une phrase, dans
 l'entête.
 
 ---
@@ -281,12 +281,12 @@ l'entête.
 ## 11. Licence
 
 L'ensemble du contenu de ce dépôt (fiches, guide, schémas) est publié sous licence
-**[Creative Commons Attribution — Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)**.
+**[Creative Commons Attribution / Partage dans les Mêmes Conditions 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)**.
 
 Vous êtes libre de le partager et de l'adapter, y compris commercialement, à deux conditions :
 
-- **Attribution** — créditer « Institut du Numérique Responsable / ISIT — Groupe de Travail AIR » et indiquer les modifications apportées.
-- **Partage dans les Mêmes Conditions** — toute œuvre dérivée doit être diffusée sous la même licence.
+- **Attribution** : créditer « Institut du Numérique Responsable / ISIT, Groupe de Travail AIR » et indiquer les modifications apportées.
+- **Partage dans les Mêmes Conditions** : toute œuvre dérivée doit être diffusée sous la même licence.
 
 Ce choix n'est pas arbitraire : le contenu dérive de publications INR/ISIT déjà sous
 CC BY-SA 4.0, dont la clause de partage à l'identique se propage aux travaux dérivés.

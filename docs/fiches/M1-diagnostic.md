@@ -48,6 +48,8 @@ Le diagnostic conditionne toute la suite : sans base de référence, impossible 
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
+> Cette sélection ne retient que les outils directement mobilisables sur ce chantier. Le catalogue complet de l'INR (355 ressources classées en 15 thèmes, liens vérifiés) est la référence à jour : [**Boîte à outils du Numérique Responsable**](https://sustainableit-tools.isit-europe.org/).
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
 | 🟢 WeNR | Empreinte GES + maturité NR du SI | <https://wenr.isit-europe.org/> |

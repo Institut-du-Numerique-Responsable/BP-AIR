@@ -8,7 +8,7 @@
 #}
 {#
   Référencement : Open Graph, Twitter Card et JSON-LD schema.org.
-  Objectif double — moteurs classiques (Google, Bing) et assistants IA, qui
+  Objectif double : moteurs classiques (Google, Bing) et assistants IA, qui
   s'appuient fortement sur les données structurées et l'attribution d'auteur.
 #}
 {% block extrahead %}
@@ -26,14 +26,14 @@
   <meta property="og:image" content="{{ og_image }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="BP-AIR — Architecture Informatique Responsable, Institut du Numérique Responsable">
+  <meta property="og:image:alt" content="BP-AIR, Architecture Informatique Responsable, Institut du Numérique Responsable">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page_title }}">
   <meta name="twitter:description" content="{{ page_desc }}">
   <meta name="twitter:image" content="{{ og_image }}">
 
-  {# `author` est déjà émis par le thème depuis site_author — ne pas dupliquer. #}
+  {# `author` est déjà émis par le thème depuis site_author, ne pas dupliquer. #}
   <meta name="publisher" content="Institut du Numérique Responsable">
   <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
   <meta name="dcterms.license" content="CC BY-SA 4.0">
@@ -92,13 +92,13 @@
 {% block content %}
   {% if page.meta and page.meta.statut == "brouillon" %}
     <div class="air-statut air-statut--brouillon" role="note">
-      <strong>Brouillon</strong> — cette fiche est un document de travail du GT AIR,
+      <strong>Brouillon</strong> : cette fiche est un document de travail du GT AIR,
       publié en transparence avant validation. Son contenu peut évoluer.
       {% if page.meta.maj %}Dernière mise à jour : {{ page.meta.maj }}.{% endif %}
     </div>
   {% elif page.meta and page.meta.statut == "en-revue" %}
     <div class="air-statut air-statut--revue" role="note">
-      <strong>En relecture</strong> — cette fiche est stabilisée et en cours de
+      <strong>En relecture</strong> : cette fiche est stabilisée et en cours de
       validation par le GT AIR.
       {% if page.meta.maj %}Dernière mise à jour : {{ page.meta.maj }}.{% endif %}
     </div>

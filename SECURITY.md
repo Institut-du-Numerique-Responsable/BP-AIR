@@ -18,5 +18,5 @@ build (`requirements.txt`), les surcharges de thème (`overrides/`) et le hook d
 génération (`hooks/`).
 
 Sont hors périmètre : les sites tiers cités dans les fiches, et les signalements
-portant sur l'exactitude du contenu — qui relèvent d'une
+portant sur l'exactitude du contenu, qui relèvent d'une
 [issue](https://github.com/Institut-du-Numerique-Responsable/BP-AIR/issues).

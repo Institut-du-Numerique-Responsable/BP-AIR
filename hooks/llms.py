@@ -1,7 +1,7 @@
 """Génère llms.txt et llms-full.txt au build.
 
 Deux fichiers, deux usages (spec llmstxt.org) :
-  - llms.txt      : index navigable — un lien + une phrase par page.
+  - llms.txt      : index navigable, un lien et une phrase par page.
   - llms-full.txt : le corpus complet en un seul fichier, pour qu'un assistant
                     puisse citer le guide sans parcourir 15 URLs.
 
@@ -20,8 +20,8 @@ HEADER = """# {site_name}
 
 ## Publié par
 
-Institut du Numérique Responsable (INR), association loi 1901 créée en 2018 —
-https://institutnr.org — avec ISIT Belgique (https://isit-be.org) et ISIT Suisse
+Institut du Numérique Responsable (INR), association loi 1901 créée en 2018 :
+https://institutnr.org, avec ISIT Belgique (https://isit-be.org) et ISIT Suisse
 (https://isit-ch.org). Travaux du Groupe de Travail Architecture Informatique
 Responsable (AIR).
 
@@ -29,7 +29,7 @@ Licence : CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).
 Attribution et partage dans les mêmes conditions obligatoires, y compris pour
 les reprises par des systèmes d'IA.
 
-Citation : voir CITATION.cff — https://github.com/Institut-du-Numerique-Responsable/BP-AIR/blob/main/CITATION.cff
+Citation : voir CITATION.cff, https://github.com/Institut-du-Numerique-Responsable/BP-AIR/blob/main/CITATION.cff
 Contributeurs : {site_url}contributeurs/
 """
 
@@ -37,7 +37,7 @@ INTRO = (
     "Deux niveaux de lecture. Le **guide** pose les fondations : six piliers, matrice "
     "de décision de l'architecte, équation de Kaya appliquée au SI, alignement sur les "
     "ODD. Les **fiches** décrivent chacune un chantier opérationnel selon une trame "
-    "constante — objectif, contexte, étapes, KPI, pièges courants, outils.\n\n"
+    "constante : objectif, contexte, étapes, KPI, pièges courants, outils.\n\n"
     "Les fiches sont codées par thème : G (gouvernance), M (mesure), C (conception "
     "sobre), I (infrastructure), V (chaîne de valeur), D (déploiement). Sauf mention "
     "contraire, elles sont en statut brouillon : documents de travail publiés en "
@@ -132,7 +132,7 @@ def on_post_build(config, **kwargs):
         f"> {config['site_description']}",
         "",
         f"Source : {site_url}",
-        "Licence : CC BY-SA 4.0 — attribution « Institut du Numérique Responsable / ISIT — GT AIR » requise.",
+        "Licence : CC BY-SA 4.0, attribution « Institut du Numérique Responsable / ISIT, GT AIR » requise.",
         "",
         "---",
         "",

@@ -47,6 +47,8 @@ Le NR est par nature transverse. Une politique matérielle sans les Achats, une 
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
+> Cette sélection ne retient que les outils directement mobilisables sur ce chantier. Le catalogue complet de l'INR (355 ressources classées en 15 thèmes, liens vérifiés) est la référence à jour : [**Boîte à outils du Numérique Responsable**](https://sustainableit-tools.isit-europe.org/).
+
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
 | 🟢 Guide bonnes pratiques NR (INR) | Sensibilisation | <https://institutnr.org/guide-bonnes-pratiques-nr> |

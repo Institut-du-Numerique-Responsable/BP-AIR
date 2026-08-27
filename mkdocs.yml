@@ -1,6 +1,6 @@
 site_name: Architecture Informatique Responsable
 site_description: >-
-  Guide et 13 fiches de bonnes pratiques pour concevoir, piloter et valoriser une
+  Guide et 14 fiches de bonnes pratiques pour concevoir, piloter et valoriser une
   architecture informatique responsable — gouvernance, mesure, éco-conception,
   infrastructure, conformité. Groupe de Travail AIR de l'Institut du Numérique
   Responsable (INR / ISIT).
@@ -56,6 +56,7 @@ nav:
   - "Thème — Conception sobre":
       - fiches/C1-eco-conception-services.md
       - fiches/C2-cycle-vie-donnees.md
+      - fiches/C3-ia-sobre.md
   - "Thème — Infrastructure & Matériel":
       - fiches/I1-infrastructures.md
       - fiches/I2-achats-responsables.md

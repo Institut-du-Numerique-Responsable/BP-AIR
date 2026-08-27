@@ -14,7 +14,7 @@ maj: 2026-06-04
 fiches_liees: []
 ---
 
-# X0 — Titre de la fiche
+# X0 : Titre de la fiche
 
 > **Public cible.** Qui met en œuvre / est concerné.
 

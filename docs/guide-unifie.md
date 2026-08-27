@@ -199,6 +199,16 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 
 ## 5. Boîte à outils & ressources
 
+!!! tip "Le catalogue de référence"
+    L'INR maintient une **[Boîte à outils du Numérique Responsable](https://sustainableit-tools.isit-europe.org/)**
+    : 355 ressources (outils de mesure, référentiels, guides, MOOC et textes de loi)
+    classées en 15 thèmes, avec recherche, filtres et vérification active des liens.
+
+    La sélection ci-dessous en est un extrait commenté : les outils que le GT AIR
+    considère comme structurants pour une démarche d'architecture. Pour un besoin
+    précis ou une veille, aller au catalogue : il est tenu à jour, cette page ne
+    l'est qu'au rythme des relectures du GT.
+
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
 ### Mesure & maturité
@@ -220,7 +230,7 @@ Croise les grandes étapes de la démarche avec les couches d'architecture.
 | 🟢 **Tanaguru** | Accessibilité (RGAA / WCAG) | — |
 | 🟢 **GR491 (INR)** | Référentiel d'éco-conception | <https://gr491.isit-europe.org/> |
 | **RGESN (ARCEP/ARCOM)** | Référentiel général d'éco-conception | <https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/> |
-| 🟢 **Green Claude** (INR) | Skill d'éco-conception pour Claude Code : audit RGESN/GR491/GSF et sobriété IA à même l'IDE | [Présentation](https://institut-du-numerique-responsable.github.io/green-claude/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/green-claude) |
+| 🟢 **Green Claude** (INR) | Skill d'éco-conception pour Claude Code : audit RGESN/GR491/GSF et sobriété IA dans l'IDE | [Présentation](https://institut-du-numerique-responsable.github.io/green-claude/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/green-claude) |
 | 🟢 **Skill NR** (INR) | Règles d'éco-conception (RGESN, GR491, Opquast, RGAA) pour 11 assistants IA de code, en 13 langues | [Présentation](https://institut-du-numerique-responsable.github.io/skill-nr/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/skill-nr) |
 
 ### Achats & gouvernance
