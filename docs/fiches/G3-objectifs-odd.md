@@ -32,6 +32,11 @@ Traduire des ambitions générales en objectifs SMART, priorisés et alignés su
 3. **Aligner** chaque objectif sur un ODD et sur la stratégie RSE (matrice d'alignement).
 4. Décliner en **principes d'architecture** (ex. « Sobriété par défaut », « Accessibilité universelle »).
 5. Prioriser via une **matrice impact / effort**.
+6. **Consolider la priorisation en collectif** plutôt que dans un tableur d'expert :
+   faire évaluer et pondérer les objectifs par les parties prenantes de
+   [G2](G2-parties-prenantes.md) avec **GPC-ONR**, puis arbitrer sur le résultat
+   consolidé. Une priorisation à laquelle les métiers ont contribué se défend seule
+   en comité.
 
 ## KPIs & OKR
 
@@ -41,6 +46,8 @@ Traduire des ambitions générales en objectifs SMART, priorisés et alignés su
 ## Pièges à éviter
 
 - Objectifs non mesurables (« être plus responsable ») → impilotables.
+- Prioriser à quelques-uns en salle de projet : les métiers découvrent l'arbitrage
+  au moment de l'exécution et le contestent.
 - Objectifs déconnectés des autres objectifs DSI (coûts, performance, sécurité) → mise en concurrence stérile.
 - Viser la perfection immédiate plutôt que l'amélioration continue.
 
@@ -52,6 +59,7 @@ Traduire des ambitions générales en objectifs SMART, priorisés et alignés su
 
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
+| 🟢 **GPC-ONR** (INR) | Évaluation participative, priorisation et consolidation des Objectifs Numérique Responsable (ONR) | <https://github.com/Institut-du-Numerique-Responsable/GPC-ONR> |
 | Liste des 17 ODD (ONU) | Alignement | <https://www.un.org/sustainabledevelopment/fr/objectifs-de-developpement-durable/> |
 
 ## Fiches liées
