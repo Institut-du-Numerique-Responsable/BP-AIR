@@ -11,15 +11,91 @@ description: >-
 
 ## 1. Introduction & Posture
 
-La transformation numérique et la transition écologique ne sont plus deux trajectoires parallèles : ce sont les deux faces d'une même réalité. Plus le numérique s'étend, plus il devient un poste de consommation de ressources — énergie, eau, métaux, mais aussi temps humain et capital. À l'échelle mondiale, le numérique pèse environ **10 % de l'électricité, 4 % de l'énergie primaire et 4 % des émissions de gaz à effet de serre** (The Shift Project, 2021-2023). Et la part dominante de cette empreinte ne se situe pas là où on l'attend : pour une DSI, **environ 80 % de l'empreinte d'un équipement est figée dès sa fabrication**, et le Scope 3 (chaîne de valeur) peut représenter **80 % de l'empreinte globale** d'une organisation.
+Le numérique et la transition écologique puisent dans les mêmes stocks : énergie,
+eau, métaux, et le temps humain qui va avec. Chaque fois que vous étendez le SI,
+vous prélevez sur ces réserves. La plupart de ces arbitrages se prennent en revue
+d'architecture, sans que personne ne les nomme ainsi.
 
-Beaucoup ont longtemps pensé le Numérique Responsable (NR) comme une affaire de code propre ou de choix d'outils. Aujourd'hui, on comprend mieux la logique d'entreprise d'une telle démarche : les systèmes sont interconnectés, interopérables, imbriqués dans et hors de l'entreprise. **Le NR ne se joue plus au niveau du logiciel isolé, mais à l'échelle du Système d'Information dans son ensemble.**
+### Les chiffres et leur périmètre
 
-**Le constat partagé.** De nombreuses organisations multiplient les bonnes intentions : un Digital Cleanup Day par an, un bilan carbone ponctuel, un audit d'accessibilité isolé. Ces initiatives sont louables mais souffrent d'un mal commun — l'absence de vision systémique. Le passage à franchir est clair : **de l'action ponctuelle et cosmétique à une stratégie intégrée, pilotée et pérenne.**
+L'ADEME et l'Arcep ont réévalué l'empreinte du numérique en France en novembre 2024.
+Elle atteint **4,4 % de l'empreinte carbone nationale** (29,5 MtCO₂e pour 2022),
+contre 2,5 % estimé en 2020, et **11 % de la consommation électrique** du pays
+(51,5 TWh, jusqu'à 65 TWh en comptant les datacenters installés à l'étranger qui
+servent des usages français). Sans inflexion, l'ADEME projette un **triplement de
+l'empreinte carbone entre 2020 et 2050**
+([ADEME / Arcep](https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/lempreinte-environnementale-du-numerique.html)).
 
-**La posture.** Le NR n'est ni un centre de coût, ni une contrainte réglementaire à subir. C'est un **levier de performance globale** — économique, opérationnelle, sociale et environnementale. Et l'architecte SI en est le pivot : non pas un simple expert technique, mais un **stratège qui aligne la technologie avec les enjeux de l'entreprise**.
+Lisez la révision avant le niveau. L'écart entre 2,5 % et 4,4 % en quatre ans tient
+à la méthode : les évaluateurs ont élargi le périmètre et affiné le comptage des
+équipements utilisateurs. L'impact n'a pas doublé, notre capacité à le voir s'est
+améliorée.
 
-> **Fil rouge.** Trois temps : les **fondations théoriques** (pourquoi et où agir), les **fiches pratico-pratiques** (comment agir), une **matrice de synthèse** et une **boîte à outils** réutilisables.
+À l'échelle mondiale, les estimations divergent selon le périmètre retenu, les
+sources de données et le traitement des terminaux. L'AIE et les travaux
+académiques situent le numérique à **quelques pour cent des émissions mondiales**,
+avec une croissance plus rapide que la moyenne des secteurs. Citez ces chiffres avec
+leur source et leur date. Avancez un pourcentage sans sa source, et votre
+contradicteur vous entraînera sur la méthode plutôt que sur le fond.
+
+### Là où se concentre l'empreinte
+
+**80 % de l'empreinte d'un équipement est figée dès sa fabrication**, avant la
+première mise sous tension. Le **Scope 3**, la chaîne de valeur, porte jusqu'à
+**80 % de l'empreinte globale** d'une organisation.
+
+Vous en tirez deux conséquences. Allonger la durée de vie du parc pèse plus lourd
+que toute optimisation de code, ce qui déplace le sujet du développeur vers l'acheteur
+([I2](fiches/I2-achats-responsables.md)). Et l'essentiel de votre empreinte se
+décide chez vos fournisseurs, donc votre chaîne de valeur devient un terrain
+d'architecture ([V1](fiches/V1-maturite-parties-prenantes.md)).
+
+### Le périmètre a changé d'échelle
+
+Les DSI ont longtemps traité le Numérique Responsable comme une affaire de code
+propre et de choix d'outils. Vous optimisez une application, et le gain se dilue
+dans les flux qui l'entourent, dans les copies de données qu'elle alimente, dans les
+serveurs qu'elle maintient allumés. **Le NR se joue à l'échelle du Système
+d'Information dans son ensemble.**
+
+Trois évolutions ont suivi les premiers travaux du GT.
+
+**La réglementation fixe des dates.** AI Act, CSRD, loi REEN, RGESN, European
+Accessibility Act : les obligations sont datées et opposables. Une direction arbitre
+et budgète un chantier daté là où elle reporte une bonne intention
+([D1](fiches/D1-conformite.md)).
+
+**La contrainte matérielle est revenue.** Tension sur les composants, prix de
+l'électricité, datacenters qui refusent des raccordements faute d'alimentation. La
+sobriété rejoint la latence et la disponibilité dans la liste des contraintes
+d'ingénierie ([§2.9](#29-le-retour-de-la-contrainte-physique)).
+
+**L'IA déplace les coûts.** Le calcul accéléré concentre la rareté, et l'inférence
+en production pèse plus lourd que l'entraînement sur la durée de vie d'un service
+([C3](fiches/C3-ia-sobre.md)).
+
+### Le constat
+
+Les organisations multiplient les initiatives ponctuelles : un Digital Cleanup Day
+par an, un bilan carbone tous les trois ans, un audit d'accessibilité isolé. Chacune
+a sa valeur. Mises bout à bout, elles ne dessinent aucune trajectoire, et au bout de
+trois ans personne ne sait dire si l'empreinte a baissé. Ce guide vise le passage de
+l'action ponctuelle à **une stratégie intégrée, pilotée et pérenne**.
+
+### La posture
+
+Le Numérique Responsable produit de la performance économique, opérationnelle,
+sociale et environnementale. Quand vous rationalisez un SI, la facture baisse avant
+l'empreinte, et les deux suivent la même pente. Cet alignement rend la démarche
+défendable devant un comité qui ne juge que sur le coût.
+
+L'architecte SI porte cet arbitrage. Il traduit les enjeux de l'entreprise en choix
+techniques, et rend visibles les contraintes physiques que ces choix engagent, au
+moment où l'organisation peut encore décider autrement.
+
+> **Fil rouge.** Les **fondations** (pourquoi et où agir), les **fiches**
+> (comment agir, chantier par chantier), puis une **matrice de synthèse** et une
+> **boîte à outils** pour outiller la démarche.
 
 ---
 
