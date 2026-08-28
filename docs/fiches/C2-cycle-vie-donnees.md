@@ -15,15 +15,15 @@ fiches_liees: [C1, I1, M1]
 
 # C2 — Maîtriser le cycle de vie des données
 
-> **Public cible.** Architectes data, DBA, Dév, métiers propriétaires de données, DPO.
+> **Public cible.** Architectes des données, administrateurs de bases de données, développeurs, métiers responsables des données et DPO.
 
 ## Objectif
 
-Réduire le poids des données — environ **52 % de dark data** et **33 % de ROT** dans un SI moyen.
+Réduire les volumes stockés en repérant les données redondantes, obsolètes, inutilisées ou dépourvues de contexte.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
-La donnée est l'objet même de l'informatique, et le plus négligé. Dark data et ROT coûtent en infrastructure, énergie, ETP, et faussent les décisions. Mais une donnée sans valeur aujourd'hui peut en créer demain : décommissionner avec discernement. Cf. [guide](../guide-unifie.md#24-pilier-3-cycle-de-vie-architecture-services-donnees).
+Les organisations accumulent souvent des données sans définir leur durée de conservation, leur valeur ni leur responsable. Ces données inutilisées, ainsi que les données redondantes, obsolètes ou triviales (ROT), mobilisent des infrastructures et de l'énergie. Elles peuvent aussi fausser les décisions. Une donnée sans valeur aujourd'hui peut toutefois en créer demain : supprimez-la avec discernement. Voir le [guide](../guide-unifie.md#24-pilier-3-cycle-de-vie-architecture-services-donnees).
 
 ## Étapes de mise en œuvre
 
@@ -33,7 +33,7 @@ La donnée est l'objet même de l'informatique, et le plus négligé. Dark data 
 4. Documenter et contextualiser la donnée (source, fraîcheur, échantillonnage) pour limiter biais et duplication.
 5. Articuler avec le **RGPD** (durée de conservation, droit à l'effacement).
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : taux de données ROT ; taux de redondance ; % de données cataloguées ; volume de stockage libéré par campagne.
 - ***OKR*** : catalogue de données opérationnel ; première campagne de décommissionnement réalisée ce semestre.
@@ -44,7 +44,7 @@ La donnée est l'objet même de l'informatique, et le plus négligé. Dark data 
 - Dupliquer faute de catalogue (confusion sur la donnée « de référence »).
 - Négliger la gouvernance → le problème revient à chaque projet.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -57,5 +57,5 @@ La donnée est l'objet même de l'informatique, et le plus négligé. Dark data 
 ## Fiches liées
 
 - [C1 — Éco-concevoir les services numériques](C1-eco-conception-services.md)
-- [I1 — Optimiser infrastructures & environnements](I1-infrastructures.md)
+- [I1 — Optimiser infrastructures et environnements](I1-infrastructures.md)
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)

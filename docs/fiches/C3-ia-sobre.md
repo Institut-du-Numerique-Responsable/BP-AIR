@@ -1,6 +1,6 @@
 ---
 id: C3
-titre: Concevoir & exploiter des services d'IA sobres
+titre: Concevoir et exploiter des services d'IA sobres
 description: >-
   Encadrer l'empreinte des services d'intelligence artificielle : arbitrage du besoin, dimensionnement du modèle, sobriété de l'inférence, taux d'occupation GPU et conformité AI Act.
 theme: Conception sobre
@@ -13,20 +13,20 @@ maj: 2026-08-27
 fiches_liees: [C1, C2, I1, D1]
 ---
 
-# C3 — Concevoir & exploiter des services d'IA sobres
+# C3 — Concevoir et exploiter des services d'IA sobres
 
-> **Public cible.** Architectes, Data Scientists, MLOps, Ops/Infra, Product Owners, DPO.
+> **Public cible.** Architectes, spécialistes des données, équipes MLOps et d'exploitation, responsables de produit et DPO.
 
 ## Objectif
 
 Traiter un service d'IA comme les autres charges du SI : **utile, dimensionné,
-mesuré**. Encadrer son empreinte pendant qu'elle est encore modeste, et tenir les
-obligations d'inventaire de l'AI Act avec les mêmes livrables.
+mesuré**. Mesurer son empreinte dès sa conception et utiliser le même inventaire
+pour répondre aux obligations du règlement européen sur l'intelligence artificielle.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
-Trois écarts entre l'IA générative et les réflexes d'architecture que vous
-appliquez au reste du SI.
+Les projets d'IA générative s'écartent souvent de trois principes appliqués au
+reste du système d'information.
 
 **L'inférence pèse plus que l'entraînement.** Vous entraînez, ou faites entraîner,
 une fois. Vous servez le modèle des milliers de fois par jour, pendant des années.
@@ -44,11 +44,11 @@ sur des cartes dix fois plus coûteuses et plus énergivores, dont l'empreinte d
 fabrication est élevée et l'approvisionnement tendu.
 
 Deux dimensions échappent au débat carbone : la **consommation d'eau** des
-datacenters d'inférence (ODD 6), et le **shadow AI**, ces outils que vos
-collaborateurs utilisent sans validation, qui cumulent empreinte invisible et fuite
-de données.
+centres de données consacrés à l'inférence (ODD 6), et l'**usage non encadré
+d'outils d'IA par les collaborateurs**, parfois appelé *shadow AI*. Ces usages
+cumulent une empreinte difficile à mesurer et un risque de fuite de données.
 
-Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-conception).
+Voir le [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-conception).
 
 ## Étapes de mise en œuvre
 
@@ -94,7 +94,8 @@ Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-con
 
 8. **Gouverner les usages.** Tenir un **inventaire des systèmes d'IA** en production
    et en test : finalité, modèle, données d'entraînement, fournisseur, niveau de
-   risque. L'AI Act l'exige, et il vous sert à repérer le shadow AI. La **Charte IA
+   risque. Le règlement européen sur l'intelligence artificielle l'exige, et cet
+   inventaire aide à repérer les usages non encadrés. La **Charte IA
    Responsable** de l'INR porte l'engagement, la fiche [D1](D1-conformite.md) les
    échéances.
 
@@ -103,7 +104,7 @@ Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-con
    [C2](C2-cycle-vie-donnees.md). Appliquer les durées de conservation aux corpus
    comme au reste.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : énergie et gCO₂e **par requête d'inférence** ; taux d'occupation des GPU ;
   part des requêtes servies par le cache ; part des usages traités par un petit modèle
@@ -126,7 +127,7 @@ Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-con
   livrables d'architecture.
 - Raisonner en kWh seuls et oublier l'eau et la fabrication.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -152,5 +153,5 @@ Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-con
 
 - [C1 — Éco-concevoir les services numériques](C1-eco-conception-services.md)
 - [C2 — Maîtriser le cycle de vie des données](C2-cycle-vie-donnees.md)
-- [I1 — Optimiser infrastructures & environnements](I1-infrastructures.md)
-- [D1 — Mettre en œuvre & contrôler la conformité](D1-conformite.md)
+- [I1 — Optimiser infrastructures et environnements](I1-infrastructures.md)
+- [D1 — Mettre en œuvre et contrôler la conformité](D1-conformite.md)

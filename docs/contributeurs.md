@@ -11,7 +11,7 @@ Ce guide et ses fiches sont le fruit d'un travail collectif du **Groupe de Trava
 Architecture Informatique Responsable (AIR)**, animé par l'Institut du Numérique
 Responsable (INR / ISIT).
 
-## Encadrement & rédaction
+## Encadrement et rédaction
 
 | Auteur / encadrant | Organisation | Rôle dans les travaux |
 |---|---|---|
@@ -59,7 +59,7 @@ n'engagent pas leur employeur.
 | Olivier POTMANS | NGAGE | Enterprise Architect |
 | Phyo AUNG | Transports Publics Genevois | Digital Transformation Manager |
 | Patrice KRAKOW | ING | Non renseigné |
-| Thomas SMALL | Bruxelles Environnement | Responsable de département « Partenariat métier & digitalisation » |
+| Thomas SMALL | Bruxelles Environnement | Responsable de département « Partenariat métier et digitalisation » |
 | Victoria RASE | Bruxelles Environnement | Non renseigné |
 | Gauthier SCHEYVEN | EXTERNALIZ-IT | Project Manager |
 | Ludovic FÉNELON | IJO | Consultant Numérique Responsable |

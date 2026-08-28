@@ -3,7 +3,7 @@ id: I3
 titre: Arbitrer résilience et sobriété
 description: >-
   Dimensionner la résilience d'un SI au risque réel plutôt qu'au réflexe : chaque niveau de redondance immobilise du matériel, chaque technologie orpheline crée une fragilité que l'infrastructure ne rattrape pas.
-theme: Infrastructure & Matériel
+theme: Infrastructure et matériel
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: []
@@ -15,7 +15,7 @@ fiches_liees: [I1, C4, M2, V2]
 
 # I3 — Arbitrer résilience et sobriété
 
-> **Public cible.** Architectes, Ops, SRE, RSSI, PRA/PCA, direction technique.
+> **Public cible.** Architectes, équipes d'exploitation, ingénieurs de fiabilité (SRE), RSSI, responsables des plans de continuité et de reprise, direction technique.
 
 ## Objectif
 
@@ -24,7 +24,7 @@ que chaque niveau de redondance coûte en matériel. Traiter aussi les fragilit�
 l'infrastructure ne rattrape pas : technologies orphelines, compétences détenues par
 une seule personne, fournisseur unique.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
 La résilience traverse la matrice KPI du guide, colonne entière, de la couche
 fonctionnelle à la couche matérielle. Aucune fiche ne la portait jusqu'ici, et la
@@ -38,11 +38,11 @@ l'empreinte de fabrication qui va avec. Un troisième réplica pour un quorum aj
 consomment jamais. Ces choix se prennent en réunion d'architecture et se paient en
 équipements pendant cinq ans.
 
-**Le sur-dimensionnement se déguise en prudence.** Personne ne se fait reprocher
-d'avoir prévu trop de redondance, tout le monde se fait reprocher une panne. Cette
-asymétrie produit des architectures calibrées sur la crainte plutôt que sur un
-objectif de disponibilité écrit et arbitré. Un service interne consulté aux heures
-ouvrées ne mérite pas le dispositif d'un service de paiement.
+**Le surdimensionnement se présente comme une mesure de prudence.** Les équipes sont
+davantage tenues responsables des interruptions que du coût d'une redondance
+excessive. Cette asymétrie favorise des architectures fondées sur la crainte plutôt
+que sur un objectif de disponibilité écrit et arbitré. Un service interne consulté
+aux heures ouvrées ne requiert pas le même dispositif qu'un service de paiement.
 
 **Les vraies fragilités sont ailleurs que dans le matériel.** La matrice du guide
 les nomme : technologies orphelines, fonctions dupliquées sans référentiel, serveurs
@@ -56,7 +56,7 @@ un plan de reprise qui suppose une livraison en trois semaines repose sur une
 hypothèse qui n'est plus vraie. La sobriété rejoint ici la résilience : un SI plus
 léger se reconstitue plus vite.
 
-Cf. [guide](../guide-unifie.md#29-le-retour-de-la-contrainte-physique).
+Voir le [guide](../guide-unifie.md#29-le-retour-de-la-contrainte-physique).
 
 ## Étapes de mise en œuvre
 
@@ -105,7 +105,7 @@ Cf. [guide](../guide-unifie.md#29-le-retour-de-la-contrainte-physique).
    à l'objectif, RTO mesuré en exercice rapporté au RTO annoncé. Un objectif dépassé
    de façon constante signale une redondance à réduire, donc du matériel à rendre.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : part des services dotés d'un RTO et d'un RPO écrits ; disponibilité
   constatée rapportée à l'objectif, par niveau de service ; nombre de composants
@@ -131,7 +131,7 @@ Cf. [guide](../guide-unifie.md#29-le-retour-de-la-contrainte-physique).
 - Multiplier les régions cloud pour la résilience et créer un couplage nouveau,
   celui du plan de contrôle du fournisseur.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -151,7 +151,7 @@ Cf. [guide](../guide-unifie.md#29-le-retour-de-la-contrainte-physique).
 
 ## Fiches liées
 
-- [I1 — Optimiser infrastructures & environnements](I1-infrastructures.md)
+- [I1 — Optimiser infrastructures et environnements](I1-infrastructures.md)
 - [C4 — Résorber la dette d'intégration](C4-dette-integration.md)
-- [V2 — Souveraineté & réversibilité](V2-souverainete.md)
-- [M2 — Pilotage & tableau de bord KPI](M2-pilotage-kpi.md)
+- [V2 — Souveraineté et réversibilité](V2-souverainete.md)
+- [M2 — Pilotage et tableau de bord KPI](M2-pilotage-kpi.md)

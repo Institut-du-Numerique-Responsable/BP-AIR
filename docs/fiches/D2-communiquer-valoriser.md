@@ -1,9 +1,9 @@
 ---
 id: D2
-titre: Communiquer, valoriser & labelliser
+titre: Communiquer, valoriser et labelliser
 description: >-
   Communiquer et valoriser une démarche numérique responsable en interne comme en externe, labellisation comprise, sans tomber dans le greenwashing.
-theme: Déploiement & Valorisation
+theme: Déploiement et valorisation
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: [Guillaume Gallon]
@@ -13,17 +13,17 @@ maj: 2026-06-04
 fiches_liees: [M2, D1, V1]
 ---
 
-# D2 — Communiquer, valoriser & labelliser
+# D2 — Communiquer, valoriser et labelliser
 
 > **Public cible.** Communication, RSE, DSI, architectes (fournisseurs de preuves).
 
 ## Objectif
 
-Suivre les progrès, maintenir l'engagement, valoriser en interne comme en externe pour renforcer marque et culture — sans tomber dans le greenwashing.
+Rendre compte des progrès en interne et à l'extérieur, renforcer la culture de l'organisation et valoriser les équipes, sans exagérer les résultats.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
-Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. Le label est une conséquence d'une démarche réelle, pas une fin en soi. Valoriser les équipes techniques est un moteur de motivation et de rétention. Cf. [guide](../guide-unifie.md#27-pilier-6-mesure-pilotage-lequation-de-kaya-appliquee-au-si).
+Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. Le label est une conséquence d'une démarche réelle, pas une fin en soi. Valoriser les équipes techniques est un moteur de motivation et de rétention. Voir le [guide](../guide-unifie.md#27-pilier-6-mesure-et-pilotage-lequation-de-kaya-appliquee-au-si).
 
 ## Étapes de mise en œuvre
 
@@ -33,7 +33,7 @@ Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. 
 4. Viser la **labellisation** : le **Label NR** (Agence LUCIE + INR, soutenu par l'ADEME) — 14 principes, 4 axes, 2 niveaux (N1 : 300 points ; N2 : 500 points + comité indépendant).
 5. S'appuyer sur le **Guide anti-greenwashing de l'ADEME** pour toute communication externe.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : fréquence de mise à jour du tableau de bord ; nombre de communications internes / trimestre.
 - ***OKR*** : +20 % de perception positive du NR (enquête collaborateurs) ; Label NR niveau 1 sous 18 mois ; 4 publications/an.
@@ -44,7 +44,7 @@ Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. 
 - Viser le label comme une fin en soi plutôt que comme la conséquence d'une démarche réelle.
 - Oublier de valoriser les équipes techniques (moteur de motivation et de rétention).
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -58,6 +58,6 @@ Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. 
 
 ## Fiches liées
 
-- [M2 — Pilotage & tableau de bord KPI](M2-pilotage-kpi.md)
-- [D1 — Mettre en œuvre & contrôler la conformité](D1-conformite.md)
+- [M2 — Pilotage et tableau de bord KPI](M2-pilotage-kpi.md)
+- [D1 — Mettre en œuvre et contrôler la conformité](D1-conformite.md)
 - [V1 — Évaluer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)

@@ -1,9 +1,9 @@
 ---
 id: G3
-titre: Identifier & prioriser les objectifs
+titre: Identifier et prioriser les objectifs
 description: >-
   Traduire les ambitions numérique responsable en objectifs SMART priorisés et alignés sur la stratégie RSE et les Objectifs de Développement Durable.
-theme: Gouvernance & Stratégie
+theme: Gouvernance et stratégie
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: [Guillaume Gallon]
@@ -13,7 +13,7 @@ maj: 2026-06-04
 fiches_liees: [G1, G4, M1]
 ---
 
-# G3 — Identifier & prioriser les objectifs
+# G3 — Identifier et prioriser les objectifs
 
 > **Public cible.** Direction, architectes, pilotes de chantiers.
 
@@ -21,9 +21,9 @@ fiches_liees: [G1, G4, M1]
 
 Traduire des ambitions générales en objectifs SMART, priorisés et alignés sur la stratégie (RSE, ODD).
 
-## Contexte & enjeu
+## Contexte et enjeux
 
-« Être plus responsable » n'est pas pilotable. Mis en concurrence avec coûts, performance et sécurité sans alignement explicite, les objectifs NR perdent. L'alignement sur les ODD ancre et légitime la démarche. Cf. [guide](../guide-unifie.md#28-le-si-au-service-des-odd).
+« Être plus responsable » n'est pas pilotable. Mis en concurrence avec coûts, performance et sécurité sans alignement explicite, les objectifs NR perdent. L'alignement sur les ODD ancre et légitime la démarche. Voir le [guide](../guide-unifie.md#28-le-si-au-service-des-odd).
 
 ## Étapes de mise en œuvre
 
@@ -38,7 +38,7 @@ Traduire des ambitions générales en objectifs SMART, priorisés et alignés su
    consolidé. Une priorisation à laquelle les métiers ont contribué se défend seule
    en comité.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : catalogue d'objectifs SMART validé ; matrice de priorisation complétée (O/N).
 - ***OKR*** : 3 à 5 objectifs prioritaires sur 2 ans, chacun lié à un ODD ; matrice approuvée par le CODIR.
@@ -51,7 +51,7 @@ Traduire des ambitions générales en objectifs SMART, priorisés et alignés su
 - Objectifs déconnectés des autres objectifs DSI (coûts, performance, sécurité) → mise en concurrence stérile.
 - Viser la perfection immédiate plutôt que l'amélioration continue.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 

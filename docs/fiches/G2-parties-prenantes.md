@@ -3,7 +3,7 @@ id: G2
 titre: Embarquer les parties prenantes
 description: >-
   Embarquer et structurer les parties prenantes d'une démarche numérique responsable : rôles, acculturation, gouvernance collective autour de l'architecte.
-theme: Gouvernance & Stratégie
+theme: Gouvernance et stratégie
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: [Guillaume Gallon]
@@ -15,15 +15,15 @@ fiches_liees: [G1, G3, V1]
 
 # G2 — Embarquer les parties prenantes
 
-> **Public cible.** DSI, Dév, Ops/Infra, Achats, Métiers, RSE, Communication, RH.
+> **Public cible.** DSI, développeurs, équipes d'exploitation et d'infrastructure, achats, métiers, RSE, communication et ressources humaines.
 
 ## Objectif
 
 Transformer des expertises individuelles en force collective : l'architecte ne peut appliquer le NR seul.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
-Le NR est par nature transverse. Une politique matérielle sans les Achats, une éco-conception sans les Métiers, un pilotage sans la RSE : autant d'impasses. L'adhésion se construit, elle ne se décrète pas. Cf. [guide](../guide-unifie.md#22-pilier-1-gouvernance-alignement-strategique).
+Le NR est par nature transverse. Une politique matérielle sans les Achats, une éco-conception sans les Métiers, un pilotage sans la RSE : autant d'impasses. L'adhésion se construit, elle ne se décrète pas. Voir le [guide](../guide-unifie.md#22-pilier-1-gouvernance-et-alignement-strategique).
 
 ## Étapes de mise en œuvre
 
@@ -32,7 +32,7 @@ Le NR est par nature transverse. Une politique matérielle sans les Achats, une 
 3. Créer et animer une **communauté de pratique (guilde)** NR.
 4. Formaliser une **matrice RACI** par chantier et une **charte d'engagement** co-signée.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : nombre d'ateliers de cartographie ; % de départements clés représentés en gouvernance ; nombre de collaborateurs sensibilisés.
 - ***OKR*** : 90 % de participation aux sessions de lancement ; charte signée par 100 % des directeurs clés ; 10 ambassadeurs NR formés sous 6 mois.
@@ -43,7 +43,7 @@ Le NR est par nature transverse. Une politique matérielle sans les Achats, une 
 - Confondre information descendante et co-construction.
 - Oublier les Achats : sans eux, aucune politique matérielle ni contractuelle ne tient.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -59,5 +59,5 @@ Le NR est par nature transverse. Une politique matérielle sans les Achats, une 
 ## Fiches liées
 
 - [G1 — Initialiser la démarche](G1-mandat.md)
-- [G3 — Identifier & prioriser les objectifs](G3-objectifs-odd.md)
+- [G3 — Identifier et prioriser les objectifs](G3-objectifs-odd.md)
 - [V1 — Évaluer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)

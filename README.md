@@ -89,12 +89,12 @@ BP-AIR/
 
 | Code | Thème | Fiches |
 |---|---|---|
-| G1–G4 | **Gouvernance & Stratégie** | Mandat · Parties prenantes · Objectifs & ODD · Feuille de route |
-| M1–M2 | **Mesure & Diagnostic** | Diagnostic · Pilotage & KPI |
+| G1–G4 | **Gouvernance et stratégie** | Mandat · Parties prenantes · Objectifs et ODD · Feuille de route |
+| M1–M2 | **Mesure et diagnostic** | Diagnostic · Pilotage et KPI |
 | C1–C5 | **Conception sobre** | Éco-conception des services · Cycle de vie des données · IA sobre · Dette d'intégration · Accessibilité |
-| I1–I3 | **Infrastructure & Matériel** | Infrastructures & environnements · Achats responsables · Résilience & sobriété |
-| V1–V2 | **Chaîne de valeur** | Maturité des parties prenantes · Souveraineté & réversibilité |
-| D1–D2 | **Déploiement & Valorisation** | Conformité · Communiquer & valoriser |
+| I1–I3 | **Infrastructure et matériel** | Infrastructures et environnements · Achats responsables · Résilience et sobriété |
+| V1–V2 | **Chaîne de valeur** | Maturité des parties prenantes · Souveraineté et réversibilité |
+| D1–D2 | **Déploiement et valorisation** | Conformité · Communiquer et valoriser |
 
 ---
 
@@ -255,7 +255,7 @@ Pour les membres bloqués par Git ou par les règles de sécurité de leur entre
 
 ---
 
-## 10. Référencement (moteurs & assistants IA)
+## 10. Référencement (moteurs et assistants IA)
 
 Le site est outillé pour être trouvé *et* correctement cité, y compris par les
 assistants IA, un enjeu direct pour un travail sous CC BY-SA, dont l'attribution

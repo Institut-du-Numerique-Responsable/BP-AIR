@@ -3,7 +3,7 @@ id: G1
 titre: Initialiser la démarche (obtenir le mandat)
 description: >-
   Obtenir un mandat clair de la Direction pour ancrer la démarche numérique responsable au plus haut niveau et éviter qu'elle soit sacrifiée au premier arbitrage.
-theme: Gouvernance & Stratégie
+theme: Gouvernance et stratégie
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: [Guillaume Gallon]
@@ -21,9 +21,9 @@ fiches_liees: [G2, G3, G4]
 
 Ancrer la démarche au plus haut niveau en obtenant un mandat clair de la Direction, sans lequel le NR restera un *nice-to-have* sacrifié au premier arbitrage.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
-On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (direction) autant qu'une attente « ascendante » (terrain). Sans mandat formel, les exigences non-fonctionnelles sont systématiquement sacrifiées au coût ou aux délais. Cf. [guide](../guide-unifie.md#22-pilier-1-gouvernance-alignement-strategique).
+On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (direction) autant qu'une attente « ascendante » (terrain). Sans mandat formel, les exigences non-fonctionnelles sont systématiquement sacrifiées au coût ou aux délais. Voir le [guide](../guide-unifie.md#22-pilier-1-gouvernance-et-alignement-strategique).
 
 ## Étapes de mise en œuvre
 
@@ -33,7 +33,7 @@ On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (d
 4. Nommer officiellement un **Référent NR** et planifier les instances de gouvernance.
 5. *(Recommandé)* Adhérer à l'**INR** (en France), l'**ISIT-BE** (en Belgique) ou l'**ISIT-CH** (en Suisse) pour bénéficier de l'écosystème.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : Note de cadrage rédigée **et signée** (O/N) ; Référent NR nommé (O/N) ; instances de gouvernance planifiées (nombre).
 - ***OKR*** : signature de la note de cadrage par 100 % du CODIR ce trimestre ; budget initial alloué pour la phase diagnostic.
@@ -44,7 +44,7 @@ On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (d
 - Présenter le NR comme une contrainte morale plutôt qu'un levier de performance.
 - Nommer un référent sans temps ni budget dédiés (un rôle « en plus du reste »).
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -58,5 +58,5 @@ On ne gouverne bien qu'à plusieurs : le NR exige un soutien « descendant » (d
 ## Fiches liées
 
 - [G2 — Embarquer les parties prenantes](G2-parties-prenantes.md)
-- [G3 — Identifier & prioriser les objectifs](G3-objectifs-odd.md)
+- [G3 — Identifier et prioriser les objectifs](G3-objectifs-odd.md)
 - [G4 — Construire la feuille de route](G4-feuille-de-route.md)
