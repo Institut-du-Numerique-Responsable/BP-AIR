@@ -1,9 +1,9 @@
 ---
 id: M2
-titre: Pilotage & tableau de bord KPI
+titre: Pilotage et tableau de bord KPI
 description: >-
   Piloter une démarche numérique responsable par les KPI : indicateurs multidimensionnels, tableau de bord et boucle Mesurer → Agir → Apprendre → Ajuster.
-theme: Mesure & Diagnostic
+theme: Mesure et diagnostic
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: [Guillaume Gallon]
@@ -13,7 +13,7 @@ maj: 2026-06-04
 fiches_liees: [M1, D2]
 ---
 
-# M2 — Pilotage & tableau de bord KPI
+# M2 — Pilotage et tableau de bord KPI
 
 > **Public cible.** Architectes, RSE, DSI, FinOps, Communication (consommateurs des indicateurs).
 
@@ -21,19 +21,19 @@ fiches_liees: [M1, D2]
 
 Mettre en place un pilotage continu de la démarche NR : indicateurs multidimensionnels, tableau de bord vivant, boucle d'amélioration *Mesurer → Agir → Apprendre → Ajuster*.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
-« On ne pilote que ce que l'on mesure. » Le diagnostic ([M1](M1-diagnostic.md)) donne le point de départ ; le pilotage transforme cette photo en film. Un bon KPI NR croise les **5 axes du NR**, le **cycle de vie**, les **couches d'architecture** et le triptyque **People / Planet / Prosperity**. Cf. [guide](../guide-unifie.md#27-pilier-6-mesure-pilotage-lequation-de-kaya-appliquee-au-si).
+« On ne pilote que ce que l'on mesure. » Le diagnostic ([M1](M1-diagnostic.md)) donne le point de départ ; le pilotage transforme cette photo en film. Un bon KPI NR croise les **5 axes du NR**, le **cycle de vie**, les **couches d'architecture** et le triptyque **People / Planet / Prosperity**. Voir le [guide](../guide-unifie.md#27-pilier-6-mesure-et-pilotage-lequation-de-kaya-appliquee-au-si).
 
 ## Étapes de mise en œuvre
 
-1. Sélectionner un **jeu de KPI multidimensionnels** par couche (cf. matrice du guide) — éviter la sur-instrumentation.
+1. Sélectionner un **jeu de KPI multidimensionnels** par couche (voir la matrice du guide) — éviter la sur-instrumentation.
 2. Transposer l'**équation de Kaya au SI** pour relier stratégie et empreinte (intensité carbone, efficience énergétique, efficacité, sobriété).
 3. Outiller la collecte automatique (sondes, logs, exports) et brancher un **tableau de bord** (Grafana, PowerBI).
 4. Définir la **fréquence de revue** et les responsables de chaque indicateur.
 5. Rattacher les indicateurs aux **scopes du Bilan Carbone** (ADEME / ABC) et aux ODD adressés.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : nombre de KPI suivis automatiquement ; fraîcheur du tableau de bord ; couverture des couches d'architecture.
 - ***OKR*** : tableau de bord NR en production ce semestre ; revue trimestrielle instituée ; 100 % des objectifs prioritaires ([G3](G3-objectifs-odd.md)) dotés d'un indicateur.
@@ -44,7 +44,7 @@ Mettre en place un pilotage continu de la démarche NR : indicateurs multidimens
 - Mesurer le seul carbone et oublier inclusion, données, éthique, résilience.
 - Tableau de bord figé / non alimenté → perte de crédibilité.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -59,7 +59,7 @@ Mettre en place un pilotage continu de la démarche NR : indicateurs multidimens
 ## Fiches liées
 
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)
-- [D2 — Communiquer, valoriser & labelliser](D2-communiquer-valoriser.md)
+- [D2 — Communiquer, valoriser et labelliser](D2-communiquer-valoriser.md)
 
 <!-- Notes de coédition (interne au GT, non publiées sur le site) :
      Fiche nouvelle : extraite et développée à partir du pilotage évoqué dans

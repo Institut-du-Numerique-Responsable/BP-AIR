@@ -1,6 +1,6 @@
 ---
 id: V2
-titre: Souveraineté & réversibilité
+titre: Souveraineté et réversibilité
 description: >-
   Garder la main sur son SI : mesurer le coût de sortie avant de s'engager, exercer la réversibilité plutôt que la contractualiser, et distinguer les charges qui exigent une localisation des autres.
 theme: Chaîne de valeur
@@ -13,7 +13,7 @@ maj: 2026-08-28
 fiches_liees: [V1, I2, I3, D1]
 ---
 
-# V2 — Souveraineté & réversibilité
+# V2 — Souveraineté et réversibilité
 
 > **Public cible.** Architectes, DSI, achats, juridique, RSSI, DPO.
 
@@ -21,9 +21,9 @@ fiches_liees: [V1, I2, I3, D1]
 
 Rester capable de changer de fournisseur, de récupérer ses données et de maîtriser
 où elles résident. Traiter la souveraineté comme une propriété d'architecture qui se
-mesure et s'exerce, pas comme une clause de contrat.
+mesure et s'exerce, au-delà des seules clauses contractuelles.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
 **Le verrouillage ne se joue pas sur le calcul.** Migrer des machines virtuelles
 d'un fournisseur à un autre reste faisable. Ce qui vous retient, ce sont les
@@ -38,11 +38,10 @@ certaines données ne doivent pas sortir d'un périmètre juridique, d'autres so
 publiques et indifférentes. L'architecte trace cette frontière, le juridique la
 qualifie, la direction l'arbitre.
 
-**La réversibilité écrite ne vaut rien tant qu'elle n'a pas été jouée.** Une clause
-de réversibilité rassure en comité et se révèle inapplicable le jour venu, quand
-personne n'a testé l'export, mesuré sa durée ni vérifié que le format importé est
-exploitable. Le coût de sortie s'estime avant de signer, pas pendant la crise qui
-motive le départ.
+**Une clause ne suffit pas à garantir la réversibilité.** Seul un exercice permet de
+vérifier l'export des données, sa durée et leur réutilisation dans un autre outil.
+Le coût de sortie s'estime avant la signature, lorsque l'organisation dispose encore
+d'un pouvoir de négociation.
 
 **Le cadre européen a bougé.** Le **Data Act** impose depuis le 12 septembre 2025 aux
 fournisseurs de services de traitement de données de lever les obstacles au
@@ -104,7 +103,7 @@ aussi en flux supprimés ([C4](C4-dette-integration.md)).
    accepté comme dépendance et pourquoi. Un successeur qui trouve la décision sans
    son motif la reproduit ou la défait au hasard.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : part des services critiques disposant d'une stratégie de sortie
   documentée ; coût de sortie estimé, par fournisseur ; date du dernier export de
@@ -130,7 +129,7 @@ aussi en flux supprimés ([C4](C4-dette-integration.md)).
 - Réduire la souveraineté à la localisation physique des serveurs, en ignorant la
   juridiction qui s'applique au fournisseur.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -150,7 +149,7 @@ aussi en flux supprimés ([C4](C4-dette-integration.md)).
 
 ## Fiches liées
 
-- [V1 — Évaluer & influencer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)
+- [V1 — Évaluer et influencer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)
 - [I2 — Politique d'achats numériques responsables](I2-achats-responsables.md)
 - [I3 — Arbitrer résilience et sobriété](I3-resilience.md)
-- [D1 — Mettre en œuvre & contrôler la conformité](D1-conformite.md)
+- [D1 — Mettre en œuvre et contrôler la conformité](D1-conformite.md)

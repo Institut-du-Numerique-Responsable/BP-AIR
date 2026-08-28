@@ -9,7 +9,7 @@ description: >-
 
 ---
 
-## 1. Introduction & Posture
+## 1. Introduction et posture
 
 Le numérique et la transition écologique puisent dans les mêmes stocks : énergie,
 eau, métaux, et le temps humain qui va avec. Chaque fois que vous étendez le SI,
@@ -26,17 +26,16 @@ servent des usages français). Sans inflexion, l'ADEME projette un **triplement 
 l'empreinte carbone entre 2020 et 2050**
 ([ADEME / Arcep](https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/lempreinte-environnementale-du-numerique.html)).
 
-Lisez la révision avant le niveau. L'écart entre 2,5 % et 4,4 % en quatre ans tient
-à la méthode : les évaluateurs ont élargi le périmètre et affiné le comptage des
-équipements utilisateurs. L'impact n'a pas doublé, notre capacité à le voir s'est
-améliorée.
+Avant de comparer les chiffres, vérifiez leur méthode de calcul et leur périmètre.
+L'écart entre 2,5 % et 4,4 % en quatre ans tient à la méthode : les évaluateurs ont
+élargi le périmètre et affiné le comptage des équipements utilisateurs. L'impact
+n'a pas doublé, mais sa mesure s'est améliorée.
 
 À l'échelle mondiale, les estimations divergent selon le périmètre retenu, les
 sources de données et le traitement des terminaux. L'AIE et les travaux
 académiques situent le numérique à **quelques pour cent des émissions mondiales**,
-avec une croissance plus rapide que la moyenne des secteurs. Citez ces chiffres avec
-leur source et leur date. Avancez un pourcentage sans sa source, et votre
-contradicteur vous entraînera sur la méthode plutôt que sur le fond.
+avec une croissance plus rapide que la moyenne des secteurs. Indiquez toujours la
+source, l'année et le périmètre d'un chiffre afin de permettre sa vérification.
 
 ### Là où se concentre l'empreinte
 
@@ -52,8 +51,8 @@ d'architecture ([V1](fiches/V1-maturite-parties-prenantes.md)).
 
 ### Le périmètre a changé d'échelle
 
-Les DSI ont longtemps traité le Numérique Responsable comme une affaire de code
-propre et de choix d'outils. Vous optimisez une application, et le gain se dilue
+Les premières démarches de numérique responsable se concentraient souvent sur la
+qualité du code et le choix des outils. Vous optimisez une application, et le gain se dilue
 dans les flux qui l'entourent, dans les copies de données qu'elle alimente, dans les
 serveurs qu'elle maintient allumés. **Le NR se joue à l'échelle du Système
 d'Information dans son ensemble.**
@@ -109,18 +108,18 @@ moment où l'organisation peut encore décider autrement.
     ([M1](fiches/M1-diagnostic.md)).
 
 
-### 2.1 Le cadre : un monde VUCA et une DSI sous tension
+### 2.1 Un contexte instable et des ressources sous tension
 
 Les organisations évoluent dans un monde dit **VUCA** — *Volatile, Uncertain, Complex, Ambiguous* (Bennis et Nanus, 1987). Crises économiques, sanitaires, énergétiques, raréfaction des matières premières : les règles du jeu ont changé.
 
-Le temps où la DSI dépensait sans compter est révolu. **Chaque investissement, chaque ressource numérique consommée doit désormais être justifié et organisé.** On parle de sobriété, non par dogme, mais par nécessité. L'**urbanisation du SI** devient indispensable : faire mieux avec moins, en rationalisant l'existant.
+Les directions des systèmes d'information doivent désormais justifier leurs investissements et mieux maîtriser leurs ressources. La sobriété répond à cette contrainte. L'**urbanisation du SI** aide à rationaliser l'existant et à faire mieux avec moins.
 
 <figure markdown>
   ![VUCA : un monde volatile, incertain, complexe et ambigu](assets/img/vuca.svg)
   <figcaption>VUCA : un monde devenu volatile, incertain, complexe et ambigu.</figcaption>
 </figure>
 
-### 2.2 Pilier 1 — Gouvernance & alignement stratégique
+### 2.2 Pilier 1 — Gouvernance et alignement stratégique
 
 Toutes les organisations partagent un besoin structurel : **bien gérer des ressources finies (financières, matérielles, humaines) au service de leurs objectifs.** C'est l'**alignement stratégique**. La stratégie de l'entreprise se retrouve dans chacune des briques numériques :
 
@@ -137,14 +136,14 @@ Toutes les organisations partagent un besoin structurel : **bien gérer des ress
 
 > **Maturité ≠ performance.** Une organisation est *performante* si ses équipements portent un écolabel (ex. TCO). Elle est *mature* si elle a **explicitement exigé** cet écolabel à l'appel d'offres. On peut être performant par chance ; on n'est mature que par intention et par méthode.
 
-### 2.3 Pilier 2 — Urbanisation & architecture en couches
+### 2.3 Pilier 2 — Urbanisation et architecture en couches
 
 L'urbanisation organise et **rationalise** le SI. Si deux outils font la même chose, n'en garder qu'un : simplification, économies de licences, de maintenance, de machines, d'énergie. Une cartographie à jour permet de **réduire de 20 à 30 % les coûts d'exploitation**
 (Forrester, 2021).
 
 | Couche | Question | Ce qu'on y trouve |
 |---|---|---|
-| **Stratégie & Business** | Le « Quoi » | Vision, gouvernance, réglementaire, parties prenantes |
+| **Stratégie et métier** | Le « Quoi » | Vision, gouvernance, réglementation, parties prenantes |
 | **Métier** | Les savoir-faire | Processus → opérations → tâches |
 | **Fonctionnelle** | L'organisation des fonctions | Zones, quartiers, îlots, blocs |
 | **Applicative** | L'incarnation logicielle | Blocs applicatifs, sous-systèmes, données |
@@ -169,7 +168,7 @@ Comprendre les cycles de vie, c'est savoir **où se cachent les impacts** et don
   <figcaption>Le cycle de vie du SI piloté par la gouvernance : Design (vision, processus, architecture), Build (achats, construction), Run (usage), jusqu'à la fin de vie.</figcaption>
 </figure>
 
-**Cycle de vie des données — le grand oublié.**
+**Le cycle de vie des données reste encore peu pris en compte.**
 
 - **52 % des données** d'un SI sont des **dark data**, stockées sans création de
   valeur, et **33 %** sont des données **ROT**, pour **R**edondantes, **O**bsolètes
@@ -178,7 +177,7 @@ Comprendre les cycles de vie, c'est savoir **où se cachent les impacts** et don
 
 La parade : une **gouvernance de la donnée** (catalogue, registre, qualification chaud/froid). Attention : une donnée sans valeur *aujourd'hui* peut en créer demain — décommissionner avec discernement.
 
-### 2.5 Pilier 4 — Cycle de vie du matériel & économie circulaire
+### 2.5 Pilier 4 — Cycle de vie du matériel et économie circulaire
 
 **80 % de l'empreinte carbone d'un équipement provient de sa fabrication**
 (ordre de grandeur retenu par l'ADEME pour les terminaux utilisateurs ; la part varie
@@ -205,14 +204,14 @@ L'éco-conception est la plus efficace quand **intégrée dès la conception**. 
   considérable. Mesurez l'usage réel de vos propres fonctionnalités plutôt que de
   reprendre ce pourcentage.
 - **Sobriété technique** — poids des pages (EcoIndex), nombre de requêtes (YellowLab), poids des médias, audits statiques (EcoCode).
-- **Durabilité** — rétrocompatibilité, auto-scaling, hébergeurs engagés.
+- **Durabilité** — rétrocompatibilité, ajustement automatique des ressources, hébergeurs engagés.
 - **Hygiène des environnements** : 25 à 30 % des serveurs tournent sans usage, un
   ordre de grandeur stable depuis les travaux de l'Uptime Institute et d'Anthesis sur
   les serveurs comateux. Un serveur sous 15 % de charge consomme jusqu'à 60 % de son
   énergie nominale, la consommation d'un processeur au repos restant élevée.
   Consolidation : de 30 à 60 % de gain.
 
-### 2.7 Pilier 6 — Mesure & pilotage (l'équation de Kaya appliquée au SI)
+### 2.7 Pilier 6 — Mesure et pilotage (l'équation de Kaya appliquée au SI)
 
 > *« On ne pilote que ce que l'on mesure. »*
 
@@ -230,13 +229,13 @@ Un bon **KPI NR** croise quatre dimensions : les **5 axes du NR**, le **cycle de
   <figcaption>Les axes du NR.</figcaption>
 </figure>
 
-| Couche | Optimiser les impacts | Inclusion & durabilité | Éthique & responsabilité | Résilience |
+| Couche | Optimiser les impacts | Inclusion et durabilité | Éthique et responsabilité | Résilience |
 |---|---|---|---|---|
 | **Fonctionnelle** | Taux d'usage des fonctionnalités | Taux d'utilisateurs capables | Données perso à but lucratif | Unicité des fonctions |
 | **Applicative / Data** | Données utilisées ; qualité | Applications accessibles (WCAG) | Respect RGPD | Unicité de la donnée |
 | **Technique** | Applications open source | API/frameworks accessibles | Sécurisation des données | Technos orphelines |
 | **Matérielle** | Usage réel (CPU, RAM, I/O) | Terminaux accessibles | Écolabels ; % renouvelable | Serveurs à fonction identifiée |
-| **Business** | Services / population | % mécénat de compétences | % femmes IT & turnover | Turnover équipes projet |
+| **Business** | Services / population | % mécénat de compétences | % femmes IT et turnover | Turnover équipes projet |
 
 > **Les 5 axes du Numérique Responsable**
 > 1. Un outil aux impacts et consommations limités.
@@ -259,13 +258,13 @@ Un bon **KPI NR** croise quatre dimensions : les **5 axes du NR**, le **cycle de
 
 | ODD | Contribution du SI |
 |---|---|
-| **3** Santé & bien-être | Lutte contre dark patterns, temps d'écran ; substances dangereuses |
+| **3** Santé et bien-être | Lutte contre dark patterns, temps d'écran ; substances dangereuses |
 | **4** Éducation | Apprentissage continu, montée en compétences |
 | **5** Égalité F/H | Lutte contre discriminations, accès aux directions |
 | **6** Eau | Consommation des datacenters et de la fabrication |
 | **7** Énergie durable | Efficience, renouvelables |
 | **8** Travail décent | Conditions dans les centres de services sous-traités |
-| **9** Infrastructure & innovation | Architecture résiliente et sobre |
+| **9** Infrastructure et innovation | Architecture résiliente et sobre |
 | **10** Réduction des inégalités | Équité salariale |
 | **12** Consommation responsable | Mesure des 3U, quotas |
 | **13** Climat | Empreinte carbone par service |
@@ -310,26 +309,26 @@ Croise chaque fiche avec les couches d'architecture qu'elle mobilise. Une fiche 
 n'active qu'une colonne se traite dans une équipe ; une fiche qui en active cinq
 demande un arbitrage transverse.
 
-| Fiche | Stratégie & Gouvernance | Métier | Application | Données | Techno / Infra |
+| Fiche | Stratégie et Gouvernance | Métier | Application | Données | Techno / Infra |
 |---|:---:|:---:|:---:|:---:|:---:|
 | **G1** Initialiser la démarche | ● | ○ | | | |
 | **G2** Embarquer les parties prenantes | ○ | ● | | | |
-| **G3** Identifier & prioriser les objectifs | ● | ● | | | |
+| **G3** Identifier et prioriser les objectifs | ● | ● | | | |
 | **G4** Feuille de route | ● | ● | ○ | ○ | ○ |
 | **M1** État des lieux | ○ | ○ | ● | ● | ● |
-| **M2** Pilotage & KPI | ● | ○ | ○ | ● | ● |
+| **M2** Pilotage et KPI | ● | ○ | ○ | ● | ● |
 | **C1** Éco-concevoir les services | | ○ | ● | ○ | ○ |
 | **C2** Cycle de vie des données | ○ | ○ | ○ | ● | ○ |
 | **C3** Services d'IA sobres | ○ | ○ | ● | ● | ● |
 | **C4** Dette d'intégration | ○ | ○ | ● | ● | ● |
 | **C5** Accessibilité | ○ | ● | ● | | |
-| **I1** Infrastructures & environnements | | | ○ | ○ | ● |
+| **I1** Infrastructures et environnements | | | ○ | ○ | ● |
 | **I2** Achats responsables | ● | ○ | | | ● |
-| **I3** Résilience & sobriété | ● | ○ | ○ | ○ | ● |
+| **I3** Résilience et sobriété | ● | ○ | ○ | ○ | ● |
 | **V1** Maturité des parties prenantes | ● | ● | ○ | ○ | ○ |
-| **V2** Souveraineté & réversibilité | ● | ○ | ● | ● | ● |
+| **V2** Souveraineté et réversibilité | ● | ○ | ● | ● | ● |
 | **D1** Conformité | ● | ○ | ● | ● | ○ |
-| **D2** Communiquer & valoriser | ○ | ● | | | |
+| **D2** Communiquer et valoriser | ○ | ● | | | |
 
 **Légende.** **●** Impact primaire · **○** Impact secondaire.
 
@@ -354,7 +353,7 @@ chaîne de valeur. D1 et V2 encadrent l'ensemble, D2 le valorise.
 
 ---
 
-## 5. Boîte à outils & ressources
+## 5. Boîte à outils et ressources
 
 !!! tip "Le catalogue de référence"
     L'INR maintient une **[Boîte à outils du Numérique Responsable](https://sustainableit-tools.isit-europe.org/)**
@@ -368,7 +367,7 @@ chaîne de valeur. D1 et V2 encadrent l'ensemble, D2 le valorise.
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
-### Mesure & maturité
+### Mesure et maturité
 | Outil | Usage | Lien |
 |---|---|---|
 | 🟢 **WeNR** | Empreinte GES + maturité NR du SI (ACV simplifiée + questionnaire DINUM) | <https://wenr.isit-europe.org/> |
@@ -378,7 +377,7 @@ chaîne de valeur. D1 et V2 encadrent l'ensemble, D2 le valorise.
 | 🟢 **Guide Maturité PP (INR/ISIT)** | 47 questions, 10 familles | <https://institutnr.org/guide-maturite-parties-prenantes> |
 | 🟢 **GPC-ONR** (INR) | Évaluation participative, priorisation et consolidation des Objectifs Numérique Responsable (ONR) | <https://github.com/Institut-du-Numerique-Responsable/GPC-ONR> |
 
-### Éco-conception & accessibilité
+### Éco-conception et accessibilité
 | Outil | Usage | Lien |
 |---|---|---|
 | 🟢 **EcoIndex CLI** | Poids des pages, intégrable CI/CD | <https://github.com/cnumr/EcoIndex_python> |
@@ -392,7 +391,7 @@ chaîne de valeur. D1 et V2 encadrent l'ensemble, D2 le valorise.
 | 🟢 **Green Claude** (INR) | Skill d'éco-conception pour Claude Code : audit RGESN/GR491/GSF et sobriété IA dans l'IDE | [Présentation](https://institut-du-numerique-responsable.github.io/green-claude/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/green-claude) |
 | 🟢 **Skill NR** (INR) | Règles d'éco-conception (RGESN, GR491, Opquast, RGAA) pour 11 assistants IA de code, en 13 langues | [Présentation](https://institut-du-numerique-responsable.github.io/skill-nr/) · [dépôt](https://github.com/Institut-du-Numerique-Responsable/skill-nr) |
 
-### Achats & gouvernance
+### Achats et gouvernance
 | Ressource | Usage | Lien |
 |---|---|---|
 | 🟢 **Clausier NR (INR)** | Clauses types CCTP/CCAP | <https://institutnr.org/clausier-numerique-ecoresponsable> |
@@ -402,10 +401,10 @@ chaîne de valeur. D1 et V2 encadrent l'ensemble, D2 le valorise.
 | **Label NR** (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
 | **Charte IA Responsable** (INR) | Cadre d'engagement pour une IA éthique, inclusive, éco-responsable et de confiance ; complète l'AI Act, qui impose des obligations sans dire comment faire | <https://charter.isit-europe.org/charte-ia/?lang=fr_FR> |
 
-### Formation & sensibilisation
+### Formation et sensibilisation
 | Ressource | Usage | Lien |
 |---|---|---|
-| 🟢 **MOOC Numérique Responsable** (Académie NR) | Montée en compétences NR (cf. fiche [G2](fiches/G2-parties-prenantes.md)) | <https://www.academie-nr.org/mooc-nr/fr/index.html> |
+| 🟢 **MOOC Numérique Responsable** (Académie NR) | Montée en compétences NR (voir la fiche [G2](fiches/G2-parties-prenantes.md)) | <https://www.academie-nr.org/mooc-nr/fr/index.html> |
 | 🟢 **MOOC IA Responsable** (Académie NR) | Comprendre et encadrer l'IA responsable | <https://www.academie-nr.org/mooc-ia/fr/index.html> |
 | 🟢 **MyImpact** (INR/ISIT) | Calculateur d'empreinte individuelle, support d'ateliers | <https://myimpact.isit-europe.org/fr/> |
 
@@ -435,7 +434,7 @@ chaîne de valeur. D1 et V2 encadrent l'ensemble, D2 le valorise.
 | **NR** | Numérique Responsable. |
 | **ODD** | Objectifs de Développement Durable (ONU, 17). |
 | **ONR** | Objectifs Numérique Responsable, déclinaison des ambitions NR en objectifs pilotables. |
-| **OKR** | Objectives & Key Results. |
+| **OKR** | *Objectives and Key Results* — objectifs et résultats clés. |
 | **PUE** | Power Usage Effectiveness — efficacité énergétique d'un datacenter. |
 | **RFI / RFP** | Request For Information (maturité) / Request For Proposal (performance, contractuel). |
 | **RGAA / WCAG** | Référentiels d'accessibilité (français / international). |
@@ -450,5 +449,5 @@ chaîne de valeur. D1 et V2 encadrent l'ensemble, D2 le valorise.
 
 *Document fusionnant le Livre Blanc AIR (INR, 2024), le Guide des Bonnes Pratiques AIR (2026) et le Guide d'évaluation de la maturité NR des parties prenantes (INR/ISIT, 2024).*
 
-!!! quote "Crédits & licence des illustrations"
+!!! quote "Crédits et licence des illustrations"
     Schémas et illustrations issus des publications du GT AIR de l'**Institut du Numérique Responsable (INR / ISIT)**, diffusés sous licence **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)**. Toute réutilisation doit créditer l'INR/ISIT et conserver la même licence.

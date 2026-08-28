@@ -15,26 +15,26 @@ fiches_liees: [C2, M1, D1]
 
 # C1 — Éco-concevoir les services numériques
 
-> **Public cible.** Dév, Product Owners, architectes, UX, QA.
+> **Public cible.** Développeurs, responsables de produit, architectes, spécialistes UX et équipes qualité.
 
 ## Objectif
 
 Intégrer la sobriété **dès la conception** des services, et la maintenir dans le temps.
 
-## Contexte & enjeux
+## Contexte et enjeux
 
-Près de **45 % des fonctionnalités développées ne sont jamais utilisées**. L'éco-conception ajoutée en fin de projet est coûteuse et superficielle ; intégrée en amont, elle réduit poids, requêtes et dette. Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-conception).
+De nombreuses fonctionnalités sont peu ou jamais utilisées. Plutôt que de reprendre un pourcentage générique, mesurez leur usage réel. Intégrée dès le cadrage, l'écoconception réduit le poids des pages, le nombre de requêtes et la dette technique. Voir le [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-conception).
 
 ## Étapes de mise en œuvre
 
 1. Appliquer la **règle des 3U** dès la conception métier (Utile, Utilisé, Utilisable).
 2. Privilégier les **standards ouverts** (REST, JSON, ODF, CSV).
 3. Maîtriser **poids des pages, nombre de requêtes, poids des médias** (EcoIndex, YellowLab, RequestMap).
-4. **Automatiser** les contrôles en CI/CD (analyse statique / EcoCode, tests de performance, scan d'accessibilité) et intégrer des critères NR dans la **Definition of Done**.
-5. Assurer **rétrocompatibilité** et **auto-scaling** ; choisir des hébergeurs engagés.
+4. **Automatiser** les contrôles en CI/CD (analyse statique avec EcoCode, tests de performance, audit automatisé de l'accessibilité) et intégrer des critères NR dans les **critères d'achèvement de chaque fonctionnalité**.
+5. Assurer la **rétrocompatibilité** et l'**ajustement automatique des ressources** ; choisir des hébergeurs engagés.
 6. Mettre en place des **revues d'architecture et de code** spécifiques NR.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : score EcoIndex / poids moyen des pages ; taux d'applications conformes RGAA (niveau AA) ; taux d'usage réel des fonctionnalités (3U).
 - ***OKR*** : 75 % de conformité RGAA AA sur les 3 sites principaux.
@@ -42,10 +42,10 @@ Près de **45 % des fonctionnalités développées ne sont jamais utilisées**. 
 ## Pièges à éviter
 
 - Éco-conception « en fin de projet » → coûteuse et superficielle.
-- Optimiser le front en ignorant le backend et les requêtes.
+- Optimiser l'interface en ignorant les traitements côté serveur et les requêtes.
 - Laisser la dette s'accumuler : un service éco-conçu se dégrade au fil des maintenances non outillées.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -65,4 +65,4 @@ Près de **45 % des fonctionnalités développées ne sont jamais utilisées**. 
 
 - [C2 — Maîtriser le cycle de vie des données](C2-cycle-vie-donnees.md)
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)
-- [D1 — Mettre en œuvre & contrôler la conformité](D1-conformite.md)
+- [D1 — Mettre en œuvre et contrôler la conformité](D1-conformite.md)

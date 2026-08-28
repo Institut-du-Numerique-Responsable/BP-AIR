@@ -1,9 +1,9 @@
 ---
 id: D1
-titre: Mettre en œuvre & contrôler la conformité
+titre: Mettre en œuvre et contrôler la conformité
 description: >-
   Mettre en œuvre et contrôler la conformité numérique responsable : l'architecte passe de concepteur à coach et contrôleur des standards NR.
-theme: Déploiement & Valorisation
+theme: Déploiement et valorisation
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: [Guillaume Gallon]
@@ -13,17 +13,17 @@ maj: 2026-06-04
 fiches_liees: [G4, C1, D2]
 ---
 
-# D1 — Mettre en œuvre & contrôler la conformité
+# D1 — Mettre en œuvre et contrôler la conformité
 
-> **Public cible.** Architectes, équipes projet, Ops, QA.
+> **Public cible.** Architectes, équipes projet, équipes d'exploitation et équipes qualité.
 
 ## Objectif
 
 Déployer concrètement les chantiers tout en garantissant le respect des standards NR : l'architecte passe de concepteur à coach et contrôleur.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
-La conformité se vérifie, elle ne se décrète pas. Des standards définis sans outillage de contrôle restent lettre morte ; un contrôle vécu comme friction est rejeté. Cf. [guide](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches).
+La conformité se vérifie, elle ne se décrète pas. Des standards définis sans outillage de contrôle restent lettre morte ; un contrôle vécu comme friction est rejeté. Voir le [guide](../guide-unifie.md#23-pilier-2-urbanisation-et-architecture-en-couches).
 
 ## Le cadre réglementaire
 
@@ -34,10 +34,10 @@ argument.
 
 | Texte | Qui est concerné | Échéance | Ce que ça implique pour le SI |
 |---|---|---|---|
-| **AI Act**, règlement (UE) 2024/1689 | Fournisseurs et **déployeurs** de systèmes d'IA | Interdictions et obligations GPAI déjà applicables ; **application générale au 2 août 2026** ; exigences substantielles pour le haut risque annexe III repoussées au **2 décembre 2027** par l'omnibus numérique (règlement (UE) 2026/1744), annexe I au **2 août 2028** | Inventaire des systèmes d'IA, classification par niveau de risque, transparence envers les utilisateurs, traçabilité. Cf. [C3](C3-ia-sobre.md) |
-| **CSRD** et normes **ESRS** | Après l'omnibus, seuils **cumulatifs** : plus de 1 000 salariés **et** plus de 450 M€ de CA | Vague 1 inchangée (rapport 2025 sur l'exercice 2024) ; **vague 2 : premier rapport en 2028** sur l'exercice 2027 ; ESRS révisés obligatoires pour les exercices ouverts en 2027 | Le SI devient fournisseur de données extra-financières auditables : traçabilité des consommations, périmètre Scope 3, fraîcheur des chiffres. Cf. [M2](M2-pilotage-kpi.md) |
+| **AI Act**, règlement (UE) 2024/1689 | Fournisseurs et **déployeurs** de systèmes d'IA | Interdictions et obligations GPAI déjà applicables ; **application générale au 2 août 2026** ; exigences substantielles pour le haut risque annexe III repoussées au **2 décembre 2027** par l'omnibus numérique (règlement (UE) 2026/1744), annexe I au **2 août 2028** | Inventaire des systèmes d'IA, classification par niveau de risque, transparence envers les utilisateurs, traçabilité. Voir [C3](C3-ia-sobre.md) |
+| **CSRD** et normes **ESRS** | Après l'omnibus, seuils **cumulatifs** : plus de 1 000 salariés **et** plus de 450 M€ de CA | Vague 1 inchangée (rapport 2025 sur l'exercice 2024) ; **vague 2 : premier rapport en 2028** sur l'exercice 2027 ; ESRS révisés obligatoires pour les exercices ouverts en 2027 | Le SI devient fournisseur de données extra-financières auditables : traçabilité des consommations, périmètre Scope 3, fraîcheur des chiffres. Voir [M2](M2-pilotage-kpi.md) |
 | **Loi REEN** (2021-1485), art. 35 | Communes et EPCI de **plus de 50 000 habitants** | Programme de travail depuis le 1<sup>er</sup> janvier 2023 ; **stratégie numérique responsable depuis 2025** | Stratégie formalisée, publiée et pilotée, pas une intention |
-| **RGESN** (ARCEP / ARCOM), article 25 de la loi REEN | Services numériques de l'État et des collectivités de plus de 50 000 habitants | Applicable **depuis 2024** | **Déclaration d'écoconception à publier** sur le service. Grille d'audit exploitable telle quelle. Cf. [C1](C1-eco-conception-services.md) |
+| **RGESN** (ARCEP / ARCOM), article 25 de la loi REEN | Services numériques de l'État et des collectivités de plus de 50 000 habitants | Applicable **depuis 2024** | **Déclaration d'écoconception à publier** sur le service. Grille d'audit exploitable telle quelle. Voir [C1](C1-eco-conception-services.md) |
 | **European Accessibility Act**, directive (UE) 2019/882 transposée par le décret 2023-931 | **Secteur privé** : entreprises de plus de 10 salariés et plus de 2 M€ de CA fournissant un service B2C couvert (e-commerce, banque, transport, télécoms, médias, livres numériques) | **Depuis le 28 juin 2025** | L'accessibilité passe d'exigence de qualité à obligation légale sanctionnée. Audit RGAA / WCAG des parcours concernés |
 | **RGAA** | Secteur public et organismes délégataires | En vigueur | Déclaration d'accessibilité, plan pluriannuel, audit |
 | **RGPD** | Toute organisation traitant des données personnelles | En vigueur | Durées de conservation et droit à l'effacement, le levier juridique des campagnes de purge de [C2](C2-cycle-vie-donnees.md) |
@@ -64,7 +64,7 @@ réglementations, plutôt que d'ouvrir un chantier par texte.
 6. **Mutualiser les livrables de conformité** (inventaires, traçabilité, preuves)
    entre les textes plutôt que d'ouvrir un chantier par réglementation.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : % d'actions de la feuille de route démarrées ; taux de consommation du budget ; jalons atteints dans les délais ; preuves de conformité archivées par jalon ; **couverture de la cartographie réglementaire** (textes applicables identifiés et dotés d'un responsable) ; part des services concernés disposant d'une déclaration à jour (écoconception, accessibilité).
 - ***OKR*** : 100 % des nouveaux projets passés en revue NR ; preuves archivées pour chaque jalon majeur.
@@ -78,7 +78,7 @@ réglementations, plutôt que d'ouvrir un chantier par texte.
 - Découvrir une échéance six mois avant, faute de cartographie tenue.
 - Confondre déclaration publiée et conformité réelle : la déclaration engage.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -97,4 +97,4 @@ réglementations, plutôt que d'ouvrir un chantier par texte.
 
 - [G4 — Construire la feuille de route](G4-feuille-de-route.md)
 - [C1 — Éco-concevoir les services numériques](C1-eco-conception-services.md)
-- [D2 — Communiquer, valoriser & labelliser](D2-communiquer-valoriser.md)
+- [D2 — Communiquer, valoriser et labelliser](D2-communiquer-valoriser.md)

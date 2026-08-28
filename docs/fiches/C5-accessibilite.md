@@ -15,15 +15,15 @@ fiches_liees: [C1, D1, M1, I2]
 
 # C5 — Accessibilité, levier de sobriété
 
-> **Public cible.** Dév front, UX, Product Owners, architectes, QA, référents accessibilité.
+> **Public cible.** Développeurs d'interfaces, spécialistes UX, responsables de produit, architectes, équipes qualité et référents accessibilité.
 
 ## Objectif
 
-Rendre les services utilisables par tous, et se servir de cette exigence pour
-alléger les interfaces. Traiter l'accessibilité au moment de la conception, là où
-elle coûte peu et rapporte deux fois.
+Rendre les services utilisables par tous et tirer parti de cette exigence pour
+alléger les interfaces. Traiter l'accessibilité dès la conception : les corrections
+sont alors moins coûteuses et peuvent aussi contribuer à alléger les interfaces.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
 **Un axe du NR resté sans chantier.** L'accessibilité forme le deuxième des cinq
 axes du Numérique Responsable, elle traverse la matrice KPI du guide, et pourtant
@@ -63,7 +63,7 @@ depuis le 28 juin 2025 aux entreprises de plus de 10 salariés et 2 M€ de chif
 d'affaires fournissant un service B2C couvert. Le RGAA reste opposable au secteur
 public. Les échéances figurent en [D1](D1-conformite.md).
 
-Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-conception).
+Voir le [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-conception).
 
 ## Étapes de mise en œuvre
 
@@ -81,9 +81,9 @@ Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-con
    d'écran, les connexions faibles, les terminaux anciens et un poids de page réduit,
    par le même travail.
 
-4. **Écrire les critères dans la Definition of Done.** Contraste, navigation au
-   clavier, alternatives textuelles, focus visible. Une exigence qui n'entre pas dans
-   la définition du fini se traite en fin de projet, donc mal et cher.
+4. **Inscrire les critères parmi les conditions d'achèvement.** Contraste, navigation au
+   clavier, alternatives textuelles, focus visible. Une exigence qui ne figure pas
+   parmi les critères d'achèvement se traite en fin de projet, donc mal et cher.
 
 5. **Automatiser ce qui s'automatise.** Les outils (axe-core, Pa11y, Lighthouse)
    couvrent environ un tiers des critères, et ce tiers se vérifie à chaque commit
@@ -109,7 +109,7 @@ Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-con
    comptent, et un logiciel acquis non accessible devient votre problème. Porter
    l'exigence dans les marchés avec [I2](I2-achats-responsables.md).
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : taux de conformité RGAA niveau AA sur les parcours critiques ; nombre de
   critères vérifiés automatiquement dans la chaîne d'intégration ; poids moyen des
@@ -135,7 +135,7 @@ Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-con
 - Publier une déclaration de complaisance. Elle engage, et l'écart avec la réalité
   se constate.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -158,6 +158,6 @@ Cf. [guide](../guide-unifie.md#26-pilier-5-architecture-logicielle-sobre-eco-con
 ## Fiches liées
 
 - [C1 — Éco-concevoir les services numériques](C1-eco-conception-services.md)
-- [D1 — Mettre en œuvre & contrôler la conformité](D1-conformite.md)
+- [D1 — Mettre en œuvre et contrôler la conformité](D1-conformite.md)
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)
 - [I2 — Politique d'achats numériques responsables](I2-achats-responsables.md)

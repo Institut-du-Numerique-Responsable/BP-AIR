@@ -15,7 +15,7 @@ fiches_liees: [C1, C2, I1, M1]
 
 # C4 — Résorber la dette d'intégration
 
-> **Public cible.** Architectes d'entreprise, urbanistes SI, architectes d'intégration, Ops, Data.
+> **Public cible.** Architectes d'entreprise, urbanistes SI, architectes d'intégration, équipes d'exploitation et spécialistes des données.
 
 ## Objectif
 
@@ -23,19 +23,19 @@ Piloter le SI comme un système d'échanges. Réduire le nombre de flux, les cop
 d'une même donnée et les couplages, en chiffrant ce que chacun coûte en matériel et
 en énergie.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
 Vous outillez la dette de code depuis quinze ans : linters, analyse statique, seuils
 de couverture, tout cela bloque une *pull request*. La dette d'intégration n'a rien
-de comparable. Aucun outil ne la mesure par défaut, aucune équipe ne la porte, et
-elle grossit à chaque projet qu'on livre.
+de comparable. Elle dispose rarement d'indicateurs dédiés ou d'un responsable
+clairement désigné, et elle grossit à chaque projet livré.
 
 **Elle croît plus vite que le SI.** Vingt applications reliées deux à deux
 autorisent jusqu'à 190 liaisons. Chaque application ajoutée sans urbanisation
 multiplie les points de contact, et vous héritez d'un graphe que personne ne sait
 dessiner en entier. Le guide rappelle qu'une cartographie tenue à jour fait baisser
 les coûts d'exploitation de 20 à 30 %
-([Forrester, 2021](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches)).
+([Forrester, 2021](../guide-unifie.md#23-pilier-2-urbanisation-et-architecture-en-couches)).
 
 **Elle se paie en serveurs.** Les revues d'architecture comptent les licences et
 s'arrêtent là. Un flux de réplication nocturne maintient allumés un serveur
@@ -68,7 +68,7 @@ volume de données proportionnel au nombre de sauts que vous avez créés.
 Chaque flux redondant immobilise du matériel qui aurait servi ailleurs, ou qui
 n'aurait pas eu besoin d'être acheté.
 
-Cf. [guide](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches).
+Voir le [guide](../guide-unifie.md#23-pilier-2-urbanisation-et-architecture-en-couches).
 
 ## Étapes de mise en œuvre
 
@@ -125,7 +125,7 @@ Cf. [guide](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches)
    propriétaire et leur durée de vie prévue avant d'entrer en production. Sans cette
    règle, vous recommencerez la cartographie dans trois ans.
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : nombre de flux inter-applicatifs ; part de liaisons point-à-point ;
   nombre de copies par donnée de référence ; volume répliqué par nuit ; flux sans
@@ -153,7 +153,7 @@ Cf. [guide](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches)
 - Traiter le regroupement de services comme un retour en arrière. Le monolithe
   modulaire redonne des appels en mémoire et divise le plancher de ressources.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -177,5 +177,5 @@ Cf. [guide](../guide-unifie.md#23-pilier-2-urbanisation-architecture-en-couches)
 
 - [C1 — Éco-concevoir les services numériques](C1-eco-conception-services.md)
 - [C2 — Maîtriser le cycle de vie des données](C2-cycle-vie-donnees.md)
-- [I1 — Optimiser infrastructures & environnements](I1-infrastructures.md)
+- [I1 — Optimiser infrastructures et environnements](I1-infrastructures.md)
 - [M1 — Faire l'état des lieux](M1-diagnostic.md)

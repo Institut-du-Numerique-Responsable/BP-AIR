@@ -3,7 +3,7 @@ id: I2
 titre: Politique d'achats numériques responsables
 description: >-
   Bâtir une politique d'achats numériques responsables : clausier NR, critères environnementaux et arbitrage entre empreinte, performance et coût.
-theme: Infrastructure & Matériel
+theme: Infrastructure et matériel
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: [Guillaume Gallon]
@@ -21,9 +21,9 @@ fiches_liees: [G4, I1, V1]
 
 Encadrer l'acquisition de produits et services numériques pour réduire l'empreinte tout en garantissant performance économique et technique.
 
-## Contexte & enjeu
+## Contexte et enjeux
 
-**80 % de l'empreinte d'un équipement est figée à la fabrication** : acheter du neuf « performant » sans avoir évalué le réemploi est un contresens. Sans les Achats, aucune politique matérielle ne tient. Cf. [guide](../guide-unifie.md#25-pilier-4-cycle-de-vie-du-materiel-economie-circulaire).
+**80 % de l'empreinte d'un équipement est figée à la fabrication** : acheter du neuf « performant » sans avoir évalué le réemploi est un contresens. Sans les Achats, aucune politique matérielle ne tient. Voir le [guide](../guide-unifie.md#25-pilier-4-cycle-de-vie-du-materiel-et-economie-circulaire).
 
 ## Étapes de mise en œuvre
 
@@ -32,7 +32,7 @@ Encadrer l'acquisition de produits et services numériques pour réduire l'empre
 3. Exiger la conformité au **RGESN** pour tout nouveau service.
 4. S'appuyer sur le **dispositif RFAR** (charte + label d'État adossé à l'ISO 20400).
 
-## KPIs & OKR
+## Indicateurs et objectifs
 
 - **KPI** : % d'appels d'offres intégrant des clauses NR ; % de matériel reconditionné dans les nouvelles acquisitions.
 - ***OKR*** : politique d'achats validée par Achats + DSI ; +50 % de matériel reconditionné.
@@ -43,7 +43,7 @@ Encadrer l'acquisition de produits et services numériques pour réduire l'empre
 - Acheter du neuf « performant » sans avoir évalué le réemploi (fabrication = 80 % de l'empreinte).
 - Négliger la dimension sociale au profit du seul carbone.
 
-## Outils & ressources
+## Outils et ressources
 
 *🟢 = outil open source ; les outils sans pastille ne le sont pas (ou partiellement).*
 
@@ -58,5 +58,5 @@ Encadrer l'acquisition de produits et services numériques pour réduire l'empre
 ## Fiches liées
 
 - [G4 — Construire la feuille de route](G4-feuille-de-route.md)
-- [I1 — Optimiser infrastructures & environnements](I1-infrastructures.md)
+- [I1 — Optimiser infrastructures et environnements](I1-infrastructures.md)
 - [V1 — Évaluer la maturité des parties prenantes](V1-maturite-parties-prenantes.md)

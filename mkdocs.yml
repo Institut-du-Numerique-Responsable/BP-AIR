@@ -45,12 +45,12 @@ theme:
 nav:
   - Accueil: index.md
   - Guide (fondations): guide-unifie.md
-  - "Thème — Gouvernance & Stratégie":
+  - "Thème — Gouvernance et stratégie":
       - fiches/G1-mandat.md
       - fiches/G2-parties-prenantes.md
       - fiches/G3-objectifs-odd.md
       - fiches/G4-feuille-de-route.md
-  - "Thème — Mesure & Diagnostic":
+  - "Thème — Mesure et diagnostic":
       - fiches/M1-diagnostic.md
       - fiches/M2-pilotage-kpi.md
   - "Thème — Conception sobre":
@@ -59,14 +59,14 @@ nav:
       - fiches/C3-ia-sobre.md
       - fiches/C4-dette-integration.md
       - fiches/C5-accessibilite.md
-  - "Thème — Infrastructure & Matériel":
+  - "Thème — Infrastructure et matériel":
       - fiches/I1-infrastructures.md
       - fiches/I2-achats-responsables.md
       - fiches/I3-resilience.md
   - "Thème — Chaîne de valeur":
       - fiches/V1-maturite-parties-prenantes.md
       - fiches/V2-souverainete.md
-  - "Thème — Déploiement & Valorisation":
+  - "Thème — Déploiement et valorisation":
       - fiches/D1-conformite.md
       - fiches/D2-communiquer-valoriser.md
   - Contributeurs: contributeurs.md
