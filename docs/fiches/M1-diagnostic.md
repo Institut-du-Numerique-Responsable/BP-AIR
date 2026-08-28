@@ -23,7 +23,7 @@ fiches_liees: [G3, G4, M2]
 
 ## Contexte et enjeux
 
-Le diagnostic conditionne toute la suite : sans base de référence, impossible de prioriser ([G4](G4-feuille-de-route.md)) ni de prouver les progrès ([M2](M2-pilotage-kpi.md)). Attention à ne pas se limiter au carbone. Voir le [guide](../guide-unifie.md#27-pilier-6-mesure-et-pilotage-lequation-de-kaya-appliquee-au-si).
+Le diagnostic conditionne toute la suite : sans base de référence, impossible de prioriser les objectifs ([G3](G3-objectifs-odd.md)), de construire la feuille de route ([G4](G4-feuille-de-route.md)) ou de prouver les progrès ([M2](M2-pilotage-kpi.md)). Attention à ne pas se limiter au carbone. Voir le [guide](../guide-unifie.md#27-pilier-6-mesure-et-pilotage-lequation-de-kaya-appliquee-au-si).
 
 ## Étapes de mise en œuvre
 
