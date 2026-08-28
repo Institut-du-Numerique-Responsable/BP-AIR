@@ -2,13 +2,13 @@
 id: I3
 titre: Arbitrer résilience et sobriété
 description: >-
-  Dimensionner la résilience d'un SI au risque réel plutôt qu'au réflexe : chaque niveau de redondance immobilise du matériel, chaque technologie orpheline crée une fragilité que l'infrastructure ne rattrape pas.
+  Définir un niveau de résilience adapté à chaque service, tester les dispositifs de reprise et maîtriser les ressources consacrées à la redondance.
 theme: Infrastructure et matériel
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: []
 reviewers: []
-version: 0.1
+version: 0.2
 maj: 2026-08-28
 fiches_liees: [I1, C4, M2, V2]
 ---
@@ -19,117 +19,106 @@ fiches_liees: [I1, C4, M2, V2]
 
 ## Objectif
 
-Dimensionner la résilience au risque que vous acceptez de couvrir, en assumant ce
-que chaque niveau de redondance coûte en matériel. Traiter aussi les fragilités que
-l'infrastructure ne rattrape pas : technologies orphelines, compétences détenues par
-une seule personne, fournisseur unique.
+Définir un niveau de résilience adapté à la criticité de chaque service. Réduire les
+points de défaillance techniques, humains et fournisseurs, puis vérifier que les
+dispositifs de continuité et de reprise fonctionnent avec les moyens prévus.
 
 ## Contexte et enjeux
 
-La résilience traverse la matrice KPI du guide, colonne entière, de la couche
-fonctionnelle à la couche matérielle. Aucune fiche ne la portait jusqu'ici, et la
-démarche NR l'abordait par la marge.
+La résilience permet à un service de continuer à fonctionner, éventuellement en
+mode dégradé, puis de revenir à une situation normale après un incident. Le niveau
+attendu dépend des conséquences d'une interruption : sécurité des personnes,
+obligations réglementaires, pertes financières, atteinte aux données ou gêne pour
+les utilisateurs.
 
-**Redonder consomme du matériel.** C'est la tension centrale de cette fiche, et le
-guide ne la résout pas d'un côté ou de l'autre. Un service actif-actif sur deux
-régions double les serveurs, le stockage et la bande passante inter-sites, avec
-l'empreinte de fabrication qui va avec. Un troisième réplica pour un quorum ajoute
-50 % de matériel pour une disponibilité marginale que la plupart des services ne
-consomment jamais. Ces choix se prennent en réunion d'architecture et se paient en
-équipements pendant cinq ans.
+La redondance réduit certains risques, mais elle mobilise du calcul, du stockage,
+du réseau et des équipements supplémentaires. Elle augmente aussi le nombre de
+composants à exploiter et à tester. L'organisation doit donc comparer le risque
+couvert aux coûts économiques et environnementaux de chaque scénario.
 
-**Le surdimensionnement se présente comme une mesure de prudence.** Les équipes sont
-davantage tenues responsables des interruptions que du coût d'une redondance
-excessive. Cette asymétrie favorise des architectures fondées sur la crainte plutôt
-que sur un objectif de disponibilité écrit et arbitré. Un service interne consulté
-aux heures ouvrées ne requiert pas le même dispositif qu'un service de paiement.
-
-**Les vraies fragilités sont ailleurs que dans le matériel.** La matrice du guide
-les nomme : technologies orphelines, fonctions dupliquées sans référentiel, serveurs
-dont plus personne ne connaît la fonction, rotation des équipes projet. Aucune
-redondance matérielle ne compense un composant que son mainteneur a abandonné, ni
-une procédure de reprise que personne n'a exécutée depuis trois ans.
-
-**La contrainte physique change le calcul.** Reconstituer un parc après un incident
-suppose du matériel disponible. Les délais d'approvisionnement se sont allongés, et
-un plan de reprise qui suppose une livraison en trois semaines repose sur une
-hypothèse qui n'est plus vraie. La sobriété rejoint ici la résilience : un SI plus
-léger se reconstitue plus vite.
+La résilience ne repose pas uniquement sur l'infrastructure. Une dépendance non
+maintenue, une procédure inconnue de l'équipe, une sauvegarde impossible à restaurer
+ou un fournisseur irremplaçable peuvent interrompre un service pourtant redondé.
+L'analyse doit couvrir ces fragilités et les hypothèses d'approvisionnement en
+matériel ou en capacité cloud.
 
 Voir le [guide](../guide-unifie.md#29-le-retour-de-la-contrainte-physique).
 
 ## Étapes de mise en œuvre
 
-1. **Écrire les objectifs par service, pas par défaut.** RTO et RPO négociés avec le
-   métier, service par service, écrits et signés. Sans cet arbitrage, chaque équipe
-   applique le niveau maximal qu'elle sait déployer. Classer les services en trois
-   niveaux suffit : critique, important, standard.
+1. **Classer les services selon leur criticité.** Évaluer les conséquences d'une
+   interruption avec les métiers, la sécurité et la conformité. Recenser les
+   dépendances nécessaires au fonctionnement de chaque service, y compris les
+   fournisseurs et les échanges décrits dans [C4](C4-dette-integration.md).
 
-2. **Chiffrer chaque niveau de redondance en matériel.** Combien de serveurs, de
-   stockage et de liens pour passer de standard à important, puis à critique ?
-   Présenter ce chiffrage au métier avec le coût et l'empreinte associés
-   ([I1](I1-infrastructures.md), DataVizta). Une direction qui voit le prix de la
-   quatrième neuf révise souvent son exigence.
+2. **Définir les objectifs de continuité et de reprise.** Pour chaque service,
+   préciser la disponibilité attendue sur une période définie et avec une méthode de
+   mesure convenue, le mode dégradé acceptable, le délai cible de rétablissement du
+   service (**RTO**) et l'ancienneté maximale admissible des données restaurées,
+   exprimée en durée (**RPO**). Faire valider ces objectifs par le responsable métier
+   et les réexaminer après tout changement important.
 
-3. **Recenser les technologies orphelines.** Pour chaque brique du socle : dernière
-   version publiée, activité du mainteneur, existence d'un successeur. Un composant
-   sans publication depuis dix-huit mois entre en surveillance. La dépendance
-   abandonnée est le point de rupture que les tests de charge ne révèlent jamais.
+3. **Comparer plusieurs scénarios d'architecture.** Étudier des scénarios adaptés au
+   service, dont une option sans redondance permanente lorsqu'elle reste compatible
+   avec le risque. Pour chacun, documenter les risques couverts, les risques résiduels,
+   le délai de reprise, les compétences requises et les ressources mobilisées.
+   Expliquer pourquoi les options écartées ne conviennent pas. Évaluer les coûts et
+   l'empreinte avec [I1](I1-infrastructures.md) avant de choisir.
 
-4. **Recenser les points uniques humains.** Quelle procédure ne sait exécuter qu'une
-   seule personne ? Quel composant n'a qu'un mainteneur interne ? La rotation des
-   équipes figure dans la matrice KPI du guide pour cette raison. Documenter et
-   faire tourner coûte moins qu'un départ non anticipé.
+4. **Traiter les points de défaillance non matériels.** Repérer les composants qui
+   ne sont plus maintenus ou ne disposent pas de solution de remplacement. Identifier
+   les procédures connues d'une seule personne, les fournisseurs difficiles à
+   remplacer et les hypothèses d'approvisionnement fragiles. Prévoir une action,
+   un responsable et une échéance pour chaque risque significatif.
 
-5. **Exécuter les procédures de reprise pour de vrai.** Une bascule jamais jouée est
-   une hypothèse, pas un plan. Programmer des exercices réels, y compris la
-   restauration de sauvegardes, et mesurer l'écart avec le RTO annoncé. L'ingénierie
-   du chaos (Chaos Toolkit, LitmusChaos) automatise cette vérification en continu.
+5. **Préparer et tester les modes de fonctionnement.** Documenter les procédures de
+   bascule, de fonctionnement dégradé, de restauration et de retour à la normale.
+   Tester les sauvegardes sur un environnement isolé et organiser des exercices
+   adaptés au risque. L'ingénierie du chaos peut compléter ces exercices lorsque
+   l'équipe maîtrise l'outil et les conséquences des perturbations injectées. Pour
+   chaque exercice, définir à l'avance le scénario, le périmètre, les critères de
+   succès, les rôles, les critères d'arrêt et les preuves à conserver. Vérifier le
+   service rendu, l'intégrité et la cohérence des données, le RTO, le RPO et le retour
+   à la normale.
 
-6. **Préférer la simplicité à la redondance.** Supprimer un composant retire un mode
-   de panne et le matériel qui le portait. La réduction des flux de
-   [C4](C4-dette-integration.md) sert la résilience autant que la sobriété : moins
-   de dépendances, moins de chemins de rupture, moins de machines à maintenir.
+6. **Mesurer les résultats et corriger les écarts.** Comparer le délai de
+   rétablissement observé au RTO et le point de reprise effectivement restauré au
+   RPO. Analyser les échecs, suivre les actions correctives et répéter le test. Une
+   disponibilité supérieure à l'objectif ne suffit pas à réduire la redondance :
+   toute modification exige une nouvelle analyse de risque et un test du scénario
+   retenu.
 
-7. **Dégrader plutôt que tomber.** Prévoir un mode dégradé explicite, en lecture
-   seule ou à fonctionnalités réduites, plutôt qu'une bascule complète coûteuse.
-   Un service qui perd sa recherche mais garde sa consultation rend encore service,
-   pour une fraction de l'infrastructure.
-
-8. **Étendre l'analyse aux fournisseurs.** Vos dépendances externes portent une part
-   de votre disponibilité. Croiser avec [V1](V1-maturite-parties-prenantes.md) pour
-   la maturité, et avec [V2](V2-souverainete.md) pour la réversibilité et la
-   concentration du risque sur un fournisseur unique.
-
-9. **Suivre l'écart entre le prévu et le constaté.** Disponibilité réelle rapportée
-   à l'objectif, RTO mesuré en exercice rapporté au RTO annoncé. Un objectif dépassé
-   de façon constante signale une redondance à réduire, donc du matériel à rendre.
+7. **Réexaminer périodiquement les choix.** Revoir la criticité, les objectifs et
+   l'architecture après un incident, un changement de fournisseur ou une évolution
+   importante du service. Supprimer les composants et les capacités devenus inutiles
+   lorsque les tests confirment que le niveau de résilience reste conforme au besoin.
 
 ## Indicateurs et objectifs
 
-- **KPI** : part des services dotés d'un RTO et d'un RPO écrits ; disponibilité
-  constatée rapportée à l'objectif, par niveau de service ; nombre de composants
-  sans publication depuis dix-huit mois ; nombre de procédures critiques exécutables
-  par une seule personne ; date du dernier exercice de reprise réussi ; matériel
-  immobilisé par la redondance, en serveurs et en tonnes de CO₂e.
-- ***OKR*** : tous les services critiques dotés d'objectifs écrits et signés ce
-  semestre ; un exercice de reprise réel par trimestre sur le périmètre critique ;
-  inventaire des technologies orphelines établi et présenté au comité d'architecture.
+- **KPI** : part des services critiques dotés d'objectifs validés ; part des
+  sauvegardes critiques restaurées avec succès ; part des exercices qui respectent
+  le RTO et le RPO ; nombre de points de défaillance sans plan de traitement ; taux
+  de réalisation des actions correctives dans le délai prévu ; capacité de calcul,
+  stockage, trafic réseau, équipements, coût et, lorsque cela peut être mesuré,
+  empreinte environnementale consacrés à la redondance, par service et par rapport à
+  une architecture de référence.
+- ***OKR 1*** : documenter et faire valider les objectifs de continuité et de reprise
+  de 100 % des services critiques avant la date convenue avec le commanditaire.
+- ***OKR 2*** : tester chaque année, selon un scénario documenté, la reprise de 100 %
+  des services critiques et suivre jusqu'à leur clôture les actions correctives issues
+  des exercices.
 
 ## Pièges à éviter
 
-- Appliquer le niveau de résilience maximal partout, faute d'objectifs négociés.
-  Vous payez le dispositif d'un service de paiement pour un intranet.
-- Confondre redondance et résilience. Trois copies d'un composant fragile donnent
-  trois composants fragiles.
-- Écrire un plan de reprise sans jamais l'exécuter, puis découvrir en incident que
-  les sauvegardes ne se restaurent pas.
-- Bâtir un plan de reprise sur une hypothèse d'approvisionnement matériel de trois
-  semaines qui ne tient plus.
-- Traiter la résilience comme un sujet d'infrastructure. Une technologie orpheline
-  et un mainteneur unique cassent un SI que la redondance protège parfaitement.
-- Multiplier les régions cloud pour la résilience et créer un couplage nouveau,
-  celui du plan de contrôle du fournisseur.
+- Appliquer le même niveau de résilience à tous les services sans analyser leur
+  criticité.
+- Confondre le nombre de copies avec la capacité à reprendre le service.
+- Définir un RTO ou un RPO sans vérifier que l'architecture peut le respecter.
+- Tester la bascule sans tester la restauration des données et le retour à la normale.
+- Ignorer les dépendances humaines, logicielles et fournisseurs.
+- Organiser un exercice susceptible d'affecter la production sans périmètre, critères
+  d'arrêt ni procédure de retour arrière.
+- Réduire une capacité sur la seule base de la disponibilité passée.
 
 ## Outils et ressources
 
@@ -145,8 +134,8 @@ Voir le [guide](../guide-unifie.md#29-le-retour-de-la-contrainte-physique).
 | Observabilité | 🟢 **Prometheus + Grafana** | Disponibilité constatée par service | <https://grafana.com> |
 | Empreinte | 🟢 **DataVizta** (Boavizta) | Coût environnemental du matériel de redondance | <https://dataviz.boavizta.org/> |
 | Coût | 🟢 **OpenCost** | Coût de la redondance par service | <https://www.opencost.io/> |
-| Cadre | **NIS2** | Exigences de résilience pour les entités essentielles et importantes | <https://www.enisa.europa.eu/> |
-| Cadre | **DORA** | Résilience opérationnelle du secteur financier, applicable depuis janvier 2025 | <https://www.digital-operational-resilience-act.com/> |
+| Cadre | **NIS2** | Exigences européennes de cybersécurité et de continuité pour les entités concernées | <https://eur-lex.europa.eu/eli/dir/2022/2555/oj?locale=fr> |
+| Cadre | **DORA** | Résilience opérationnelle numérique du secteur financier | <https://eur-lex.europa.eu/eli/reg/2022/2554/oj?locale=fr> |
 | Référentiel | 🟢 **GR491** (INR) | Critères de durabilité et de robustesse | <https://gr491.isit-europe.org/> |
 
 ## Fiches liées

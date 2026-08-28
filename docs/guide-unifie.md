@@ -398,7 +398,8 @@ chaîne de valeur. D1 et V2 encadrent l'ensemble, D2 le valorise.
 | **Dispositif RFAR** | Charte + Label d'État (ISO 20400) | <https://www.economie.gouv.fr/mediateur-des-entreprises> |
 | 🟢 **Guide bonnes pratiques NR (INR)** | Référentiel | <https://institutnr.org/guide-bonnes-pratiques-nr> |
 | **Guide achats responsables (DINUM)** | Achats | <https://ecoresponsable.numerique.gouv.fr/publications/guide-pratique-achats-numeriques-responsables/> |
-| **Label NR** (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
+| **Label Numérique Responsable** de l'INR et de France IT, opéré par l'Agence LUCIE | Démarche d'amélioration continue proposée en deux niveaux | <https://label-nr.fr/> |
+| **ICDSC** | Référentiel international commun utilisé par des organismes labellisateurs indépendants | <https://www.icdsc.eu/> |
 | **Charte IA Responsable** (INR) | Cadre d'engagement pour une IA éthique, inclusive, éco-responsable et de confiance ; complète l'AI Act, qui impose des obligations sans dire comment faire | <https://charter.isit-europe.org/charte-ia/?lang=fr_FR> |
 
 ### Formation et sensibilisation
