@@ -8,8 +8,8 @@ statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: [Guillaume Gallon]
 reviewers: []
-version: 0.1
-maj: 2026-06-04
+version: 0.2
+maj: 2026-08-28
 fiches_liees: [M2, D1, V1]
 ---
 
@@ -30,7 +30,10 @@ Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. 
 1. S'appuyer sur le **tableau de bord KPI** ([M2](M2-pilotage-kpi.md)), mis à jour régulièrement.
 2. Traduire les résultats techniques en **bénéfices compréhensibles** (« −50 % de requêtes CPU sur l'app X »).
 3. Publier **retours d'expérience** et **études de cas** ; alimenter le rapport RSE.
-4. Viser la **labellisation** : le **Label NR** (Agence LUCIE + INR, soutenu par l'ADEME) — 14 principes, 4 axes, 2 niveaux (N1 : 300 points ; N2 : 500 points + comité indépendant).
+4. Envisager la **labellisation** lorsque la démarche est suffisamment structurée :
+   le **Label Numérique Responsable** de l'INR et de France IT, opéré par l'Agence LUCIE,
+   propose deux niveaux. Le référentiel international de l'**ICDSC** peut aussi servir
+   de cadre commun aux organismes qui évaluent et labellisent les organisations.
 5. S'appuyer sur le **Guide anti-greenwashing de l'ADEME** pour toute communication externe.
 
 ## Indicateurs et objectifs
@@ -52,7 +55,8 @@ Communiquer avant d'avoir des preuves = greenwashing et perte de crédibilité. 
 
 | Outil / Ressource | Usage | Lien |
 |---|---|---|
-| Label NR (LUCIE × INR × ADEME) | 14 principes, 2 niveaux | <https://label-nr.fr/referentiel-numerique-responsable/> |
+| **Label Numérique Responsable** de l'INR et de France IT, opéré par l'Agence LUCIE | Évaluer et valoriser une démarche d'amélioration continue en numérique responsable | <https://label-nr.fr/> |
+| **ICDSC** | Consulter le référentiel international commun utilisé par des organismes labellisateurs indépendants | <https://www.icdsc.eu/> |
 | Guide anti-greenwashing (ADEME) | Communication externe | <https://librairie.ademe.fr/> |
 | Communication responsable (ADEME) | Bonnes pratiques | <https://communication-responsable.ademe.fr/> |
 

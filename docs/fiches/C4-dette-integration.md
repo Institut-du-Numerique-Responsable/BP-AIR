@@ -2,13 +2,13 @@
 id: C4
 titre: Résorber la dette d'intégration
 description: >-
-  Traiter la dette d'intégration, invisible et non outillée, comme la dette de code : cartographier les flux, réduire les copies de données et chiffrer le coût matériel de chaque échange.
+  Cartographier les flux, réduire les échanges et les copies de données inutiles, puis mesurer les ressources mobilisées par l'intégration.
 theme: Conception sobre
 statut: brouillon
 proprietaire: INR/ISIT
 contributeurs: []
 reviewers: []
-version: 0.1
+version: 0.2
 maj: 2026-08-28
 fiches_liees: [C1, C2, I1, M1]
 ---
@@ -19,139 +19,126 @@ fiches_liees: [C1, C2, I1, M1]
 
 ## Objectif
 
-Piloter le SI comme un système d'échanges. Réduire le nombre de flux, les copies
-d'une même donnée et les couplages, en chiffrant ce que chacun coûte en matériel et
-en énergie.
+Identifier et réduire les échanges, les copies de données et les dépendances qui
+complexifient inutilement le système d'information. Évaluer leurs coûts techniques,
+économiques et environnementaux afin d'éclairer les décisions d'architecture.
 
 ## Contexte et enjeux
 
-Vous outillez la dette de code depuis quinze ans : linters, analyse statique, seuils
-de couverture, tout cela bloque une *pull request*. La dette d'intégration n'a rien
-de comparable. Elle dispose rarement d'indicateurs dédiés ou d'un responsable
-clairement désigné, et elle grossit à chaque projet livré.
+La dette d'intégration apparaît lorsque les échanges s'accumulent, évoluent sans
+maîtrise suffisante ou demeurent en service après la disparition de leur besoin.
+Elle se traduit par des flux redondants, des données dupliquées, des contrats
+d'interface fragiles et des composants techniques maintenus sans usage identifié.
 
-**Elle croît plus vite que le SI.** Vingt applications reliées deux à deux
-autorisent jusqu'à 190 liaisons. Chaque application ajoutée sans urbanisation
-multiplie les points de contact, et vous héritez d'un graphe que personne ne sait
-dessiner en entier. Le guide rappelle qu'une cartographie tenue à jour fait baisser
-les coûts d'exploitation de 20 à 30 %
-([Forrester, 2021](../guide-unifie.md#23-pilier-2-urbanisation-et-architecture-en-couches)).
+Cette dette reste souvent moins visible que la dette de code. Les organisations
+disposent d'outils pour analyser le code, mais rarement d'une cartographie fiable
+des flux, de leurs propriétaires et des ressources qu'ils mobilisent.
 
-**Elle se paie en serveurs.** Les revues d'architecture comptent les licences et
-s'arrêtent là. Un flux de réplication nocturne maintient allumés un serveur
-d'intégration, une baie de stockage et un lien réseau, pour recopier une donnée que
-vous détenez déjà. Une donnée de référence dupliquée cinq fois occupe
-cinq fois le stockage, et le stockage porte son empreinte de fabrication avant
-même d'être branché. Un broker déployé en cluster pour la haute disponibilité,
-c'est trois serveurs de plus, allumés en permanence, pour transporter des messages
-dont une partie n'a plus de destinataire.
+Chaque échange peut solliciter du calcul, du stockage, du réseau et des mécanismes
+d'observabilité. La multiplication des interfaces augmente aussi les coûts
+d'exploitation et les risques d'incident. L'enjeu consiste donc à supprimer les
+flux inutiles, à rationaliser les copies de données et à adapter les solutions
+d'intégration aux besoins réels.
 
-**Le matériel vous rattrape.** Pendant vingt ans, vous avez pu raisonner en
-abstractions : la capacité suivait, l'énergie n'apparaissait pas sur votre facture,
-le matériel arrivait en quelques semaines. Depuis, la tension sur les composants, le
-prix de l'électricité et les datacenters qui refusent des raccordements ont changé
-l'équation. Le guide pose la règle : **80 % de l'empreinte d'un équipement est figée
-dès sa fabrication**. Le serveur que vous ajoutez pour porter un flux arrive avec sa
-dette environnementale constituée, avant son premier message traité.
-
-**Le découpage en microservices fabrique de la dette d'intégration.** Laissez le
-débat « microservices ou monolithe » aux conférences et posez la question du seuil :
-à partir de quelle granularité le coût de coordination dépasse-t-il le bénéfice
-d'autonomie ? Sa version matérielle se compte. Chaque service porte son
-runtime, son *sidecar* de service mesh, ses répliques minimales pour la haute
-disponibilité et sa collecte d'observabilité. Quarante services en trois répliques,
-ce sont cent vingt instances, chacune avec un plancher de RAM et de CPU que personne
-ne consomme. Un appel qui coûtait un saut en mémoire devient une sérialisation, un
-chiffrement TLS et un aller-retour réseau. Le tracing distribué génère ensuite un
-volume de données proportionnel au nombre de sauts que vous avez créés.
-
-Chaque flux redondant immobilise du matériel qui aurait servi ailleurs, ou qui
-n'aurait pas eu besoin d'être acheté.
+Les architectures distribuées, notamment celles fondées sur des microservices,
+demandent une attention particulière. Elles peuvent apporter de l'autonomie lorsque
+les services correspondent à des responsabilités clairement délimitées et peuvent
+évoluer indépendamment lorsque le besoin le justifie. Un découpage trop fin peut
+cependant multiplier les communications réseau, les instances et les données
+techniques sans bénéfice équivalent.
 
 Voir le [guide](../guide-unifie.md#23-pilier-2-urbanisation-et-architecture-en-couches).
 
 ## Étapes de mise en œuvre
 
-1. **Cartographier les flux, pas seulement les applications.** La plupart des
-   cartographies listent des briques et taisent ce qui circule entre elles.
-   Recenser pour chaque flux sa source, sa destination, sa fréquence, son volume,
-   son protocole et **son propriétaire métier**. Un flux sans propriétaire est un
-   candidat au décommissionnement.
+1. **Recenser les flux et leurs caractéristiques.** Pour chaque échange, relever la
+   source, la destination, les données transportées, le protocole, la fréquence, le
+   volume, la criticité, le mode de déclenchement, les garanties de livraison et,
+   le cas échéant, la durée de conservation des données produites. Compléter la
+   cartographie des applications par une vue des flux qui les relient.
 
-2. **Partir des flux réels, pas des flux documentés.** L'écart entre les deux est
-   la mesure de votre dette. Le tracing distribué (OpenTelemetry) et le *lineage*
-   de données (OpenLineage, OpenMetadata) montrent ce qui circule vraiment,
-   y compris les échanges qu'aucun schéma n'a jamais décrits.
+2. **Comparer les flux déclarés aux échanges observés.** Croiser la documentation
+   avec les journaux, les traces, les métriques réseau et les configurations des
+   ordonnanceurs, brokers, passerelles API et mécanismes de transfert de fichiers.
+   Le traçage et le lignage complètent l'inventaire lorsque les systèmes sont
+   instrumentés ; ils ne dispensent pas d'échanger avec les exploitants et les
+   consommateurs. Analyser chaque écart avant de mettre la cartographie à jour.
 
-3. **Mesurer la dette.** Nombre de flux inter-applicatifs, part de liaisons
-   point-à-point, nombre de copies de chaque donnée de référence, volume répliqué
-   chaque nuit, flux sans consommateur identifié. Ces cinq chiffres suffisent à
-   ouvrir la discussion en comité d'architecture.
+3. **Identifier les responsables et les consommateurs.** Associer à chaque flux un
+   propriétaire métier, un responsable technique et la liste de ses consommateurs.
+   L'absence de responsable ou de consommateur déclenche une analyse ; elle ne suffit
+   pas à décider d'une suppression.
 
-4. **Appliquer la règle des 3U aux flux.** Ce flux est-il **U**tile, est-il
-   **U**tilisé, est-il **U**tilisable par d'autres que son créateur ? La fiche
-   [C1](C1-eco-conception-services.md) applique la règle aux fonctionnalités, elle
-   vaut autant pour les échanges.
+4. **Mesurer les ressources mobilisées.** Suivre le volume transféré, le stockage
+   des copies, la bande passante, les traitements et les ressources réservées aux
+   composants d'intégration. Relier ces mesures au suivi FinOps de
+   [I1](I1-infrastructures.md) et, lorsque les données sont disponibles, à
+   l'empreinte environnementale des équipements.
 
-5. **Réduire les copies avant d'optimiser les transports.** Une donnée de référence
-   servie par une API à la demande remplace cinq réplications nocturnes et les
-   serveurs qui les portent. Établir le référentiel maître avec
-   [C2](C2-cycle-vie-donnees.md), puis supprimer les copies devenues inutiles.
+5. **Évaluer l'utilité et la criticité.** Appliquer la règle des 3U : le flux est-il
+   **u**tile, **u**tilisé et **u**tilisable par d'autres ? Compléter cette analyse par
+   les exigences de sécurité, de conformité, de continuité d'activité et de qualité
+   des données. La fiche [C1](C1-eco-conception-services.md) applique la même règle
+   aux fonctionnalités.
 
-6. **Interroger la granularité du découpage.** Pour chaque service, poser le test de
-   Conway : quelle équipe en est propriétaire, et livre-t-elle sur son propre cycle ?
-   Si la même équipe possède douze services, le découpage n'achète aucune autonomie
-   et facture toute la complexité, en coordination comme en instances. Regrouper vers
-   un monolithe modulaire est une décision d'architecture recevable, pas un aveu.
-   Rapporter le plancher de ressources (instances × réplicas × RAM réservée) à la
-   charge servie donne le chiffre qui tranche.
+6. **Rationaliser les copies et les interfaces.** Définir le référentiel maître avec
+   [C2](C2-cycle-vie-donnees.md), puis supprimer les copies sans usage démontré.
+   Choisir le mécanisme d'intégration selon le besoin : API pour une réponse
+   immédiate, événement ou message pour découpler les rythmes et absorber les
+   indisponibilités, transfert par lot lorsque la fraîcheur attendue le permet. Une
+   médiation ESB ou iPaaS peut centraliser certains contrôles ou certaines
+   transformations, mais elle ne remplace ni la réduction des flux ni la maîtrise
+   des contrats. Évaluer les dépendances temporelles, les garanties de livraison,
+   l'idempotence, la reprise et la cohérence attendue. Versionner les contrats
+   d'interface et les vérifier par des tests.
 
-7. **Découpler par le contrat plutôt que par l'outillage.** Un schéma versionné et
-   testé (OpenAPI, AsyncAPI, tests de contrat) découple deux équipes sans ajouter
-   d'infrastructure. Un ESB inséré au milieu de flux non rationalisés ajoute une
-   couche à maintenir et un cluster à alimenter, sans réduire le nombre d'échanges.
+7. **Réexaminer le découpage des services.** Vérifier que chaque service porte une
+   responsabilité cohérente et que son déploiement séparé répond à un besoin
+   explicite : autonomie d'évolution, isolation des risques, exigences de sécurité,
+   disponibilité ou caractéristiques de charge. Comparer ce bénéfice au coût des
+   instances, des communications réseau et de l'observabilité. Regrouper des services
+   peut être pertinent lorsque leur séparation n'apporte pas le bénéfice attendu.
 
-8. **Chiffrer le coût physique de l'intégration.** Combien de serveurs, de stockage
-   et de bande passante vos échanges mobilisent-ils ? Rapprocher ce chiffrage du
-   suivi FinOps de [I1](I1-infrastructures.md) et de l'empreinte de fabrication
-   (DataVizta). Un flux dont personne ne défend le coût matériel se supprime plus
-   facilement qu'un flux discuté sur des principes.
-
-9. **Décommissionner par lots, avec un filet.** Couper d'abord en observation
-   (le flux tourne, plus personne ne le lit), mesurer l'absence de réclamation
-   pendant un cycle métier complet, puis supprimer et rendre le matériel.
-
-10. **Poser une règle d'entrée.** Toute nouvelle application déclare ses flux, leur
-   propriétaire et leur durée de vie prévue avant d'entrer en production. Sans cette
-   règle, vous recommencerez la cartographie dans trois ans.
+8. **Décommissionner progressivement et prévoir le retour arrière.** Confirmer les
+   dépendances déclarées et observées, y compris les traitements périodiques. Définir
+   les critères d'arrêt, la durée d'observation et la fenêtre de retour arrière.
+   Lorsque c'est possible, suspendre les nouveaux échanges de manière réversible,
+   placer le consommateur en lecture seule ou exécuter le flux en parallèle sans
+   effet métier, selon le mécanisme concerné. Après l'arrêt, surveiller les erreurs,
+   les files d'attente, les rejets et les écarts de données pendant la période
+   convenue. Ne supprimer les configurations et les ressources qu'après validation
+   des responsables métier et techniques. Archiver ou supprimer les données selon
+   les règles de conservation, de conformité et de sécurité applicables. Toute
+   nouvelle application doit déclarer ses flux, leurs responsables et leur durée de
+   vie avant sa mise en production.
 
 ## Indicateurs et objectifs
 
-- **KPI** : nombre de flux inter-applicatifs ; part de liaisons point-à-point ;
-  nombre de copies par donnée de référence ; volume répliqué par nuit ; flux sans
-  propriétaire déclaré ; serveurs et stockage dédiés à l'intégration ; écart entre
-  flux documentés et flux observés ; **plancher de ressources réservé rapporté à la
-  charge servie** ; nombre de services par équipe propriétaire.
-- ***OKR*** : cartographie des flux complète et datée ce semestre ; toute donnée de
-  référence ramenée à deux copies au plus ; 20 % de liaisons point-à-point
-  supprimées sur l'année, avec le matériel correspondant rendu.
+- **KPI** : part des flux critiques documentés ; part des flux disposant d'un
+  propriétaire métier et d'un responsable technique ; écart entre les flux déclarés
+  et les flux observés ; nombre de copies sans usage démontré ; volume de données
+  transféré ; ressources réservées aux composants d'intégration ; nombre de flux
+  arrêtés et ressources libérées.
+- ***OKR 1*** : documenter 100 % des flux classés critiques, avec leurs responsables,
+  leurs consommateurs et une date de réexamen.
+- ***OKR 2*** : après établissement de la référence initiale, fixer une cible datée
+  de suppression des flux redondants et des copies sans usage, puis mesurer les
+  arrêts validés.
 
 ## Pièges à éviter
 
-- Acheter un ESB ou un iPaaS pour traiter la dette d'intégration. Vous ajoutez une
-  couche et un cluster à alimenter pendant que le nombre de flux reste le même.
-- Surveiller la qualité du code et ignorer ce qui circule entre les applications.
-- Cartographier une fois, publier un joli schéma, puis le laisser vieillir. Une
-  carte fausse coûte plus cher que pas de carte.
-- Supprimer un flux sans avoir identifié ses consommateurs, y compris le tableur
-  d'un service que personne n'a déclaré.
-- Compter l'intégration en licences et jamais en serveurs, en stockage ni en kWh.
-- Confondre découplage et indirection : passer par un intermédiaire de plus ne
-  découple rien si les deux extrémités partagent toujours le même modèle.
-- Découper en microservices sans équipes autonomes en face. Vous payez le réseau,
-  les répliques et le *sidecar* pour une autonomie que l'organisation n'exerce pas.
-- Traiter le regroupement de services comme un retour en arrière. Le monolithe
-  modulaire redonne des appels en mémoire et divise le plancher de ressources.
+- Déployer un nouvel outil d'intégration avant d'avoir rationalisé les flux.
+- Limiter la cartographie aux applications sans représenter les échanges.
+- Laisser la cartographie vieillir sans responsable ni fréquence de mise à jour.
+- Supprimer un flux sur la seule base de l'absence de propriétaire déclaré.
+- Mesurer uniquement les licences et ignorer le calcul, le stockage et le réseau.
+- Considérer qu'un intermédiaire technique suffit à découpler les systèmes sans
+  contrats maîtrisés, responsabilités claires ni gestion indépendante de leurs
+  évolutions.
+- Découper les services plus finement que ne le justifient les responsabilités des
+  équipes et les besoins d'évolution.
+- Décommissionner sans observation préalable, validation des consommateurs ni
+  procédure de rétablissement.
 
 ## Outils et ressources
 
