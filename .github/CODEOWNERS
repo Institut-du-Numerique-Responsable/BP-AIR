@@ -1,11 +1,11 @@
 # Relecture par défaut : l'animation du GT AIR.
 # Remplacer par une équipe GitHub (@Institut-du-Numerique-Responsable/gt-air)
 # dès qu'elle existe — une équipe survit aux départs, pas un compte nominatif.
-*                       @gridboy
+*                       @gridboy @Guillaume-INR @vcourbou @vincentcourboulay
 
 # La chaîne de publication mérite un œil technique systématique.
-/.github/               @gridboy
-/hooks/                 @gridboy
-/overrides/             @gridboy
-/mkdocs.yml             @gridboy
-/requirements.txt       @gridboy
+/.github/               @gridboy @Guillaume-INR @vcourbou @vincentcourboulay
+/hooks/                 @gridboy @Guillaume-INR @vcourbou @vincentcourboulay
+/overrides/             @gridboy @Guillaume-INR @vcourbou @vincentcourboulay
+/mkdocs.yml             @gridboy @Guillaume-INR @vcourbou @vincentcourboulay
+/requirements.txt       @gridboy @Guillaume-INR @vcourbou @vincentcourboulay
