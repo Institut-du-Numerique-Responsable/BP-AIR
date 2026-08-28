@@ -1,6 +1,6 @@
 ---
 titre: Contributeurs
-maj: 2026-08-27
+maj: 2026-08-28
 description: >-
   Les autrices, auteurs et intervenants du Groupe de Travail Architecture Informatique Responsable de l'Institut du Numérique Responsable (INR / ISIT).
 ---
@@ -15,9 +15,9 @@ Responsable (INR / ISIT).
 
 | Auteur / encadrant | Organisation | Rôle dans les travaux |
 |---|---|---|
-| Vincent COURBOULAY | Institut du Numérique Responsable (INR) | Encadrant scientifique, auteur et contributeur |
+| Vincent COURBOULAY | La Rochelle Université / Institut du Numérique Responsable (INR) | Encadrant scientifique, auteur et contributeur |
 | Benjamin DUTHIL | EIGSI (École d'ingénieurs, La Rochelle) | Encadrant du GT AIR, auteur et contributeur |
-| Guillaume GALLON | MADE-UP | Encadrant du GT AIR, auteur et contributeur |
+| Guillaume GALLON | Institut du Numérique Responsable (INR) | Encadrant du GT AIR, auteur et contributeur |
 
 ## Intervenants du groupe de travail
 
@@ -31,7 +31,7 @@ n'engagent pas leur employeur.
 | Xavier PRINCE | MADE-UP | Architecte SI / Tech Lead |
 | Thierry-Gauthier DE LANGHE | VECTEUR E | Consultant en numérique durable |
 | Cyrille CHOPELET | CGI | Architecte Technique |
-| Guillaume GALLON | MADE-UP | Architecte Business & Solution |
+| Guillaume GALLON | Institut du Numérique Responsable (INR) | Architecte Business & Solution |
 | Carole DAVIES-FILLEUR | ACCENTURE | Directrice transformation numérique, en charge du Numérique responsable |
 | Jeremy SINTES | SOPRA STERIA | Non renseigné |
 | Luc CANAGUIER | SOPRA STERIA | Architecte Solution |
