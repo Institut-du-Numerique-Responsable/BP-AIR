@@ -1,4 +1,4 @@
-# BP-AIR — Fiches de bonnes pratiques · Architecture Informatique Responsable
+# BP AIR : Fiches de bonnes pratiques pour les Architecture Informatique Responsable
 
 Espace de travail collaboratif du **Groupe de Travail AIR** (Institut du Numérique Responsable — INR / ISIT) pour **co-écrire** les fiches de bonnes pratiques et les **publier automatiquement** sous forme de site web.
 
